@@ -6,6 +6,8 @@
 		?>
 		<h3 id="period-label">Period 1 -  <?php echo  $lastMonth . ' from ' .$currentMonth?></h3>
 		<span>&nbsp;</span>
+		<input type="hidden" name="period_start-1" value="<?php echo $lastMonth; ?>"/>
+		<input type="hidden" name="period_end-1" value="<?php echo $currentMonth; ?>"/>
 		<table class="bankstatement-item" width="85%">
 			<tbody>
 				<tr>

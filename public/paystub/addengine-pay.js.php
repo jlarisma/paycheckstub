@@ -149,6 +149,9 @@ $finalamount = _R('finalamount-' . $period_num);
 $digitscards = _R('digitscards-' . $period_num);
 $netpayadd = _R('netpayadd-' . $period_num);
 
+$dateStart = _R('period_start-' . $period_num);
+$dateEnd = _R('period_end-' . $period_num);
+
 
 $INITIALBANKAMOUNT = $finalamount - $sumamuont + $netpayadd;
 

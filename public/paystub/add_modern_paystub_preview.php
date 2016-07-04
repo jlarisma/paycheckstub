@@ -108,7 +108,8 @@ background-size: cover;
             </div>
             </div>
             <div class="col-xs-5">
-                <a style="    font-size: 9.2;">$pmonth2M   27, $year through  $pmonthM   28, $year </a>
+                <!--<a style="    font-size: 9.2;">$pmonth2M   27, $year through  $pmonthM   28, $year </a>-->
+                <a style="    font-size: 9.2;">$dateStart 27 through  $dateEnd 28</a>
                 <br>
                 <a style="    font-size: 9.2;">Account  Number: 02114105912118</a>
                 <br>                

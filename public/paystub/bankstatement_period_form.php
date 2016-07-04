@@ -17,6 +17,8 @@
 <div id="bankstatement-period-<?php echo $formId; ?>" class="bankstatement-period" style="margin:10px 0;">
 	<h3 id="period-label">Period <?php echo $formId . ' - ' . $lastMonth . ' from ' .$currentMonth?></h3>
 	<span>&nbsp;</span>
+	<input type="hidden" name="period_start-<?php echo $formId; ?>" value="<?php echo $lastMonth; ?>"/>
+	<input type="hidden" name="period_end-<?php echo $formId; ?>" value="<?php echo $currentMonth; ?>"/>
 	<table class="bankstatement-item" width="85%">
 		<tbody>
 			<tr>
