@@ -1,0 +1,250 @@
+LOG ENTRY: Fri Oct 2nd, 2015 @ precisely 11:02 pm UTC
+PHP v5.4.44 :: WordPress v4.3.1 :: s2Member v150722 :: s2Member Pro v150722
+Memory 4.56 MB :: Real Memory 4.75 MB :: Peak Memory 4.69 MB :: Real Peak Memory 4.75 MB
+www.paycheckstubonline.com/free-user/
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko
+Array
+(
+    [user_id] => 57129
+    [password] => 
+    [pagenow] => index.php
+    [email_config] => 1
+    [processed] => yes
+    [user] => WP_User Object
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 57129
+                    [user_login] => pursuingpassion
+                    [user_pass] => $P$BBGX4/s8EI3m2/0QwbawP4OzPsd1Hc1
+                    [user_nicename] => pursuingpassion
+                    [user_email] => tanya.c@ohtransportation.com
+                    [user_url] => 
+                    [user_registered] => 2015-10-02 23:02:49
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => pursuingpassion
+                    [user_level] => 0
+                )
+
+            [ID] => 57129
+            [caps] => Array
+                (
+                    [subscriber] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [0] => subscriber
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [subscriber] => 1
+                )
+
+            [filter] => 
+        )
+
+    [_pmr] => Array
+        (
+            [s2member_pro_authnet_registration] => Array
+                (
+                    [first_name] => Tanya
+                    [last_name] => Carmichael
+                    [email] => tanya.c@ohtransportation.com
+                    [username] => pursuingpassion
+                    [password1] => jesuswins#3938
+                    [password2] => jesuswins#3938
+                    [custom_fields] => Array
+                        (
+                            [first_name] => Tanya
+                        )
+
+                    [nonce] => 8d26541061
+                    [attr] => fnhlOjYzZGRlNGU0MzBhMGRkNmJkYTkwMmE0OGFlNzU0MjM1fNWvq8yGgWpja7unjmeSeaCcp3Z9q3BbgWtpdnLIY4RtW7DLxW6VyVt2X2-KY2hkxGBqhma7tbeWoFaAxItZjXCHWYHDX3xyTJSjlcSnepKqcmSOZFpxnYF9c3abupy0VXS-jYd-lHh0rYy7yKFml8CdYWytw3e0UXqmqrZySo7BkWmAcoiqWmWkemeOVq2qe1pvx3xucEyqvqzIpsJLjKZzfYmPbtHNmHKVrsyUro60kajAubG_r52doqp_tJfAcJKqgIJfaayLU3unjmWSeWdab8d8anBMu7lbj6qPWotVaW2OyIaMkEO4mW-OpIBai0h5bn_CinNrVqamc4ybjYKRWXZ-VXhaZaR6Zo5WysdZc6eOc3JYW2mErI5pj0vDp1uGxo99lHhuZmDAjWOAS8OYV4e3iYF7U2VWgMSLW41wyam6cmC6clprYlaPp5KNcVqhw6ahnKNphKyOaI9LgVV0vo2Lhny5grKIsr9TgZyLV29udHGLtGtpbmfGv5vIsHlyuYpWgVpaU3unjmaSeaqoVo-1cmdkaXlbj6qPYYtVq7C6vr_Ou5NmYMCNYoBLgkhwv36FimOmpJimxbZKjsGRaIByVWlznWt2bnaVu7qcqKh2fZlwXoHEoo5nkJyLZ3Ntyb6_u3hcrV9-jqSAWoFgV7mlwsSmo5eVt7VzY7yIiXK5ilmBWouepax2b8GRanOnjnpyWI6wvJzDrbqbc262vo2Lhny5kLmVvMFTgZyLVm9uZorDe2JobmeytIu4vsuWqb-at6eYpGJvx26JkVloVo-1cmhagWuduZ22nr2nmK7CyrrOyJqjiLy3lmhkxGBnhmako2Nsp258i3OLtL7Lmq6xR4KrZGZ6VregvbilWm_HfHBwTLuupsSjtp22VXS-jYWGfHhct1-EjVO5nrSJmr-3cYu0a2RuZ3OMm42GkVm5uZOurZaSslaPnZKIa21qj78
+                )
+
+            [g-recaptcha-response] => 03AHJ_VusVtNriLeml5opDbYUOfaP3QUlWlVGGbXoEAypJoAWi4r1idBQkPTQPSq07vHE6szWhgNwpspqb-seakxNeB2QqNVZ9BEz1AY2idaLfMd4fCFu1p7i1Q5febIlNR2IwJ_1GG14BOzym81F6RvuVYwQTDcRYnSCe9SfjN5XnhWlVCayZxKHL1xZxzE0BOMfAcahoPb3biMoUoREYblrol3f-2579MrrmqHLh0S1-Z6H7hkr0M83akfsPE31f5ITBXbV3n4UNEMXc2Iw-Bzi1ytW9EYJuj_QojugwZd6PjHzYse2p_QAUZfug9JV7bJW57p1PXanAoeZqxEZvJesuquQh4uIUIiGGHy0b6OHyHDKyx3gjygQsKKZ7-ZCUYy4FaacC6_aRSICBMA7CdYYcv6_1W0EIvFx5FHu8cdTCNTvnuvMXZl94sysc1Q_Z4AHuPqJVki3vfqUXbZWT7yb1RM52lAPdn4QO6mevEcI6mBoFavdBz-IUmMBLRurgVqvtM-9L737KPMjiWos0Gk3QGe-92SjuNPL4NS2Wn0LR4ZXOl-xUT9hVrWnDblvXxoUqEWl_9MOfACxDEiNLE3RFlghepZNH3SEJVy9e9gFGERawzHbIkl9Sghh3WZauUj55vdDITE6MT6rGo2eP8muIT7e6Z1dGMAtcQFbLSLD_oeC-3NZf3B3wkxrBr4Iq7BQldBrAlqgfATH5lNnfsctTwuG9-qZbZTPDiFkFr889xzeGZCL_3PJ2qtevSCJ0TS58lsK-qFw2g9GlFFN_XfMMuGtmzFRDgXsQyTp84RKJddb0Vz4D70QL4DMmv6mn3Kc8_0ASSqYf960WhhxdXxliDUP5ObvnZWqTLevIgzb_k6C0pc3Eav_voE9Hiixg8v_iPnJ8vx4kwHmv2DW0BgUkda-GQkoibwFD7iAQAfr4koC0jeUzobT3u4-YJFd-3UdXoscUwPXWNpYpShU-Oz4oZfuwpSwOsMon_HzqRXMV14H2j-V5eM8
+            [ws_plugin__s2member_custom_reg_field_user_pass1] => jesuswins#3938
+            [ws_plugin__s2member_custom_reg_field_first_name] => Tanya
+            [ws_plugin__s2member_custom_reg_field_last_name] => Carmichael
+            [ws_plugin__s2member_custom_reg_field_opt_in] => 
+            [ws_plugin__s2member_custom_reg_field_s2member_level] => 0
+            [ws_plugin__s2member_custom_reg_field_s2member_ccaps] => 
+            [ws_plugin__s2member_custom_reg_field_s2member_auto_eot_time] => 
+            [ws_plugin__s2member_custom_reg_field_s2member_custom] => www.paycheckstubonline.com
+        )
+
+    [custom_reg_display_name] => full
+    [reg_cookies] => 
+    [current_role] => 
+    [role] => subscriber
+    [level] => 0
+    [ccaps] => 
+    [email] => tanya.c@ohtransportation.com
+    [login] => pursuingpassion
+    [ip] => 184.88.254.214
+    [custom] => www.paycheckstubonline.com
+    [subscr_id] => 
+    [subscr_baid] => 
+    [subscr_cid] => 
+    [subscr_gateway] => 
+    [cv] => Array
+        (
+            [0] => www.paycheckstubonline.com
+        )
+
+    [eot] => 
+    [auto_eot_time] => 
+    [notes] => 
+    [opt_in] => 
+    [fname] => Tanya
+    [lname] => Carmichael
+    [name] => Tanya Carmichael
+    [pass] => jesuswins#3938
+    [fields] => Array
+        (
+            [first_name] => Tanya
+        )
+
+    [_COOKIE] => Array
+        (
+            [__utma] => 194792492.2040841398.1443823912.1443823912.1443823912.1
+            [__utmb] => 194792492.11.10.1443823912
+            [__utmz] => 194792492.1443823912.1.1.utmcsr=bing|utmccn=(organic)|utmcmd=organic|utmctr=(not provided)
+            [__utmc] => 194792492
+            [PHP_SESSION_PHP] => 503
+        )
+
+)
+
+LOG ENTRY: Fri Oct 2nd, 2015 @ precisely 11:16 pm UTC
+PHP v5.4.44 :: WordPress v4.3.1 :: s2Member v150722 :: s2Member Pro v150722
+Memory 4.56 MB :: Real Memory 4.75 MB :: Peak Memory 4.68 MB :: Real Peak Memory 4.75 MB
+www.paycheckstubonline.com/free-user/
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0
+Array
+(
+    [user_id] => 57130
+    [password] => 
+    [pagenow] => index.php
+    [email_config] => 1
+    [processed] => yes
+    [user] => WP_User Object
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 57130
+                    [user_login] => marianh
+                    [user_pass] => $P$BH9BAWU77AywcQmfaP6msNKV64/7hp.
+                    [user_nicename] => marianh
+                    [user_email] => meheisley@midstate.edu
+                    [user_url] => 
+                    [user_registered] => 2015-10-02 23:16:40
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => marianh
+                    [user_level] => 0
+                )
+
+            [ID] => 57130
+            [caps] => Array
+                (
+                    [subscriber] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [0] => subscriber
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [subscriber] => 1
+                )
+
+            [filter] => 
+        )
+
+    [_pmr] => Array
+        (
+            [s2member_pro_authnet_registration] => Array
+                (
+                    [first_name] => marian
+                    [last_name] => heisley
+                    [email] => meheisley@midstate.edu
+                    [username] => marianh
+                    [password1] => marianh21
+                    [password2] => marianh21
+                    [custom_fields] => Array
+                        (
+                            [first_name] => marian
+                        )
+
+                    [nonce] => 8d26541061
+                    [attr] => fnhlOjYzZGRlNGU0MzBhMGRkNmJkYTkwMmE0OGFlNzU0MjM1fNWvq8yGgWpja7unjmeSeaCcp3Z9q3BbgWtpdnLIY4RtW7DLxW6VyVt2X2-KY2hkxGBqhma7tbeWoFaAxItZjXCHWYHDX3xyTJSjlcSnepKqcmSOZFpxnYF9c3abupy0VXS-jYd-lHh0rYy7yKFml8CdYWytw3e0UXqmqrZySo7BkWmAcoiqWmWkemeOVq2qe1pvx3xucEyqvqzIpsJLjKZzfYmPbtHNmHKVrsyUro60kajAubG_r52doqp_tJfAcJKqgIJfaayLU3unjmWSeWdab8d8anBMu7lbj6qPWotVaW2OyIaMkEO4mW-OpIBai0h5bn_CinNrVqamc4ybjYKRWXZ-VXhaZaR6Zo5WysdZc6eOc3JYW2mErI5pj0vDp1uGxo99lHhuZmDAjWOAS8OYV4e3iYF7U2VWgMSLW41wyam6cmC6clprYlaPp5KNcVqhw6ahnKNphKyOaI9LgVV0vo2Lhny5grKIsr9TgZyLV29udHGLtGtpbmfGv5vIsHlyuYpWgVpaU3unjmaSeaqoVo-1cmdkaXlbj6qPYYtVq7C6vr_Ou5NmYMCNYoBLgkhwv36FimOmpJimxbZKjsGRaIByVWlznWt2bnaVu7qcqKh2fZlwXoHEoo5nkJyLZ3Ntyb6_u3hcrV9-jqSAWoFgV7mlwsSmo5eVt7VzY7yIiXK5ilmBWouepax2b8GRanOnjnpyWI6wvJzDrbqbc262vo2Lhny5kLmVvMFTgZyLVm9uZorDe2JobmeytIu4vsuWqb-at6eYpGJvx26JkVloVo-1cmhagWuduZ22nr2nmK7CyrrOyJqjiLy3lmhkxGBnhmako2Nsp258i3OLtL7Lmq6xR4KrZGZ6VregvbilWm_HfHBwTLuupsSjtp22VXS-jYWGfHhct1-EjVO5nrSJmr-3cYu0a2RuZ3OMm42GkVm5uZOurZaSslaPnZKIa21qj78
+                )
+
+            [g-recaptcha-response] => 03AHJ_VusfgtOnSCtws-EGt0gKbNWXcibqwPXBTGZvp0KkGk8PI0RWS0GkCgds229k13yhPdnaHr9k-nqfEc0AfoBQXHGeB7fXHcN-4IDXpWxLgcDlsFyynGZtJIe-yBgP0htU8ifnLe5Rqh52Fvx5sLqxMjjRaFB3J0_9qSz-iEQVFQ7IZfixBahy7NNpIKz19GWKiiMUz1wRzexjEuya7NdvT8RlLeJ3WWqpA5f_WxVkbWQjIAAj_X2AwZJVY6hkCxVMYqqcqSceeeWUYAY-WePsw9rQKA1WN_nuFqaAF2IHqzN36zZxyBHetC8XTDYxPGh7OUEz86kD6eZJiP0gLa7DuRobbUqJIcHR-2ln5o6KKCsL4pZQ7cvXyNJrahSSh0ckxxXUCe3cUEVwC5uyMihVGPl6FwMpl3XreieamsNCUTM5INSv2KDQ3djoGjqSjkyJsIlk_d3K4IE9os5z6SOCcXV0Av7bg-IrSt8I1OjqJ_YEQQuRBzX1q3OZrDursiRUARJpBr08NztSNUrSuBovbenAaSWSvy7NrsqmA7y80HfGqCKA09Zfh6tYuLU1nJyY1776hTo6ZRrZiTQ5y7j5mmWeuFZVIXinhjxAouDcdpJdL6J19k6NIU3weO3OIY4EdLxJZ1nI3-ahmmY7usttKTuso6ABEJtlsKQB-rhXAzFomdufpiCG2xLFORVaZRcQ61JOhu4mpjiGi5JX0XFH6DTrtNOKp8sXOd8FjuaVcphPN5yu7fRl9FRpG0FE3DlaICCIHjS7f0vUOEpehpAw86SBPHzzSYak4WxnwOqJOy38zuA5U4yenOGiaPM3lyVr1aAFgMaL-lNeHydLmQIkUCrbMncf0zk3ZwC1cCslfodQkFUiXdY0XG5V18zI_1_lPrk4z6sSJXfNY0f335LO8LJF0G5GtQ
+            [ws_plugin__s2member_custom_reg_field_user_pass1] => marianh21
+            [ws_plugin__s2member_custom_reg_field_first_name] => marian
+            [ws_plugin__s2member_custom_reg_field_last_name] => heisley
+            [ws_plugin__s2member_custom_reg_field_opt_in] => 
+            [ws_plugin__s2member_custom_reg_field_s2member_level] => 0
+            [ws_plugin__s2member_custom_reg_field_s2member_ccaps] => 
+            [ws_plugin__s2member_custom_reg_field_s2member_auto_eot_time] => 
+            [ws_plugin__s2member_custom_reg_field_s2member_custom] => www.paycheckstubonline.com
+        )
+
+    [custom_reg_display_name] => full
+    [reg_cookies] => 
+    [current_role] => 
+    [role] => subscriber
+    [level] => 0
+    [ccaps] => 
+    [email] => meheisley@midstate.edu
+    [login] => marianh
+    [ip] => 99.32.22.36
+    [custom] => www.paycheckstubonline.com
+    [subscr_id] => 
+    [subscr_baid] => 
+    [subscr_cid] => 
+    [subscr_gateway] => 
+    [cv] => Array
+        (
+            [0] => www.paycheckstubonline.com
+        )
+
+    [eot] => 
+    [auto_eot_time] => 
+    [notes] => 
+    [opt_in] => 
+    [fname] => marian
+    [lname] => heisley
+    [name] => marian heisley
+    [pass] => marianh21
+    [fields] => Array
+        (
+            [first_name] => marian
+        )
+
+    [_COOKIE] => Array
+        (
+            [__utma] => 194792492.810133416.1443826406.1443826406.1443826406.1
+            [__utmb] => 194792492.6.10.1443826406
+            [__utmc] => 194792492
+            [__utmz] => 194792492.1443826406.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not provided)
+            [__utmt] => 1
+        )
+
+)
+

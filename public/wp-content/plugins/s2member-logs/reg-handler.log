@@ -1,0 +1,393 @@
+LOG ENTRY: Mon Dec 28th, 2015 @ precisely 3:29 am UTC
+PHP v5.4.44 :: WordPress v4.4 :: s2Member v151210 :: s2Member Pro v151210
+Memory 4.84 MB :: Real Memory 5.50 MB :: Peak Memory 5.70 MB :: Real Peak Memory 6.00 MB
+www.paycheckstubonline.com/buy-one-paystub/
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13C75 Safari/601.1
+Array
+(
+    [user_id] => 60132
+    [password] => 
+    [pagenow] => index.php
+    [email_config] => 1
+    [processed] => yes
+    [user] => WP_User Object
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 60132
+                    [user_login] => lalanykol
+                    [user_pass] => $P$BUIVpHvIyjek8ifzzR0a09WdbkuX53.
+                    [user_nicename] => lalanykol
+                    [user_email] => lalanykol@icloud.com
+                    [user_url] => 
+                    [user_registered] => 2015-12-28 03:29:13
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => lalanykol
+                    [user_level] => 0
+                )
+
+            [ID] => 60132
+            [caps] => Array
+                (
+                    [s2member_level1] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [0] => s2member_level1
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [access_s2member_level1] => 1
+                    [s2member_level1] => 1
+                )
+
+            [filter] => 
+        )
+
+    [_pmr] => Array
+        (
+            [s2member_pro_authnet_checkout] => Array
+                (
+                    [coupon] => 
+                    [first_name] => Latoya
+                    [last_name] => McCoy
+                    [email] => lalanykol@icloud.com
+                    [username] => lalanykol
+                    [password1] => KksDnsas2011
+                    [password2] => KksDnsas2011
+                    [card_type] => Amex
+                    [card_number] => xxxxxxxxxxxx6144
+                    [card_expiration_month] => 01
+                    [card_expiration_year] => 2023
+                    [card_verification] => 0337
+                    [card_start_date_issue_number] => 
+                    [street] => 21210 oak st
+                    [city] => Matteson
+                    [state] => Il
+                    [zip] => 60443
+                    [country] => US
+                    [nonce] => 14793f0958
+                    [attr] => fnhlOjI5OWVlNmI5NzQ0ZjExZmVkMzE0N2EwZDllZjA5YTNlfNWvq8yGgWtaa7unjmeSeaCcp3Z9q3BbgWtpdnLIY4RtW7DLxW6VyVt2X2-KY2hkxGBqhma7tbeWoFaAxItZjXCIWYHDX3xyTJSjlcSnepKqcmSOZFpxnYF9c3abupy0VXS-jYh9lHhFe1OGiFGbfJVGZGyTvbVhhZ2hqnF5l8Gzd6q6xYdwWmWkemaOVru6WXOnjnVyWH-ajVuPqo9fi1WcwMbJu8d4XLdff4lraKDInWO8pcizqZaXn7jFxorCvMOgtLVTqqeXU3unjmaSeauZVo-1cmdkaXlbj6qPW4tVrbt1kL-Uh1tmVW-OpIBbi0ipwGaKw3tiblaJc4ybjYCRWbixR4KrZGV6VotikYxZc6eOdHJYnLdrdMdxhmNzZFuGxo9-lHiTuEeIxmt3Y3NyV4e3iYJ7U6amZ4zEYoWIeXmUcmC6cl1rYqbGqHqSqnJkjmRacZ2Bf3N2pMSNupmybY7IhouQQ3RHiMZrfGNziZa6p7S8Y2ynbnaLc1h1icpxe4pHvKadpqJWj6eSiHFaZHZ9q3BcgWusxFmQnItkc22Dd4fNkFl-R7-4mK-cxYunbn_CinJrVmRnjMRiiYh5rLa0hrudTGyzboVueodZc6eOeHJYi6qsnsSrd2SybW2Fzr6GipGUflmHdaevnLJIcLV-gIu0a2Vkf3O-icbCvKmpsZerWmWaemaPp5KLcVqVwaewWGWwg2yPqo9hi1WdtMa4u9C7k2ZgysZrfGNziaTBtL6-Y2ynbnWLc0qOwZFoeopHqJuNlrCos5fHzKenosdkc6lkeINbhFmQnItlaYV1ubHAt5awmay2oLuXxZiuq6e-tKZTb6d_g4tKqKF5crmKXIFajZKwqLecuXlyq26FfFpmTIK8c4xxd522oKm3tMmxfJGUflWHdVOBnItdb263xLOklqenZ4zEYomFkVmuxJm3cllgt6vLYsi4sJucuaWjqZ68q6jCo76XtmGcusCEwMK3j69SxsKmc5myjZp5pbXEpqNhpKbKfpvIsbqcucNUaXOda3hudqfBxZ6toLW0WnGTgXpvhmuQnItkcYV1wbHQu42jiLC0obmItpWpvKnBcnykbmV_c4JKjss
+                )
+
+            [ws_plugin__s2member_custom_reg_field_user_pass1] => KksDnsas2011
+            [ws_plugin__s2member_custom_reg_field_first_name] => Latoya
+            [ws_plugin__s2member_custom_reg_field_last_name] => McCoy
+            [ws_plugin__s2member_custom_reg_field_opt_in] => 
+        )
+
+    [custom_reg_display_name] => login
+    [reg_cookies] => Array
+        (
+            [subscr_gateway] => authnet
+            [subscr_id] => 7836681650
+            [custom] => www.paycheckstubonline.com
+            [item_number] => 1
+        )
+
+    [subscr_gateway] => authnet
+    [subscr_id] => 7836681650
+    [custom] => www.paycheckstubonline.com
+    [item_number] => 1
+    [current_role] => subscriber
+    [eotper] => 
+    [ccaps] => 
+    [level] => 1
+    [role] => s2member_level1
+    [email] => lalanykol@icloud.com
+    [login] => lalanykol
+    [ip] => 172.56.13.75
+    [subscr_baid] => 
+    [subscr_cid] => 
+    [auto_eot_time] => 
+    [notes] => 
+    [opt_in] => 
+    [fname] => Latoya
+    [lname] => McCoy
+    [name] => Latoya McCoy
+    [pass] => KksDnsas2011
+    [fields] => Array
+        (
+        )
+
+    [pr_times] => Array
+        (
+            [level] => 1451273353
+            [level1] => 1451273353
+        )
+
+    [transient] => s2m_f09cd2464427a8baa69fc42122e5c563
+    [ipn_signup_vars] => 
+    [subscr_payment] => 
+    [subscr_eot] => 
+    [s2member_tracking] => fnhlOjQxY2UyODk2MmU0YTc4MDI3MWNkODkzNGY2NTdlZDdlfNWvq8xcf2tgZ3hlimmI
+    [_COOKIE] => Array
+        (
+            [wfvt_1891438122] => 5680abfef0a2f
+            [wordfence_verifiedHuman] => dd1e7f845a
+            [__utma] => 194792492.201491673.1451272345.1451272345.1451272345.1
+            [__utmb] => 194792492.4.10.1451272345
+            [__utmc] => 194792492
+            [__utmt] => 1
+            [__utmz] => 194792492.1451272345.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not provided)
+            [s2member_subscr_gateway] => fnhlOjljZDkyZGZlMjk3MGJhZDA1YTQ0OTU0NGEyNDAyYjYyfNWvq8yGvKySn6Wo
+            [s2member_subscr_id] => fnhlOjQxY2UyODk2MmU0YTc4MDI3MWNkODkzNGY2NTdlZDdlfNWvq8xcf2tgZ3hlimmI
+            [s2member_custom] => fnhlOmFhNTliZWY1MzBjODk2MWI2ODNlMzY4M2I2MjMyM2Q4fNWvq8ycvq9YoaGtt5y9uqKrqMmkp6SWsLeegprElg
+            [s2member_item_number] => fnhlOjg0ODU3NTg0Y2M3OGQwNmI2ZGU3ZDExMTc0YTM3NGZmfNWvq8xW
+            [s2member_tracking] => fnhlOjQxY2UyODk2MmU0YTc4MDI3MWNkODkzNGY2NTdlZDdlfNWvq8xcf2tgZ3hlimmI
+        )
+
+)
+
+LOG ENTRY: Mon Dec 28th, 2015 @ precisely 6:20 am UTC
+PHP v5.4.44 :: WordPress v4.4 :: s2Member v151210 :: s2Member Pro v151210
+Memory 4.78 MB :: Real Memory 5.00 MB :: Peak Memory 4.88 MB :: Real Peak Memory 5.00 MB
+www.paycheckstubonline.com/wp-login.php?action=register
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.52 Safari/537.36
+Array
+(
+    [user_id] => 60133
+    [password] => 
+    [pagenow] => wp-login.php
+    [email_config] => 1
+    [processed] => yes
+    [user] => WP_User Object
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 60133
+                    [user_login] => TTSSilasjwypsv
+                    [user_pass] => $P$BLIknWfEor02nV8gB7NE4zDXxh7etv0
+                    [user_nicename] => ttssilasjwypsv
+                    [user_email] => clintonlopez@mailcatch.com
+                    [user_url] => 
+                    [user_registered] => 2015-12-28 06:20:08
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => TTSSilasjwypsv
+                )
+
+            [ID] => 60133
+            [caps] => Array
+                (
+                    [subscriber] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [0] => subscriber
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [subscriber] => 1
+                )
+
+            [filter] => 
+        )
+
+    [_pmr] => Array
+        (
+            [user_login] => TTSSilasjwypsv
+            [user_email] => clintonlopez@mailcatch.com
+            [ws_plugin__s2member_registration] => 0cbd2a73bc
+            [ws_plugin__s2member_custom_reg_field_user_pass1] => ynX4jBOi
+            [ws_plugin__s2member_custom_reg_field_user_pass2] => ynX4jBOi
+            [ws_plugin__s2member_custom_reg_field_first_name] => Silas
+            [ws_plugin__s2member_custom_reg_field_last_name] => Killinger
+            [redirect_to] => 
+            [wp-submit] => Register
+        )
+
+    [custom_reg_display_name] => login
+    [reg_cookies] => 
+    [current_role] => subscriber
+    [role] => subscriber
+    [level] => 0
+    [ccaps] => 
+    [email] => clintonlopez@mailcatch.com
+    [login] => TTSSilasjwypsv
+    [ip] => 23.95.235.132
+    [custom] => 
+    [subscr_id] => 
+    [subscr_baid] => 
+    [subscr_cid] => 
+    [subscr_gateway] => 
+    [eot] => 
+    [auto_eot_time] => 
+    [notes] => 
+    [opt_in] => 
+    [fname] => Silas
+    [lname] => Killinger
+    [name] => Silas Killinger
+    [pass] => ynX4jBOi
+    [fields] => Array
+        (
+        )
+
+    [_COOKIE] => Array
+        (
+            [wfvt_1891438122] => 5680d498aa435
+            [wordpress_test_cookie] => WP Cookie check
+        )
+
+)
+
+LOG ENTRY: Mon Dec 28th, 2015 @ precisely 6:26 am UTC
+PHP v5.4.44 :: WordPress v4.4 :: s2Member v151210 :: s2Member Pro v151210
+Memory 4.83 MB :: Real Memory 5.00 MB :: Peak Memory 4.94 MB :: Real Peak Memory 5.00 MB
+www.paycheckstubonline.com/buy-one-paystub/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+Array
+(
+    [user_id] => 60134
+    [password] => 
+    [pagenow] => index.php
+    [email_config] => 1
+    [processed] => yes
+    [user] => WP_User Object
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 60134
+                    [user_login] => heatherm26
+                    [user_pass] => $P$BRXyQnI4jN3gBVJ0p/EDa6HHYNHfau/
+                    [user_nicename] => heatherm26
+                    [user_email] => merboth26@gmail.com
+                    [user_url] => 
+                    [user_registered] => 2015-12-28 06:26:46
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => heatherm26
+                    [user_level] => 0
+                )
+
+            [ID] => 60134
+            [caps] => Array
+                (
+                    [s2member_level1] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [0] => s2member_level1
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [access_s2member_level1] => 1
+                    [s2member_level1] => 1
+                )
+
+            [filter] => 
+        )
+
+    [_pmr] => Array
+        (
+            [s2member_pro_authnet_checkout] => Array
+                (
+                    [coupon] => 
+                    [first_name] => heather
+                    [last_name] => merboth
+                    [email] => merboth26@gmail.com
+                    [username] => heatherm26
+                    [password1] => neb4769770
+                    [password2] => neb4769770
+                    [card_type] => MasterCard
+                    [card_number] => xxxxxxxxxxxx7681
+                    [card_expiration_month] => 09
+                    [card_expiration_year] => 2020
+                    [card_verification] => 588
+                    [card_start_date_issue_number] => 
+                    [street] => 18 10th Street unit 336 S
+                    [city] => San Fransisco
+                    [state] => CA
+                    [zip] => 94103
+                    [country] => US
+                    [nonce] => 14793f0958
+                    [attr] => fnhlOjI5OWVlNmI5NzQ0ZjExZmVkMzE0N2EwZDllZjA5YTNlfNWvq8yGgWtaa7unjmeSeaCcp3Z9q3BbgWtpdnLIY4RtW7DLxW6VyVt2X2-KY2hkxGBqhma7tbeWoFaAxItZjXCIWYHDX3xyTJSjlcSnepKqcmSOZFpxnYF9c3abupy0VXS-jYh9lHhFe1OGiFGbfJVGZGyTvbVhhZ2hqnF5l8Gzd6q6xYdwWmWkemaOVru6WXOnjnVyWH-ajVuPqo9fi1WcwMbJu8d4XLdff4lraKDInWO8pcizqZaXn7jFxorCvMOgtLVTqqeXU3unjmaSeauZVo-1cmdkaXlbj6qPW4tVrbt1kL-Uh1tmVW-OpIBbi0ipwGaKw3tiblaJc4ybjYCRWbixR4KrZGV6VotikYxZc6eOdHJYnLdrdMdxhmNzZFuGxo9-lHiTuEeIxmt3Y3NyV4e3iYJ7U6amZ4zEYoWIeXmUcmC6cl1rYqbGqHqSqnJkjmRacZ2Bf3N2pMSNupmybY7IhouQQ3RHiMZrfGNziZa6p7S8Y2ynbnaLc1h1icpxe4pHvKadpqJWj6eSiHFaZHZ9q3BcgWusxFmQnItkc22Dd4fNkFl-R7-4mK-cxYunbn_CinJrVmRnjMRiiYh5rLa0hrudTGyzboVueodZc6eOeHJYi6qsnsSrd2SybW2Fzr6GipGUflmHdaevnLJIcLV-gIu0a2Vkf3O-icbCvKmpsZerWmWaemaPp5KLcVqVwaewWGWwg2yPqo9hi1WdtMa4u9C7k2ZgysZrfGNziaTBtL6-Y2ynbnWLc0qOwZFoeopHqJuNlrCos5fHzKenosdkc6lkeINbhFmQnItlaYV1ubHAt5awmay2oLuXxZiuq6e-tKZTb6d_g4tKqKF5crmKXIFajZKwqLecuXlyq26FfFpmTIK8c4xxd522oKm3tMmxfJGUflWHdVOBnItdb263xLOklqenZ4zEYomFkVmuxJm3cllgt6vLYsi4sJucuaWjqZ68q6jCo76XtmGcusCEwMK3j69SxsKmc5myjZp5pbXEpqNhpKbKfpvIsbqcucNUaXOda3hudqfBxZ6toLW0WnGTgXpvhmuQnItkcYV1wbHQu42jiLC0obmItpWpvKnBcnykbmV_c4JKjss
+                )
+
+            [ws_plugin__s2member_custom_reg_field_user_pass1] => neb4769770
+            [ws_plugin__s2member_custom_reg_field_first_name] => heather
+            [ws_plugin__s2member_custom_reg_field_last_name] => merboth
+            [ws_plugin__s2member_custom_reg_field_opt_in] => 
+        )
+
+    [custom_reg_display_name] => login
+    [reg_cookies] => Array
+        (
+            [subscr_gateway] => authnet
+            [subscr_id] => 7836852142
+            [custom] => www.paycheckstubonline.com
+            [item_number] => 1
+        )
+
+    [subscr_gateway] => authnet
+    [subscr_id] => 7836852142
+    [custom] => www.paycheckstubonline.com
+    [item_number] => 1
+    [current_role] => subscriber
+    [eotper] => 
+    [ccaps] => 
+    [level] => 1
+    [role] => s2member_level1
+    [email] => merboth26@gmail.com
+    [login] => heatherm26
+    [ip] => 76.212.147.134
+    [subscr_baid] => 
+    [subscr_cid] => 
+    [auto_eot_time] => 
+    [notes] => 
+    [opt_in] => 
+    [fname] => heather
+    [lname] => merboth
+    [name] => heather merboth
+    [pass] => neb4769770
+    [fields] => Array
+        (
+        )
+
+    [pr_times] => Array
+        (
+            [level] => 1451284006
+            [level1] => 1451284006
+        )
+
+    [transient] => s2m_1cfb6315284453415d6b1ad067c6f5df
+    [ipn_signup_vars] => 
+    [subscr_payment] => 
+    [subscr_eot] => 
+    [s2member_tracking] => fnhlOmVhNGUyYTY0ZjQzMjQyN2U3Yjg1YWUyYjlhYTQzN2IyfNWvq8xcf2tgaXVmhWiK
+    [_COOKIE] => Array
+        (
+            [wfvt_1891438122] => 5680d5b0d86a8
+            [wordfence_verifiedHuman] => 3f07038ff4
+            [__utmc] => 194792492
+            [__utma] => 194792492.772108178.1451282247.1451282247.1451282247.1
+            [__utmb] => 194792492.13.10.1451282247
+            [__utmz] => 194792492.1451282247.1.1.utmcsr=bing|utmccn=(organic)|utmcmd=organic|utmctr=Pay Stubs Online Free
+            [s2member_subscr_gateway] => fnhlOjljZDkyZGZlMjk3MGJhZDA1YTQ0OTU0NGEyNDAyYjYyfNWvq8yGvKySn6Wo
+            [s2member_subscr_id] => fnhlOmVhNGUyYTY0ZjQzMjQyN2U3Yjg1YWUyYjlhYTQzN2IyfNWvq8xcf2tgaXVmhWiK
+            [s2member_custom] => fnhlOmFhNTliZWY1MzBjODk2MWI2ODNlMzY4M2I2MjMyM2Q4fNWvq8ycvq9YoaGtt5y9uqKrqMmkp6SWsLeegprElg
+            [s2member_item_number] => fnhlOjg0ODU3NTg0Y2M3OGQwNmI2ZGU3ZDExMTc0YTM3NGZmfNWvq8xW
+            [s2member_tracking] => fnhlOmVhNGUyYTY0ZjQzMjQyN2U3Yjg1YWUyYjlhYTQzN2IyfNWvq8xcf2tgaXVmhWiK
+        )
+
+)
+

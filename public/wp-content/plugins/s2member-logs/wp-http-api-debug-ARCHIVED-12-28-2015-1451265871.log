@@ -1,0 +1,138 @@
+LOG ENTRY: Mon Dec 28th, 2015 @ precisely 1:21 am UTC
+PHP v5.4.44 :: WordPress v4.4 :: s2Member v151210 :: s2Member Pro v151210
+Memory 4.76 MB :: Real Memory 5.00 MB :: Peak Memory 4.90 MB :: Real Peak Memory 5.00 MB
+www.paycheckstubonline.com/wp-login.php?action=lostpassword
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0
+Array
+(
+    [state] => response
+    [transport_class] => WP_Http_Curl
+    [args] => Array
+        (
+            [method] => POST
+            [timeout] => 20
+            [redirection] => 2
+            [httpversion] => 1.0
+            [user-agent] => WordPress/4.4; www.paycheckstubonline.com
+            [reject_unsafe_urls] => 
+            [blocking] => 1
+            [headers] => Array
+                (
+                    [Content-Type] => application/x-www-form-urlencoded; charset=UTF-8
+                    [Content-Length] => 146
+                )
+
+            [cookies] => Array
+                (
+                )
+
+            [body] => a=send_log&m=Error%3A+50.197.117.129%3B+Password+retrieval+attempt%3A+tlagro01&v1=1&p=wordpress&k=6ecd29d1d6586a2cdf1358a32ab81174&time=1451265696
+            [compress] => 
+            [decompress] => 
+            [sslverify] => 
+            [sslcertificates] => /home/nginx/domains/paycheckstubonline.com/public/wp-includes/certificates/ca-bundle.crt
+            [stream] => 
+            [filename] => 
+            [limit_response_size] => 
+            [_redirection] => 2
+            [ssl] => 1
+            [local] => 
+        )
+
+    [url] => https://wordpress.sucuri.net/api/
+    [response] => Array
+        (
+            [headers] => Array
+                (
+                    [date] => Mon, 28 Dec 2015 01:21:38 GMT
+                    [server] => Apache
+                    [content-length] => 116
+                    [connection] => close
+                    [content-type] => application/json
+                )
+
+            [body] => {"status":1,"action":"send_log","request_time":1451265698,"verbose":0,"output":{"message":"Log successfully added"}}
+            [response] => Array
+                (
+                    [code] => 200
+                    [message] => OK
+                )
+
+            [cookies] => Array
+                (
+                )
+
+            [filename] => 
+        )
+
+)
+
+LOG ENTRY: Mon Dec 28th, 2015 @ precisely 1:21 am UTC
+PHP v5.4.44 :: WordPress v4.4 :: s2Member v151210 :: s2Member Pro v151210
+Memory 4.73 MB :: Real Memory 5.00 MB :: Peak Memory 4.83 MB :: Real Peak Memory 5.00 MB
+www.paycheckstubonline.com/wp-login.php?checkemail=confirm
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0
+Array
+(
+    [state] => response
+    [transport_class] => WP_Http_Curl
+    [args] => Array
+        (
+            [method] => POST
+            [timeout] => 20
+            [redirection] => 2
+            [httpversion] => 1.0
+            [user-agent] => WordPress/4.4; www.paycheckstubonline.com
+            [reject_unsafe_urls] => 
+            [blocking] => 1
+            [headers] => Array
+                (
+                    [Content-Type] => application/x-www-form-urlencoded; charset=UTF-8
+                    [Content-Length] => 145
+                )
+
+            [cookies] => Array
+                (
+                )
+
+            [body] => a=send_log&m=Error%3A+50.197.117.129%3B+User+authentication+failed%3A+Unknown&v1=1&p=wordpress&k=6ecd29d1d6586a2cdf1358a32ab81174&time=1451265698
+            [compress] => 
+            [decompress] => 
+            [sslverify] => 
+            [sslcertificates] => /home/nginx/domains/paycheckstubonline.com/public/wp-includes/certificates/ca-bundle.crt
+            [stream] => 
+            [filename] => 
+            [limit_response_size] => 
+            [_redirection] => 2
+            [ssl] => 1
+            [local] => 
+        )
+
+    [url] => https://wordpress.sucuri.net/api/
+    [response] => Array
+        (
+            [headers] => Array
+                (
+                    [date] => Mon, 28 Dec 2015 01:21:42 GMT
+                    [server] => Apache
+                    [content-length] => 116
+                    [connection] => close
+                    [content-type] => application/json
+                )
+
+            [body] => {"status":1,"action":"send_log","request_time":1451265702,"verbose":0,"output":{"message":"Log successfully added"}}
+            [response] => Array
+                (
+                    [code] => 200
+                    [message] => OK
+                )
+
+            [cookies] => Array
+                (
+                )
+
+            [filename] => 
+        )
+
+)
+

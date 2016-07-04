@@ -1,0 +1,906 @@
+
+.top {
+    border-top:thin solid;
+    border-color:black;
+}
+
+.bottom {
+    border-bottom:thin solid;
+    border-color:black;
+}
+
+.left {
+   width:234px;
+}
+
+.right {
+    border-right:thin solid;
+    border-color:black;
+}
+.medium {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+h1{ background:none !important;}
+
+.butn
+	{
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf123/pdf_buy.png) no-repeat;
+    height: 26px;
+    margin: 0;
+    text-transform: uppercase;
+    width: 85px;
+	margin:5px 0px 0px 3px;
+	}
+.btn2
+	{
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf123/pdf_preview.png) no-repeat;
+    height: 26px;
+    margin:5px 0 0 8px;
+    text-transform: uppercase;
+    width:125px;}
+
+.btn_download
+	{
+	background:url(http://www.paycheckstubonline.com/wp-content/uploads/2013/04/btn_download.gif) no-repeat;
+    height: 43px;
+    margin:5px 0 0 8px;
+    width:172px;	
+	}
+	
+.breaker
+	{
+	margin:0;
+	width: 900px;
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf/receipt.jpg) repeat;
+	}
+table.breaker tr td{ border:0px solid #333333;color:#000000; padding-left:5px; width: 114px;}
+table.w1096 tr td{ border:1px solid #333333;color:#000000; padding-left:5px; width: 114px;}
+.w1096 {
+	 background-color: #F0F4FD !important;
+    float: left;
+    font-weight: bold;
+    margin: 0 8px 0 0px;
+    width: 939px;
+}
+.emp_w2
+   {   
+	 background-color: #F0F4FD !important;
+    float: left;
+    font-weight: bold;
+    margin: 0 8px 0 0px;
+    width: 800px;
+	}
+table.emp_w2 tr td{ border:1px solid #333333;color:#000000; padding-left:5px;}	
+
+.msc{
+    margin:0;
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf/receipt.jpg) repeat;
+}
+table.msc tr td{border:1px solid #333333; width: 20%; color:#000000; padding-left:3px; font-weight:bold; }
+
+.w_3{
+	background-color: #F0F4FD !important;
+    float: left;
+    font-weight: bold;
+    margin: 0 0 0 0px;
+    width: 900px;
+}
+table.w_3 tr td{border:1px solid #333333; color:#000000; padding-left:3px;}
+
+.w3_c{
+    margin:0;
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf/receipt.jpg) repeat;
+	 font-weight:bold;
+}
+.w4_c{
+	margin:0;
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf/receipt.jpg) repeat;
+}
+.formbluetxt{ /*padding-left:10px;*/}
+table.w3_c tr td{border:1px solid #333333; color:#000000; padding-left:3px;}
+.user{text-align:center;}
+.numbertxt1{color: black; font-size: 16px; font-weight: bold; width: 168px; padding-left:10px;}
+
+.bg_table_center{
+	margin:0;
+	padding:0;
+	float:left;
+	border-bottom:0px solid #b3c3da;
+	border-left:4px solid #b3c3da;
+	border-right:4px solid #b3c3da;
+	background:#f0f4fd;
+	border-top:0px solid #b3c2d5;
+	min-height:306px;
+	width:250px;
+}
+.bg_table_center2{
+	margin:0;
+	padding:0;
+	float:left;
+	border-bottom:4px solid #b3c3da;
+	border-left:4px solid #b3c3da;
+	border-right:4px solid #b3c3da;
+	background:#f0f4fd;
+	border-top:4px solid #b3c2d5;
+	min-height:150px;
+	width:250px;
+	-moz-border-radius:5px;
+}
+
+.text_ded{
+margin:0;
+padding:0;
+float:left;
+width:125px;
+height:auto;
+}
+.tab_last{
+	margin:0;
+	padding:0;
+	float:left;
+	width:auto;
+	height:auto;
+	}
+.tab_last tr{
+	margin:0;
+	padding:0;
+	float:left;
+	width:auto;
+	height:auto;
+	}
+	.tab_last td{ margin:0 5px; }
+.paychecktable{
+margin-top:11px;
+}
+.descdata{
+top:11px;
+}
+.hrsdata{
+margin-top:11px;
+}
+.nettable{
+margin-top:05px;
+margin-left:05px;
+}
+#comment{
+width: 910px !important;
+}
+
+input {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*border:1px solid #ccc;*/
+	font-size:18px;
+	width:150px;
+	min-height:15px;
+	display:block;
+	margin-bottom:5px;
+	margin-top:5px;
+	outline: none;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+	border-radius:5px;
+  } 
+  
+.shorter_box{width:70px; text-align:right; font-size:14px}
+.short_box{width:40px; text-align:right; font-size:24px !important}
+
+.no_edit{background-color:white !important;}
+
+.bigger{font-size: 3em !important; width:187px; color:black !important;}
+.bigger-narrow{font-size: 3em !important; width:110px; color:black !important;}
+.bigger-wide{font-size: 1em !important; width:172px; color:black !important;}
+
+	tr td{ font-size:11px !important;}
+div.domtab div a:link, div.domtab div a:visited, div.domtab div a:active {
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+	padding:0;
+}
+input {
+   /* border: 1px solid #CCCCCC;*/
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    min-height: 15px;
+    outline: medium none;
+	margin-left:5px !important;
+    padding-left: 5px !important;
+    width: 150px;
+}
+
+input[type="radio"] {
+	width: 50px;
+	}
+
+
+.head, h1.head {
+color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px !important;
+    padding-left: 05px !important;
+	font-weight:bold;
+    text-align: left;
+    text-transform: capitalize;}
+h2.head {
+color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px !important;
+    padding-left: 12px !important;
+	font-weight:bold;
+	padding-top:11px;
+    text-align: left;
+    text-transform: capitalize;}
+.border-radius
+{
+    border: 2px solid #b2c2dc;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    padding-bottom: 10px;
+    width: 185px;
+	margin-bottom:10px;
+}
+
+
+.border-radius_one
+{
+    border: 2px solid #b2c2dc;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    padding-bottom: 10px;
+    width:  410px;
+	margin-bottom:10px;
+}
+
+
+#note
+     {z-index:100; position:inherit; text-align:center; color:black; font-size:19px; font-weight:bold; left:22px; top:17px; }
+
+
+#main_form
+{ width:859px; height:auto; color:black; font-size:11px; margin:0 0 0 -8px}
+#corp-preview
+{z-index:100; position:absolute; color:black; font-size:12px; font-weight:bold; left:700px; top:130px;}
+#basic-preview
+{z-index:100; position:absolute; color:black; font-size:12px; font-weight:bold; left:690px; top:130px;}
+
+
+#email_table
+   {z-index:100; position:relative; color:black; font-size:20px; font-weight:bold; left:22px; top:0px; }
+
+#paypal_edit
+	{z-index:100; height:60px; width:110px; position:relative; top:10px; right:0px;}
+#email_simple
+	{z-index:100; height:28px; width:210px; position:absolute; top:325px; right:250px;}
+	
+	
+	
+	
+	
+	
+#calc_btn
+     {z-index:100; position:relative; color:black; font-size:20px; font-weight:bold; left:520px; top:-77px; width: 230px }	
+
+#stub
+	{ height:960px; width:1010px; position:relative; top:50px; right:-40px;}
+
+#first_paystub
+	{ height:160px; width:210px; position:relative; top:50px; right:-40px;}
+#second_paystub
+	{ height:160px; width:210px; position:relative; top:50px; right:-40px;}
+	
+	
+
+
+#corporate-test
+{ z-index:99; height:970px; width:710px; position:relative; top:10px; right:-50px; background: url("http://www.paycheckstubonline.com/wp-content/uploads/2013/04/Corporate-paycheck-paystub-710.gif") no-repeat; }
+
+#corp_empr_add_name
+     {z-index:100; position:absolute; color:black; font-size:20px; font-weight:bold; left:22px; top:17px; }
+#corp_empr_add_street
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:19px; } 
+#corp_empr_add_city
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:29px; }
+#corp_empr_add_state
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:40px; }
+#corp_empr_add_zip
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:51px; }
+
+
+#corp_rout_num
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:650px; top:719px;}
+#corp_acc_num
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:540px; top:719px;}
+#corp_emp_email
+{z-index:100; position:absolute; color:#FFEFD5; font-size:20px; font-weight:bold; left:22px; top:890px; }
+#corp_emp_id
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:28px; top:175px;}
+#corp_emp_f_name
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:28px; top:100px;}
+#corp_emp_l_name
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:28px; top:110px;}
+#corp_emp_street
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:102px;}
+#corp_emp_city
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:114px;}
+#corp_emp_state
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:126px;}
+#corp_emp_zip
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:138px;}
+#corp_emp_ssn
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:148px; top:175px;}
+#corp_emp_mar_status
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:420px; top:175px;}
+
+#corp_start_date
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:600px; top:102px;}
+#corp_end_date
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:150px; top:216px;}
+#corp_pay_date
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:25px; top:216px;}
+    
+#corp_gross_rate
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:483px; top:216px;}
+#corp_gross_hrs
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:90px; top:280px; }
+#corp_ot_hrs
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:203px; top:280px; }
+
+#corp_gross_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:89px; top:216px;}
+#corp_gross_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:610px; top:281px;}
+
+#corp_taxable_gross_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:362px; top:281px;}
+#corp_taxable_gross_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:429px;}
+
+
+#corp_fed_amt_deduct_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:477px; top:629px;}
+#corp_fed_amt_deduct_ytd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:88px; top:629px;}
+
+#corp_medicare_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:477px; top:654px;}
+#corp_medicare_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:88px; top:654px;}
+
+#corp_state_amtincometax_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:477px; top:666px;}
+#corp_state_amtincometax_ytd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:88px; top:666px;}
+
+#corp_fica_social_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:477px; top:641px;}
+#corp_fica_social_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:88px; top:641px;}
+
+#corp_net_pay_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:216px; top:719px;}
+#corp_net_pay_prd_deposit
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:400px; top:719px;}
+#corp_net_pay_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:88px; top:719px;}
+
+#corp_state_abb
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:643px; top:666px;}
+
+#paypal_corp
+	{z-index:100; height:50px; width:100px; position:relative; top:0px; right:-670px;}
+
+#corp_union_dues_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:362px; top:340px;}
+#corp_union_dues_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:88px; top:340px;}
+
+#corp_val_401k_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:362px; top:353px;}
+#corp_val_401k_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:88px; top:353px;}
+
+#corp_start_date2
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:236px; top:495px;}
+#corp_end_date2
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:370px; top:495px;}
+
+#corp_commission_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:362px; top:442px;}
+#corp_commission_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:442px;}
+
+
+#corp_check_num
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:142px; top:175px;}
+
+
+
+#basic_paystub
+{ z-index:99; height:520px; width:580px; position:relative; top:30px; right:-50px; background: url("http://www.paycheckstubonline.com/wp-content/uploads/2013/04/PaycheckStubSimple.gif") no-repeat; }
+
+#basic_empr_add_name
+     {z-index:100; position:absolute; color:black; font-size:20px; font-weight:bold; left:22px; top:2217px; }
+#basic_empr_add_street
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:2219px; } 
+#basic_empr_add_city
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:2229px; }
+#basic_empr_add_state
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:2240px; }
+#basic_empr_add_zip
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:340px; top:2251px; }
+
+#basic_emp_email
+     {z-index:100; position:absolute; color:#FFEFD5; font-size:20px; font-weight:bold; left:22px; top:890px; }
+
+#basic_rout_num
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:650px; top:1719px;}
+#basic_acc_num
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:540px; top:1719px;}
+#basic_emp_id
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:109px; top:3px;}
+#basic_emp_f_name
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:200px; top:28px;}
+#basic_emp_l_name
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:107px; top:28px;}
+#basic_emp_street
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:42px; top:243px;}
+#basic_emp_city
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:42px; top:253px;}
+#basic_emp_state
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:42px; top:263px;}
+#basic_emp_zip
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:42px; top:273px;}
+#basic_emp_ssn
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:200px; top:3px;}
+#basic_emp_mar_status
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:420px; top:1175px;}
+
+#basic_start_date
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:90px; top:54px;}
+#basic_end_date2
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:177px; top:54px;}
+#basic_pay_date
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:25px; top:216px;}
+    
+#basic_gross_rate
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:90px; top:119px;}
+#basic_gross_hrs
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:20px; top:119px; }
+#basic_ot_hrs
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:203px; top:119px; }
+
+#basic_gross_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:178px; top:142px;}
+#basic_gross_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:250px; top:142px;}
+
+#basic_taxable_gross_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:360px; top:429px;}
+#basic_taxable_gross_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:621px; top:429px;}
+
+
+#basic_fed_amt_deduct_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:90px; top:31px;}
+#basic_fed_amt_deduct_ytd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:30px; top:31px;}
+
+#basic_medicare_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:90px; top:44px;}
+#basic_medicare_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:30px; top:44px;}
+
+#basic_state_amtincometax_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:90px; top:57px;}
+#basic_state_amtincometax_ytd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:30px; top:57px;}
+
+#basic_fica_social_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:90px; top:70px;}
+#basic_fica_social_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:30px; top:70px;}
+
+#basic_net_pay_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:90px; top:169px;}
+#basic_net_pay_prd_deposit
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:500px; top:306px;}
+#basic_net_pay_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:30px; top:169px;}
+
+#basic_state_abb
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:145px; top:59px;}
+
+#paypal_basic
+	{z-index:100; height:50px; width:100px; position:relative; top:0px; right:-670px;}
+
+#basic_union_dues_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:362px; top:353px;}
+#basic_union_dues_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:88px; top:353px;}
+
+#basic_val_401k_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:90px; top:100px;}
+#basic_val_401k_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:30px; top:100px;}
+
+#basic_start_date2
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:90px; top:53px;}
+#basic_end_date2
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:175px; top:53px;}
+
+
+
+
+
+
+
+
+
+#neat_paystub
+{ z-index:99; height:520px; width:900px; position:relative; top:0px; right:-5px; background: url("http://www.paycheckstubonline.com/wp-content/uploads/2013/04/paycheckstubonline-empty.jpg") no-repeat; }
+
+
+#neat_empr_add_name
+     {z-index:100; position:absolute; color:black; font-size:18px; font-weight:bold; left:22px; top:41px; }
+#neat_empr_add_street
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:24px; top:56px; } 
+#neat_empr_add_city
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:24px; top:66px; }
+#neat_empr_add_state
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:24px; top:76px; }
+#neat_empr_add_zip
+     {z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:24px; top:86px; }
+
+#neat_emp_email
+     {z-index:100; position:absolute; color:#FFEFD5; font-size:20px; font-weight:bold; left:22px; top:890px; }
+#neat_emp_id
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:47px; top:140px;}
+#neat_emp_f_name
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:290px; top:140px;}
+#neat_emp_l_name
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:170px; top:140px;}
+#neat_emp_street
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:400px; top:56px;}
+#neat_emp_city
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:400px; top:66px;}
+#neat_emp_state
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:400px; top:76px;}
+#neat_emp_zip
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:400px; top:86px;}
+#neat_emp_ssn
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:450px; top:140px;}
+
+#neat_start_date
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:93px; top:54px;}
+#neat_start_date2
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:607px; top:140px;}
+#neat_end_date2
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:710px; top:140px;} 
+#neat_pay_date
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; left:814px; top:140px;}   
+
+#neat_gross_hrs
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:730px; top:200px; }	
+#neat_gross_rate
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:630px; top:200px;}
+#neat_ot_hrs
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:730px; top:220px; }
+#neat_gross_ot_rate
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:630px; top:220px;}
+
+
+#neat_gross_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:500px; top:200px;}
+#neat_gross_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:200px;}
+#neat_gross_ot_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:500px; top:220px;}
+#neat_gross_ot_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:220px;}
+
+
+#neat_taxable_gross_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:840px; top:435px;}
+#neat_taxable_gross_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:445px; top:435px;}
+
+
+#neat_fed_amt_deduct_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:220px; top:300px;}
+#neat_fed_amt_deduct_ytd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:300px;}
+
+#neat_state_amtincometax_prd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:220px; top:280px;}
+#neat_state_amtincometax_ytd
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:280px;}
+#neat_state_abb
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:330px; top:280px;}
+
+#neat_fica_social_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:220px; top:320px;}
+#neat_fica_social_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:320px;}
+
+#neat_medicare_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:220px; top:340px;}
+#neat_medicare_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:340px;}
+
+#neat_net_pay_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:220px; top:390px;}
+#neat_net_pay_prd_deposit
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:573px; top:435px;}
+#neat_net_pay_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:177px; top:435px;}
+
+
+
+#neat_union_dues_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:220px; top:353px;}
+#neat_union_dues_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:353px;}
+
+#neat_val_401k_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:220px; top:240px;}
+#neat_val_401k_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:87px; top:240px;}
+#neat_label_401
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:330px; top:240px;}
+
+#neat-preview
+{z-index:100; position:absolute; color:black; font-size:12px; font-weight:bold; left:900px; top:75px;}
+#paypal_neat
+	{z-index:100; height:50px; width:100px; position:relative; top:0px; left:900px;}
+
+#neat_tot_ded_prd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:700px; top:435px;}
+#neat_tot_ded_ytd
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:300px; top:435px;}
+
+
+
+#neat_label_fed
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:330px; top:300px;}
+#neat_label_ot
+{ z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:830px; top:220px;}
+#neat_label_ss
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:330px; top:320px;}
+#neat_label_med
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:330px; top:340px;}
+#neat_label_reg
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:830px; top:200px;}
+
+#neat_check_num
+{z-index:100; position:absolute; color:black; font-size:11px; font-weight:bold; right:70px; top:435px;}
+
+
+
+
+#tstub_paystub
+{ z-index:99; height:1000px; width:800px; position:relative; top:10px; right:-50px; background: url("http://www.paycheckstubonline.com/wp-content/uploads/2013/04/tstub-illustrator-777-1006.png") no-repeat; }
+
+#tstub_empr_add_name
+     {z-index:100; position:absolute; color:black; font-size:16px; font-weight:bold; left:25px; top:17px; }
+#tstub_empr_add_street
+     {z-index:100; position:absolute; color:black; font-size:12px; font-weight:bold; left:25px; top:35px; } 
+
+#wrapper {
+ float:left;
+margin-top:48px;
+ width:250px;
+ margin-left:25px;
+ }
+#tstub_empr_add_city{z-index:100; display: inline-block; color:black; font-size:12px; font-weight:bold; left:25px; top:47px;} #tstub_empr_add_state{z-index:100; display: inline-block; color:black; font-size:12px; font-weight:bold; }
+
+
+#tstub_empr_add_zip
+     {z-index:100; position:absolute; color:black; font-size:12px; font-weight:bold; left:25px; top:61px; }
+
+
+#tstub_rout_num
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:494px;}
+#tstub_acc_num
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:510px;}
+#tstub_emp_email
+     {z-index:100; position:absolute; color:#FFEFD5; font-size:20px; font-weight:normal; left:22px; top:1890px; }
+#tstub_emp_id
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:236px;}
+#tstub_emp_f_name
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:246px;}
+#tstub_emp_l_name
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:256px;}
+#tstub_emp_street
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:266px;}
+
+#wrapper2 {
+ float:left;
+margin-top:-195px;
+ width:250px;
+ margin-left:80px;
+ }
+#tstub_emp_city {z-index:100; display: inline-block; color:black; font-size:10px; font-weight:normal; left:80px; top:286px;}
+#tstub_emp_state {z-index:100; display: inline-block; color:black; font-size:10px; font-weight:normal;}
+
+#tstub_emp_zip
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:296px;}
+#tstub_emp_ssn
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:320px;}
+#tstub_emp_mar_status
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:351px;}
+
+#tstub_garnish1_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:532px;}
+#tstub_garnish1_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:532px;}
+
+#tstub_garnish2_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:544px;}
+#tstub_garnish2_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:544px;}
+
+#tstub_garnish3_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:556px;}
+#tstub_garnish3_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:556px;}
+
+#tstub_tot_garnish_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:599px;}
+#tstub_tot_garnish_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:599px;}
+
+#tstub_start_date
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:335px;}
+#tstub_end_date
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:175px; top:411px;}
+#tstub_pay_date
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:427px;}
+    
+#tstub_start_date2
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:411px;}
+#tstub_end_date2
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:370px; top:495px;}	
+	
+#tstub_gross_rate
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:250px; top:314px;}
+#tstub_gross_hrs
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:310px; top:314px; }
+#tstub_ot_hrs
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:310px; top:329px; }
+
+#tstub_gross_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:314px;}
+#tstub_gross_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:314px;}
+
+#tstub_taxable_gross_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:429px;}
+#tstub_taxable_gross_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:429px;}
+
+
+#tstub_fed_amt_deduct_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:710px;}
+#tstub_fed_amt_deduct_ytd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:710px;}
+
+#tstub_medicare_prd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:724px;}
+#tstub_medicare_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:724px;}
+
+#tstub_fica_social_prd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:738px;}
+#tstub_fica_social_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:738px;}
+
+#tstub_net_pay_prd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:932px;}
+#tstub_net_pay_prd_deposit
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:640px; top:581px;}
+#tstub_net_pay_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:932px;}
+#tstub_net_pay_ytd_deposit
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:550px; top:581px;}
+
+#tstub_state_abb
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:310px; top:755px;}
+
+#tstub-preview
+{z-index:100; position:absolute; color:black; font-size:12px; font-weight:bold; left:930px; top:130px;}
+
+#paypal_tstub
+	{z-index:100; height:50px; width:100px; position:relative; top:0px; right:-670px;}
+
+#tstub_union_dues_prd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:362px;}
+#tstub_union_dues_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:362px;}
+
+#tstub_val_401k_prd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:377px;}
+#tstub_val_401k_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:377px;}
+
+#tstub_commission_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:346px;}
+#tstub_commission_ytd
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:346px;}
+
+#tstub_state_amtincometax_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:755px;}
+#tstub_state_amtincometax_ytd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:755px;}
+
+#tstub_tot_ded_prd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:150px; top:786px;}
+#tstub_tot_ded_ytd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; right:42px; top:786px;}
+
+#tstub_check_num
+  {z-index:100; position:absolute; color:black; font-size:10px; font-weight:normal; left:80px; top:479px;}
+
+
+#w2-background
+{ z-index:99; height:1040px; width:800px; position:relative; top:0px; right:0px; background: url("http://www.paycheckstubonline.com/wp-content/uploads/2013/04/w2-2012.gif") no-repeat; }
+
+#w2_empr_add_name
+     {z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:117px; }
+#w2_empr_add_street
+     {z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:127px; } 
+#w2_empr_add_city
+     {z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:139px; }
+#w2_empr_add_state
+     {z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:150px; }
+#w2_empr_add_zip
+     {z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:161px; }
+
+#w2_emp_id3
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:211px;}
+#w2_emp_f_name
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:244px;}
+#w2_emp_l_name
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:237px; top:244px;}
+#w2_emp_street
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:287px;}
+#w2_emp_city
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:298px;}
+#w2_emp_state
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:309px;}
+#w2_emp_zip
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:67px; top:320px;}
+#w2_emp_ssn
+{z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:225px; top:56px;}
+
+#w2_this_prd_tot
+{ z-index:100; position:absolute; color:black; font-size:12px; font-weight:bold; left:625px; top:216px;}
+#w2_fed_gross
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:470px; top:90px;}
+#w2_fed_amtytd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:630px; top:90px;}
+
+#w2_medicare_ytd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:630px; top:120px;}
+#w2_fica_social_ytd
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:630px; top:150px;}
+
+
+#w2_state_amtincometax
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:400px; top:387px;}
+
+#w2_state_abb
+{ z-index:100; position:absolute; color:black; font-size:10px; font-weight:bold; left:60px; top:387px;}
+
+
+#paypal_w2
+	{z-index:100; height:7	0px; width:80px; position:relative; top:10px; right:-10px;}

@@ -1,0 +1,41 @@
+<?php
+
+
+require_once ( __DIR__ . '/wp-load.php' );
+$check_num_base = $_POST['check_num'];
+
+//$_REQUEST['is_customer_paid'] = 1;
+//$sql_trx = "select * from user_transaction where id=5; ";
+//$results = $wpdb->get_results($sql_trx, ARRAY_A);
+//print_r($_POST);
+//exit;
+
+$user = wp_get_current_user();
+if ( $user )
+	$userId = $user->id;
+else{
+	$userId = '0'; // guest user
+}
+
+
+//for ($i = 0; $i < $num_stubs; $i++) {
+	$_REQUEST['check_num'] = 0;
+	$_REQUEST['prd_num'] = 0;
+
+	$params = base64_encode(json_encode($_REQUEST));
+//echo $params;
+
+	$sql_insert = "INSERT INTO user_transaction(user_id, options)
+	                 VALUES ('$userId', '$params' )";
+
+	$wpdb->query($sql_insert);
+//}
+
+
+$trxId =  $wpdb->insert_id;
+
+$result = array("trxId" =>$trxId);
+echo json_encode($result);
+exit;
+
+?>

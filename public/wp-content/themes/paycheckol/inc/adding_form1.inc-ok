@@ -1,0 +1,339 @@
+<style>
+    td {
+        float: left;
+    }
+</style>
+<?      require_once($baseDir.'paystub/_addpages.inc');
+$add_pdf_pagesUrl = paystub_get_pages($baseUrl);
+$add_prevUrl = $baseUrl. "/paystub/add_ajax_preview_stub.php";
+//$add_prevUrl = $baseUrl. "/paystub/add_preview.php";
+$add_netpayUrl = $baseUrl. "/paystub/add_netpay_preview_stub.php";
+function daterandom($str){
+     $n = rand(1,26);
+     return $n;
+    
+}
+?>
+<?
+//<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+//<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+?>
+
+<div  id="finalamount">      
+    <table>
+        <a>FINAL AMOUNT</a>
+        <input autocomplete="off" id="addfinalamount"  name="finalamount" type="text" placeholder="Beginning Balance" data-items="8" />
+    </table>    
+    <table>
+        <a>Netpay</a>
+        <input autocomplete="off" id="netpayadd"  name="netpayadd" type="text" placeholder="Netpay (Deposit)" data-items="8" />
+    </table>    
+    <table class="nettable" cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                   <tr>
+                                     <td  class="border-radius">
+                                         <table class="nettable" cellspacing="0" cellpadding="0" border="0">
+                                               <tr> <td class="head">How often are you paid? --#6--</td></tr>
+                                              <tr>
+                                                <td>
+                                                  <table style=" float: left; margin-left: 10px; " class="nettable" cellspacing="0" cellpadding="0" border="0">
+                                                   <tbody>
+                                                    <tr>
+                                                      <td><input type="radio" name="payfreq" value="weekly" id="pfweekly" onchange="getdata()" checked="checked" tabindex="24"/></td>
+                                                      <td>Weekly</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                      <td><input type="radio" name="payfreq" value="biweekly" id="pfbiweekly" onchange="getdata()" tabindex="25" /></td>
+                                                      <td>Bi-Weekly </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                      <td><input type="radio" name="payfreq" value="monthly" id="pfmonthly" onchange="getdata()" tabindex="25"/></td>
+                                                      <td>Monthly </td>
+                                                    </tr>
+                                                   </tbody>
+                                                </table>
+                                               </td>
+                                             </tr>
+                                       </table>
+                                     </td>
+                                   </tr>
+                                </tbody>
+    </table> 
+    <table>
+        <a>Last 4 digits on card</a>
+        <input autocomplete="off" id="digitscards"  name="digitscards" type="text" placeholder="Last 4 digits on card" data-items="8" />
+    </table>       
+</div>
+<div  id="digitscards">      
+              
+</div>
+
+<div id="bankstate">
+    <table class="dd" width="100%" id="data">
+        <tbody>
+
+        <input name="netpay" id="netpay" class="hidden"  type="text" value="" />
+        <tr  style="display: none!important;">
+            <td>Select mouth:</td>
+            <td>
+                <input type="text" id="month1" class="hasMonthpicker">
+
+            </td>
+        </tr>  
+
+        <tr style="display: none!important;">
+            <td>						
+                Please select type:</td>
+            <td>
+                <select name="add_stub_id" id="add_stub_id" tabindex="1"> 
+                    <?php
+                    $stubs = add_paystub_get_pages();
+                    foreach ($stubs as $stubId => $data) {
+                        echo "<option value='$stubId'>{$data[0]}</option>";
+                    }
+                    ?>
+                </select>
+            </td>						  
+        </tr>
+
+
+
+<tr style="    font-weight: bold;"><td style="    width: 20%;">Name</td><td style="    width: 20%;">Amount</td><td style="    width: 20%;">Code</td><td style="    width: 20%;">Date</td></tr>
+
+
+
+
+<div id="fieldid2" class="inline-block"><tr><td><a class="cut btn" id="2" onclick2="removep('.tr2')">--&#x20;</a></td><td><input id="nameof2" name="nameof2" type="text" value=" La "/></td><td><input name="amount2" id="amount2" type="text" value="7"/></td><td><input name="type2" id="type2" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker2' id="date2" name="date2" value="<?php echo daterandom("2"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid3" class="inline-block"><tr><td><a class="cut btn" id="3" onclick3="removep('.tr3')">--&#x20;</a></td><td><input id="nameof3" name="nameof3" type="text" value=" Lake Interests Llc "/></td><td><input name="amount3" id="amount3" type="text" value="10"/></td><td><input name="type3" id="type3" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker3' id="date3" name="date3" value="<?php echo daterandom("3"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid4" class="inline-block"><tr><td><a class="cut btn" id="4" onclick4="removep('.tr4')">--&#x20;</a></td><td><input id="nameof4" name="nameof4" type="text" value=" Lake Interests Llc "/></td><td><input name="amount4" id="amount4" type="text" value="18"/></td><td><input name="type4" id="type4" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker4' id="date4" name="date4" value="<?php echo daterandom("4"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid5" class="inline-block"><tr><td><a class="cut btn" id="5" onclick5="removep('.tr5')">--&#x20;</a></td><td><input id="nameof5" name="nameof5" type="text" value=" Sign Lot #6257     096  "/></td><td><input name="amount5" id="amount5" type="text" value="10"/></td><td><input name="type5" id="type5" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker5' id="date5" name="date5" value="<?php echo daterandom("5"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid6" class="inline-block"><tr><td><a class="cut btn" id="6" onclick6="removep('.tr6')">--&#x20;</a></td><td><input id="nameof6" name="nameof6" type="text" value=" Houston Passport "/></td><td><input name="amount6" id="amount6" type="text" value="170"/></td><td><input name="type6" id="type6" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker6' id="date6" name="date6" value="<?php echo daterandom("6"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid7" class="inline-block"><tr><td><a class="cut btn" id="7" onclick7="removep('.tr7')">--&#x20;</a></td><td><input id="nameof7" name="nameof7" type="text" value=" Premier Parking Enforc "/></td><td><input name="amount7" id="amount7" type="text" value="115.25"/></td><td><input name="type7" id="type7" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker7' id="date7" name="date7" value="<?php echo daterandom("7"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid8" class="inline-block"><tr><td><a class="cut btn" id="8" onclick8="removep('.tr8')">--&#x20;</a></td><td><input id="nameof8" name="nameof8" type="text" value=" Barnaby's Cafe - West "/></td><td><input name="amount8" id="amount8" type="text" value="20.8"/></td><td><input name="type8" id="type8" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker8' id="date8" name="date8" value="<?php echo daterandom("8"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid9" class="inline-block"><tr><td><a class="cut btn" id="9" onclick9="removep('.tr9')">--&#x20;</a></td><td><input id="nameof9" name="nameof9" type="text" value=" Bush Int Arpt Ab   096  "/></td><td><input name="amount9" id="amount9" type="text" value="7"/></td><td><input name="type9" id="type9" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker9' id="date9" name="date9" value="<?php echo daterandom("9"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid10" class="inline-block"><tr><td><a class="cut btn" id="10" onclick10="removep('.tr10')">--&#x20;</a></td><td><input id="nameof10" name="nameof10" type="text" value=" Kroger #312 "/></td><td><input name="amount10" id="amount10" type="text" value="14.99"/></td><td><input name="type10" id="type10" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker10' id="date10" name="date10" value="<?php echo daterandom("10"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid11" class="inline-block"><tr><td><a class="cut btn" id="11" onclick11="removep('.tr11')">--&#x20;</a></td><td><input id="nameof11" name="nameof11" type="text" value="601   Rogell DR "/></td><td><input name="amount11" id="amount11" type="text" value="200"/></td><td><input name="type11" id="type11" type="text" value="ATM Withdrawal" /></td><td><input type="text" class='datepicker11' id="date11" name="date11" value="<?php echo daterandom("11"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid12" class="inline-block"><tr><td><a class="cut btn" id="12" onclick12="removep('.tr12')">--&#x20;</a></td><td><input id="nameof12" name="nameof12" type="text" value=" Middlebelt & Wick Bp "/></td><td><input name="amount12" id="amount12" type="text" value="14.9"/></td><td><input name="type12" id="type12" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker12' id="date12" name="date12" value="<?php echo daterandom("12"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid13" class="inline-block"><tr><td><a class="cut btn" id="13" onclick13="removep('.tr13')">--&#x20;</a></td><td><input id="nameof13" name="nameof13" type="text" value=" Lexington Law 800341 800-3418441  UT "/></td><td><input name="amount13" id="amount13" type="text" value="39.9"/></td><td><input name="type13" id="type13" type="text" value="Recurring Card Purchase" /></td><td><input type="text" class='datepicker13' id="date13" name="date13" value="<?php echo daterandom("13"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid14" class="inline-block"><tr><td><a class="cut btn" id="14" onclick14="removep('.tr14')">--&#x20;</a></td><td><input id="nameof14" name="nameof14" type="text" value=" Metro Mart "/></td><td><input name="amount14" id="amount14" type="text" value="30.7"/></td><td><input name="type14" id="type14" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker14' id="date14" name="date14" value="<?php echo daterandom("14"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid15" class="inline-block"><tr><td><a class="cut btn" id="15" onclick15="removep('.tr15')">--&#x20;</a></td><td><input id="nameof15" name="nameof15" type="text" value=" LA Tapatia # 2 "/></td><td><input name="amount15" id="amount15" type="text" value="35.83"/></td><td><input name="type15" id="type15" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker15' id="date15" name="date15" value="<?php echo daterandom("15"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid16" class="inline-block"><tr><td><a class="cut btn" id="16" onclick16="removep('.tr16')">--&#x20;</a></td><td><input id="nameof16" name="nameof16" type="text" value=" Ihop 1478 "/></td><td><input name="amount16" id="amount16" type="text" value="14.96"/></td><td><input name="type16" id="type16" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker16' id="date16" name="date16" value="<?php echo daterandom("16"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid17" class="inline-block"><tr><td><a class="cut btn" id="17" onclick17="removep('.tr17')">--&#x20;</a></td><td><input id="nameof17" name="nameof17" type="text" value=" Sign Lot #6257     096  "/></td><td><input name="amount17" id="amount17" type="text" value="7"/></td><td><input name="type17" id="type17" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker17' id="date17" name="date17" value="<?php echo daterandom("17"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid18" class="inline-block"><tr><td><a class="cut btn" id="18" onclick18="removep('.tr18')">--&#x20;</a></td><td><input id="nameof18" name="nameof18" type="text" value=" Marshalls #878 "/></td><td><input name="amount18" id="amount18" type="text" value="66.66"/></td><td><input name="type18" id="type18" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker18' id="date18" name="date18" value="<?php echo daterandom("18"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid19" class="inline-block"><tr><td><a class="cut btn" id="19" onclick19="removep('.tr19')">--&#x20;</a></td><td><input id="nameof19" name="nameof19" type="text" value=" Walgreens #3735 "/></td><td><input name="amount19" id="amount19" type="text" value="38.03"/></td><td><input name="type19" id="type19" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker19' id="date19" name="date19" value="<?php echo daterandom("19"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid20" class="inline-block"><tr><td><a class="cut btn" id="20" onclick20="removep('.tr20')">--&#x20;</a></td><td><input id="nameof20" name="nameof20" type="text" value=" Wholefds Mts 10346 "/></td><td><input name="amount20" id="amount20" type="text" value="32.04"/></td><td><input name="type20" id="type20" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker20' id="date20" name="date20" value="<?php echo daterandom("20"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid21" class="inline-block"><tr><td><a class="cut btn" id="21" onclick21="removep('.tr21')">--&#x20;</a></td><td><input id="nameof21" name="nameof21" type="text" value=" Bush Int Arpt Ab   096  "/></td><td><input name="amount21" id="amount21" type="text" value="17"/></td><td><input name="type21" id="type21" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker21' id="date21" name="date21" value="<?php echo daterandom("21"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid22" class="inline-block"><tr><td><a class="cut btn" id="22" onclick22="removep('.tr22')">--&#x20;</a></td><td><input id="nameof22" name="nameof22" type="text" value=" Kroger #312 "/></td><td><input name="amount22" id="amount22" type="text" value="29.21"/></td><td><input name="type22" id="type22" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker22' id="date22" name="date22" value="<?php echo daterandom("22"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid23" class="inline-block"><tr><td><a class="cut btn" id="23" onclick23="removep('.tr23')">--&#x20;</a></td><td><input id="nameof23" name="nameof23" type="text" value=" Diamond 2148 Shamrock  "/></td><td><input name="amount23" id="amount23" type="text" value="80.93"/></td><td><input name="type23" id="type23" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker23' id="date23" name="date23" value="<?php echo daterandom("23"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid24" class="inline-block"><tr><td><a class="cut btn" id="24" onclick24="removep('.tr24')">--&#x20;</a></td><td><input id="nameof24" name="nameof24" type="text" value=" LA Fendee Mediterran "/></td><td><input name="amount24" id="amount24" type="text" value="16.06"/></td><td><input name="type24" id="type24" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker24' id="date24" name="date24" value="<?php echo daterandom("24"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid25" class="inline-block"><tr><td><a class="cut btn" id="25" onclick25="removep('.tr25')">--&#x20;</a></td><td><input id="nameof25" name="nameof25" type="text" value=" Consulate General of Ch "/></td><td><input name="amount25" id="amount25" type="text" value="160"/></td><td><input name="type25" id="type25" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker25' id="date25" name="date25" value="<?php echo daterandom("25"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid26" class="inline-block"><tr><td><a class="cut btn" id="26" onclick26="removep('.tr26')">--&#x20;</a></td><td><input id="nameof26" name="nameof26" type="text" value=" Bank of America TX5186  "/></td><td><input name="amount26" id="amount26" type="text" value="500"/></td><td><input name="type26" id="type26" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker26' id="date26" name="date26" value="<?php echo daterandom("26"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid27" class="inline-block"><tr><td><a class="cut btn" id="27" onclick27="removep('.tr27')">--&#x20;</a></td><td><input id="nameof27" name="nameof27" type="text" value=" Brasil - Dunlavy "/></td><td><input name="amount27" id="amount27" type="text" value="27.32"/></td><td><input name="type27" id="type27" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker27' id="date27" name="date27" value="<?php echo daterandom("27"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid28" class="inline-block"><tr><td><a class="cut btn" id="28" onclick28="removep('.tr28')">--&#x20;</a></td><td><input id="nameof28" name="nameof28" type="text" value=" The Tasting Room 4 "/></td><td><input name="amount28" id="amount28" type="text" value="32.69"/></td><td><input name="type28" id="type28" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker28' id="date28" name="date28" value="<?php echo daterandom("28"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid29" class="inline-block"><tr><td><a class="cut btn" id="29" onclick29="removep('.tr29')">--&#x20;</a></td><td><input id="nameof29" name="nameof29" type="text" value=" EI Tiempo  Meat Market "/></td><td><input name="amount29" id="amount29" type="text" value="130"/></td><td><input name="type29" id="type29" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker29' id="date29" name="date29" value="<?php echo daterandom("29"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid30" class="inline-block"><tr><td><a class="cut btn" id="30" onclick30="removep('.tr30')">--&#x20;</a></td><td><input id="nameof30" name="nameof30" type="text" value=" Ninfa's  "/></td><td><input name="amount30" id="amount30" type="text" value="18.3"/></td><td><input name="type30" id="type30" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker30' id="date30" name="date30" value="<?php echo daterandom("30"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid31" class="inline-block"><tr><td><a class="cut btn" id="31" onclick31="removep('.tr31')">--&#x20;</a></td><td><input id="nameof31" name="nameof31" type="text" value="Kroger #312 "/></td><td><input name="amount31" id="amount31" type="text" value="97.83"/></td><td><input name="type31" id="type31" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker31' id="date31" name="date31" value="<?php echo daterandom("31"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid32" class="inline-block"><tr><td><a class="cut btn" id="32" onclick32="removep('.tr32')">--&#x20;</a></td><td><input id="nameof32" name="nameof32" type="text" value="Dacapos Pastry Cafe "/></td><td><input name="amount32" id="amount32" type="text" value="19.1"/></td><td><input name="type32" id="type32" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker32' id="date32" name="date32" value="<?php echo daterandom("32"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid33" class="inline-block"><tr><td><a class="cut btn" id="33" onclick33="removep('.tr33')">--&#x20;</a></td><td><input id="nameof33" name="nameof33" type="text" value="Walmart #312 "/></td><td><input name="amount33" id="amount33" type="text" value="17.18"/></td><td><input name="type33" id="type33" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker33' id="date33" name="date33" value="<?php echo daterandom("33"); ?>" title="Date"/></td></tr></div>
+<div id="fieldid34" class="inline-block"><tr><td><a class="cut btn" id="34" onclick34="removep('.tr34')">--&#x20;</a></td><td><input id="nameof34" name="nameof34" type="text" value="Chevron  Fuel Ctr #7312  "/></td><td><input name="amount34" id="amount34" type="text" value="74.76"/></td><td><input name="type34" id="type34" type="text" value="Card Purchase" /></td><td><input type="text" class='datepicker34' id="date34" name="date34" value="<?php echo daterandom("34"); ?>" title="Date"/></td></tr></div>
+
+
+
+
+
+
+        <div id="fieldid1" class="inline-block">
+            <td><a class="cut btn" id="1" onclick1="removep('.tr1')">--&#x20;</a></td>    
+            <td width="">
+                <select style="" class="quform-tooltip chosen-select" id="nameof1" name="nameof1" title="Name Select" onChange="showUser(this.value, 1)">
+                    <option value="">Please select</option>
+
+                    <?php
+                    global $wpdb;
+                    $myrows = $wpdb->get_results("SELECT * FROM ka_bankstatement");
+//$php_array = array('abc','def','ghi');
+//$js_array = json_encode($php_array);
+//echo "var javascript_array = ". $js_array . ";\n";
+                    $js_array = json_encode($myrows);
+                    $jdate = date("d");
+                    echo "<script type='text/javascript'>";
+                    echo "var javascript_array = " . $js_array . ";\n";
+                    echo "var jdate = " . $jdate . ";\n";
+                    echo '</script>';
+//print_r( $myrows);
+                    foreach ($myrows as $row) {
+                        $id = $row->ID;
+                        $name = $row->name;
+                        echo "<option value=" . $id . " >" . $name . "</option>";
+                    }
+                    ?>
+
+                </select></td>
+            <td><input name="amount1" id="amount1" type="text" /></td>
+            <td><input name="type1" id="type1" type="text" /></td>
+            <td><input type="text" class='datepicker1' id="date1" name="date1" value="<?php echo date("d"); ?>" title="Date"/></td>
+
+        </div>
+        </tbody>
+    </table>
+    <input type="button" id="addnew" name="addnew" value="Add new item" />
+    <input type="button" id="addnew1" name="addnew1" value="Add blank item" />  
+    <input type="button" class = "red_button" value="Preview" id="add_preview" onclick="add_preview_pdf(1)"/>                  
+    <input type="hidden" id="bankitems" name="bankitems" value="35" /> 
+    
+    <div id="addmodern_paystub">
+        <h4>Bank statement Modern PAYSTUB template</h4>
+        <iframe src="about:blank" id="add_ifr_prev_1" scrolling="no" style="//max-height: 842px;max-width: 760px;" onload1="top.calcHeight(this)"></iframe>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#month1').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/yy',
+        });
+    });
+</script>
+<script>
+    function add_preview_pdf(pnum) {
+        // feed data to preview page
+        //  pnum = 1;
+        $ifr = $("#add_ifr_prev_" + pnum)[0];
+
+        // set the form parameter for stub identity
+        $param = $('#form-main').serialize();
+        $param += "&prd_num=0";//trial = 0
+        console.log($param);
+        $.post("<?php echo $add_prevUrl ?>",
+                $param,
+                function (data) {
+                    $doc = $ifr.contentWindow.document;
+                    $($doc.body).html(data);
+                    //$doc.write(data);
+                    calcHeight($ifr);
+                }
+        )
+    }
+
+</script>
+<script>
+    function showUser(str, str1) {
+        var amount;
+        console.log(str);
+        for (var index in javascript_array) {
+            //console.log(javascript_array[index]);
+            if (str == javascript_array[index]["ID"]) {
+                amount = javascript_array[index]["amount"];
+                type = javascript_array[index]["type"];
+                //console.log(amount);
+            }
+        }
+        //console.log(str1);
+        var stramount = 'amount' + str1;
+        var stramount1 = 'type' + str1;
+        console.log(stramount);
+        document.getElementById(stramount).value = amount;
+        document.getElementById(stramount1).value = type;
+
+    }
+
+</script>
+<script type='text/javascript'>
+//<![CDATA[
+    var currentItem = 35;
+    var Items = 35;
+    $(document).ready(function () {
+        $('#addbankstate').click(function () {
+            $ifr = $('#netpay');
+            $param = $('#form-main').serialize();
+            $.post("<?php echo $add_netpayUrl; ?>",
+                    $param,
+                    function (data) {
+                        //$ifr.value(data) ;
+                        console.log(data);
+                    }
+            )
+            $("#finalamount").removeClass('hidden');
+        }
+        );
+        $('#addfinalamount').click(function () {
+            $("#bankstate").removeClass('hidden');
+
+        }
+        );
+
+
+        $('#addnew').click(function () {
+            currentItem++;
+            strpicker = ".datepicker" + currentItem;
+            console.log(strpicker);
+            $('#bankitems').val(currentItem);
+            var strToAdd = '<div id="fieldid' + currentItem + '" class="inline-block"><tr class="" ><td><a class="cut1 btn"  id=' + currentItem + '" onclick="removep(\'' + currentItem + '\')">--</a></td>    <td colspan="2"></td></tr><tr><td width="">';
+            strToAdd += '<select style="" class="quform-tooltip chosen-select" id="nameof' + currentItem + '" name="nameof' + currentItem + '" title="Name Select" onChange="showUser(this.value,' + currentItem + ')"><option value="">Please select</option>';
+            for (var index in javascript_array) {
+                name = javascript_array[index]["name"];
+                id = javascript_array[index]["ID"];
+                strToAdd += '<option value=' + id + '>' + name + '</option>';
+            }
+            strToAdd += '</select>';
+
+            strToAdd += '</td><td><input name="amount' + currentItem + '" id ="amount' + currentItem + '"type="text" /></td><td>type:</td><td><input name="type' + currentItem + '" id="type' + currentItem + '" type="text" /></td>';
+            strToAdd += '<td><input type="text" class="datepicker' + currentItem + '" id="date' + currentItem + '" name="date' + currentItem + '" value="' + jdate + '" title="Date" /></td></tr>';
+            strToAdd += '</div>';
+            $('#data').append(strToAdd);
+        });
+
+        $('#addnew1').click(function () {
+            currentItem++;
+            $('#items').val(currentItem);
+            var strToAdd = '<div id="fieldid' + currentItem + '" class="inline-block"><tr class="" ><td><a class="cut1 btn" id="' + currentItem + '" onclick="removep(\'' + currentItem + '\')">--</a></td>';
+            strToAdd += '<td colspan="2"></td></tr><tr><td width=""><input type="text" id="nameof' + currentItem + '" name="nameof' + currentItem + '" /></td>';
+            strToAdd += '';
+            strToAdd += '<td><input name="amount' + currentItem + '" id ="amount' + currentItem + '"type="text" /></td><td>type:</td><td><input name="type' + currentItem + '" id="type' + currentItem + '" type="text" /></td>';
+            strToAdd += '<input type="text" class="datepicker' + currentItem + ' hasDatepicker" id="date' + currentItem + '" name="date' + currentItem + '" value="' + jdate + '" title="Date" /></td></tr>';
+            strToAdd += '</div>';
+            $('#data').append(strToAdd);
+            $('.cut').click(function (e) {
+                e.preventDefault();
+                $(this).parent().parent().remove();
+
+
+                var fieldNum = this.id;
+                $(this).remove();
+                var fieldID = "#fieldid" + fieldNum;
+                console.log(fieldID);
+                $(fieldID).remove();
+            });
+        });
+
+
+    });
+
+
+    //]]>
+</script>
+<script>
+    $(document).ready(function () {
+        $('.cut').click(function (e) {
+            e.preventDefault();
+            $(this).parent().parent().remove();
+            var fieldNum = this.id;
+            $(this).remove();
+            var fieldID = "#fieldid" + fieldNum;
+            console.log(fieldID);
+            $(fieldID).remove();
+        });
+    });
+    function removep(p) {
+        var fieldNum = p;
+        //$(this).remove();.
+        var fieldID = "#fieldid" + fieldNum;
+        console.log(fieldID);
+        $(fieldID).remove();
+    }
+</script>

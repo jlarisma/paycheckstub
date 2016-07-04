@@ -1,0 +1,79 @@
+********************************************************************************
+PACKAGE-LOG: 2016-05-23 02:31:45
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.1.6
+WORDPRESS:	4.5.2
+PHP INFO:	5.4.44 | SAPI: fpm-fcgi
+SERVER:		nginx/1.9.3 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (640M default) 
+MEMORY STACK: 42.25MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:65 | filtered:0 | create:65 
+FILTERED: [] 
+SQL CREATED: 20160523_paycheckstubonlinecom_57426b3dcb0302100160523023021_database.sql 
+SQL FILE SIZE: 401.65MB (421164884) 
+SQL FILE TIME: 2016-05-23 02:39:44 
+SQL RUNTIME: 478.84 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /home/nginx/domains/paycheckstubonline.com/public 
+ARCHIVE FILE: 20160523_paycheckstubonlinecom_57426b3dcb0302100160523023021_archive.zip 
+FILTERS: *ON* 
+DIRS:  /home/nginx/domains/paycheckstubonline.com/public/wp-content/uploads/backupbuddy_backups/*;/home/nginx/domains/paycheckstubonline.com/public/wp-content/uploads/backupbuddy_temp/*; 
+EXTS:  zip;sql; 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	710.74MB 
+STATS:	Dirs 1,483 | Files 11,712 
+SQL ADDED: 20160523_paycheckstubonlinecom_57426b3dcb0302100160523023021_database.sql 
+WARNING: Unable to zip file: /home/nginx/domains/paycheckstubonline.com/public/wp-content/cache/page_enhanced/www.paycheckstubonline.com/examples-paystub/_index.html_gzip.old 
+WARNING: Unable to zip file: /home/nginx/domains/paycheckstubonline.com/public/wp-content/cache/page_enhanced/www.paycheckstubonline.com/examples-paystub/_index.html.old 
+WARNING: Unable to zip file: /home/nginx/domains/paycheckstubonline.com/public/wp-content/cache/page_enhanced/www.paycheckstubonline.com/michign-paycheck-stub-maker/_index.html_gzip.old 
+WARNING: Unable to zip file: /home/nginx/domains/paycheckstubonline.com/public/wp-content/cache/page_enhanced/www.paycheckstubonline.com/michign-paycheck-stub-maker/_index.html.old 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 13191
+    [filename] => /home/nginx/domains/paycheckstubonline.com/public/wp-snapshots/tmp/20160523_paycheckstubonlinecom_57426b3dcb0302100160523023021_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 239.94MB 
+ARCHIVE RUNTIME: 85.17 sec. 
+MEMORY STACK: 47.75MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [/home/nginx/domains/paycheckstubonline.com/public/wp-snapshots/tmp/20160523_paycheckstubonlinecom_57426b3dcb0302100160523023021_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 401.65MB 
+Installer File: 319.33KB 
+Archive File: 239.94MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 565.88 sec.
+PEAK PHP MEMORY USED: 51MB
+DONE PROCESSING => 20160523_paycheckstubonlinecom 2016-05-23 02:41:11
+ 

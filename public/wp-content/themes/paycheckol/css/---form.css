@@ -1,0 +1,293 @@
+.top {
+    border-top:thin solid;
+    border-color:black;
+}
+
+.bottom {
+    border-bottom:thin solid;
+    border-color:black;
+}
+
+.left {
+   width:234px;
+}
+
+.right {
+    border-right:thin solid;
+    border-color:black;
+}
+.medium {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+h1{ background:none !important;}
+
+.butn
+	{
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf123/pdf_buy.png) no-repeat;
+    height: 26px;
+    margin: 0;
+    text-transform: uppercase;
+    width: 85px;
+	margin:5px 0px 0px 3px;
+	}
+.btn2
+	{
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf123/pdf_preview.png) no-repeat;
+    height: 26px;
+    margin:5px 0 0 8px;
+    text-transform: uppercase;
+    width:125px;
+
+		
+	}
+.breaker
+	{
+	margin:0;
+	width: 900px;
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf/receipt.jpg) repeat;
+	}
+table.breaker tr td{ border:0px solid #333333;color:#000000; padding-left:5px; width: 114px;}
+table.w1096 tr td{ border:1px solid #333333;color:#000000; padding-left:5px; width: 114px;}
+.w1096 {
+	 background-color: #F0F4FD !important;
+    float: left;
+    font-weight: bold;
+    margin: 0 8px 0 0px;
+    width: 939px;
+}
+.emp_w2
+   {   
+	 background-color: #F0F4FD !important;
+    float: left;
+    font-weight: bold;
+    margin: 0 8px 0 0px;
+    width: 800px;
+	}
+table.emp_w2 tr td{ border:1px solid #333333;color:#000000; padding-left:5px;}	
+
+.msc{
+    margin:0;
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf/receipt.jpg) repeat;
+}
+table.msc tr td{border:1px solid #333333; width: 20%; color:#000000; padding-left:3px; font-weight:bold; }
+
+.w_3{
+	background-color: #F0F4FD !important;
+    float: left;
+    font-weight: bold;
+    margin: 0 0 0 0px;
+    width: 900px;
+}
+table.w_3 tr td{border:1px solid #333333; color:#000000; padding-left:3px;}
+
+.w3_c{
+    margin:0;
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf/receipt.jpg) repeat;
+	 font-weight:bold;
+}
+.w4_c{
+	margin:0;
+	background:url(http://www.paycheckstubonline.com/wp-content/themes/Chameleon/pdf/receipt.jpg) repeat;
+}
+.formbluetxt{ /*padding-left:10px;*/}
+table.w3_c tr td{border:1px solid #333333; color:#000000; padding-left:3px;}
+.user{text-align:center;}
+.numbertxt1{color: black; font-size: 16px; font-weight: bold; width: 168px; padding-left:10px;}
+
+.bg_table_center{
+	margin:0;
+	padding:0;
+	float:left;
+	border-bottom:0px solid #b3c3da;
+	border-left:4px solid #b3c3da;
+	border-right:4px solid #b3c3da;
+	background:#f0f4fd;
+	border-top:0px solid #b3c2d5;
+	min-height:306px;
+	width:250px;
+}
+.bg_table_center2{
+	margin:0;
+	padding:0;
+	float:left;
+	border-bottom:4px solid #b3c3da;
+	border-left:4px solid #b3c3da;
+	border-right:4px solid #b3c3da;
+	background:#f0f4fd;
+	border-top:4px solid #b3c2d5;
+	min-height:150px;
+	width:250px;
+	-moz-border-radius:5px;
+}
+
+.text_ded{
+margin:0;
+padding:0;
+float:left;
+width:125px;
+height:auto;
+}
+.tab_last{
+	margin:0;
+	padding:0;
+	float:left;
+	width:auto;
+	height:auto;
+	}
+.tab_last tr{
+	margin:0;
+	padding:0;
+	float:left;
+	width:auto;
+	height:auto;
+	}
+	.tab_last td{ margin:0 5px; }
+	
+.paychecktable{
+margin-top:11px;
+}
+.descdata{
+top:11px;
+}
+.hrsdata{
+margin-top:11px;
+}
+.nettable{
+margin-top:05px;
+margin-left:05px;
+}
+#comment{
+width: 910px !important;
+}
+
+input {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*border:1px solid #ccc;*/
+	font-size:18px;
+	width:150px;
+	min-height:15px;
+	display:block;
+	margin-bottom:5px;
+	margin-top:5px;
+	outline: none;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+	border-radius:5px;
+  } 
+  
+.shorter_box{width:70px; text-align:right; font-size:14px}
+.short_box{width:40px; text-align:right; font-size:24px !important}
+
+.no_edit{background-color:white !important;}
+
+.bigger{font-size: 3em !important; width:168px; color:black !important;}
+.bigger-narrow{font-size: 3em !important; width:110px; color:black !important;}
+.bigger-wide{font-size: 1em !important; width:172px; color:black !important;}
+
+	tr td{ font-size:11px !important;}
+div.domtab div a:link, div.domtab div a:visited, div.domtab div a:active {
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+	padding:0;
+}
+input {
+   /* border: 1px solid #CCCCCC;*/
+    border-radius: 5px 5px 5px 5px;
+    display: inline;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    min-height: 15px;
+    outline: medium none;
+	margin-left:5px !important;
+    padding-left: 5px !important;
+    width: 150px;
+}
+
+input[type="radio"] {
+	width: 50px;
+	}
+
+
+.head, h1.head {
+color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px !important;
+    padding-left: 05px !important;
+	font-weight:bold;
+    text-align: left;
+    text-transform: capitalize;}
+h2.head {
+color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px !important;
+    padding-left: 12px !important;
+	font-weight:bold;
+	padding-top:11px;
+    text-align: left;
+    text-transform: capitalize;}
+.border-radius
+{
+    border: 2px solid #b2c2dc;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    padding-bottom: 10px;
+    width: 185px;
+	margin-bottom:10px;
+}
+
+
+.border-radius_one
+{
+    border: 2px solid #b2c2dc;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    padding-bottom: 10px;
+    width:  410px;
+	margin-bottom:10px;
+}
+
+.buttonHolder{ text-align: center; }
+
+#dl-table{position:relative; left:110px; top:0px;}
+
+#main_form
+{ width:859px; height:auto; color:black; font-size:11px; margin:0 0 0 -8px}
+#corp-preview
+{z-index:100; position:absolute; color:black; font-size:12px; font-weight:bold; left:700px; top:130px;}
+#basic-preview
+{z-index:100; position:absolute; color:black; font-size:12px; font-weight:bold; left:690px; top:130px;}
+
+
+#email_table
+   {z-index:100; width:215px; float:left; color:black; font-size:20px; font-weight:bold; left:5px; top:0px; }
+#qty_of_stub_table
+   {z-index:100; width:215px; float:left; color:black; font-size:20px; font-weight:bold; left:22px; top:0px; }
+
+#paypal_edit
+	{z-index:100; height:60px; width:110px; position:relative; top:10px; right:0px;}
+#email_simple
+	{z-index:100; height:28px; width:210px; position:absolute; top:325px; right:250px;}
+	
+#calc_btn
+     {z-index:100; position:relative; color:black; font-size:20px; font-weight:bold; left:520px; top:-77px; width: 230px }	
+
+#stub
+	{ height:960px; width:1010px; position:relative; top:50px; right:-40px;}
+
+#first_paystub
+	{ height:160px; width:210px; position:relative; top:50px; right:-40px;}
+#second_paystub
+	{ height:160px; width:210px; position:relative; top:50px; right:-40px;}
+	
+	
+
+

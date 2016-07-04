@@ -1,0 +1,142 @@
+LOG ENTRY: Mon Dec 28th, 2015 @ precisely 3:29 am UTC
+PHP v5.4.44 :: WordPress v4.4 :: s2Member v151210 :: s2Member Pro v151210
+Memory 4.78 MB :: Real Memory 5.25 MB :: Peak Memory 6.88 MB :: Real Peak Memory 7.75 MB
+www.paycheckstubonline.com/?s2member_paypal_notify=1
+User-Agent: s2Member v151210; http://www.paycheckstubonline.com
+Array
+(
+    [txn_type] => web_accept
+    [txn_id] => 7836681650
+    [custom] => www.paycheckstubonline.com
+    [mc_gross] => 7.95
+    [mc_currency] => USD
+    [tax] => 0.00
+    [payer_email] => lalanykol@icloud.com
+    [first_name] => Latoya
+    [last_name] => McCoy
+    [option_name1] => Originating Domain
+    [option_selection1] => www.paycheckstubonline.com
+    [option_name2] => Customer IP Address
+    [option_selection2] => 172.56.13.75
+    [item_name] => $7.95 USD / One Time (one stub)
+    [item_number] => 1
+    [proxy_verified] => authnet
+    [s2member_log] => Array
+        (
+            [0] => IPN received on: Mon Dec 28, 2015 3:29:18 am UTC
+            [1] => s2Member POST vars verified with a Proxy Key
+            [2] => s2Member originating domain (`$_SERVER["HTTP_HOST"]`) validated.
+            [3] => s2Member `txn_type` identified as ( `web_accept|subscr_signup` ).
+            [4] => s2Member `txn_type` identified as ( `web_accept|subscr_signup` ) w/o update vars.
+            [5] => Signup Confirmation Email sent to: "Latoya McCoy" <lalanykol@icloud.com>.
+            [6] => Signup Notification URLs have been processed.
+            [7] => Subscr. Return ( `modification=0` ), a Proxy Return URL is ready.
+            [8] => User exists. Handling `payment` for Subscription via ( `web_accept` ).
+            [9] => Payment Notification URLs have been processed.
+            [10] => Payment Notification Emails have been processed.
+            [11] => Storing IPN signup vars now. These are associated with a User's account record; for future reference.
+        )
+
+    [subscr_gateway] => authnet
+    [subscr_id] => 7836681650
+    [subscr_baid] => 7836681650
+    [subscr_cid] => 7836681650
+    [eotper] => 
+    [ccaps] => 
+    [level] => 1
+    [ip] => 172.56.13.75
+    [period1] => 0 D
+    [mc_amount1] => 0.00
+    [period3] => 1 L
+    [mc_amount3] => 7.95
+    [initial_term] => 0 D
+    [initial] => 7.95
+    [regular] => 7.95
+    [regular_term] => 1 L
+    [recurring] => 0
+    [currency] => USD
+    [currency_symbol] => $
+    [s2member_paypal_proxy_return_url] => http://www.paycheckstubonline.com/thank-you-page-after-pay-success/
+    [s2member_paypal_proxy] => authnet
+    [s2member_paypal_proxy_use] => pro-emails
+    [s2member_paypal_proxy_coupon] => Array
+        (
+            [coupon_code] => 
+            [full_coupon_code] => 
+            [affiliate_id] => 
+        )
+
+    [s2member_paypal_proxy_verification] => 49f5d8b0e85f840308be22518850ec87
+)
+
+LOG ENTRY: Mon Dec 28th, 2015 @ precisely 6:26 am UTC
+PHP v5.4.44 :: WordPress v4.4 :: s2Member v151210 :: s2Member Pro v151210
+Memory 4.77 MB :: Real Memory 5.00 MB :: Peak Memory 5.20 MB :: Real Peak Memory 5.25 MB
+www.paycheckstubonline.com/?s2member_paypal_notify=1
+User-Agent: s2Member v151210; http://www.paycheckstubonline.com
+Array
+(
+    [txn_type] => web_accept
+    [txn_id] => 7836852142
+    [custom] => www.paycheckstubonline.com
+    [mc_gross] => 7.95
+    [mc_currency] => USD
+    [tax] => 0.00
+    [payer_email] => merboth26@gmail.com
+    [first_name] => heather
+    [last_name] => merboth
+    [option_name1] => Originating Domain
+    [option_selection1] => www.paycheckstubonline.com
+    [option_name2] => Customer IP Address
+    [option_selection2] => 76.212.147.134
+    [item_name] => $7.95 USD / One Time (one stub)
+    [item_number] => 1
+    [proxy_verified] => authnet
+    [s2member_log] => Array
+        (
+            [0] => IPN received on: Mon Dec 28, 2015 6:26:49 am UTC
+            [1] => s2Member POST vars verified with a Proxy Key
+            [2] => s2Member originating domain (`$_SERVER["HTTP_HOST"]`) validated.
+            [3] => s2Member `txn_type` identified as ( `web_accept|subscr_signup` ).
+            [4] => s2Member `txn_type` identified as ( `web_accept|subscr_signup` ) w/o update vars.
+            [5] => Signup Confirmation Email sent to: "heather merboth" <merboth26@gmail.com>.
+            [6] => Signup Notification URLs have been processed.
+            [7] => Subscr. Return ( `modification=0` ), a Proxy Return URL is ready.
+            [8] => User exists. Handling `payment` for Subscription via ( `web_accept` ).
+            [9] => Payment Notification URLs have been processed.
+            [10] => Payment Notification Emails have been processed.
+            [11] => Storing IPN signup vars now. These are associated with a User's account record; for future reference.
+        )
+
+    [subscr_gateway] => authnet
+    [subscr_id] => 7836852142
+    [subscr_baid] => 7836852142
+    [subscr_cid] => 7836852142
+    [eotper] => 
+    [ccaps] => 
+    [level] => 1
+    [ip] => 76.212.147.134
+    [period1] => 0 D
+    [mc_amount1] => 0.00
+    [period3] => 1 L
+    [mc_amount3] => 7.95
+    [initial_term] => 0 D
+    [initial] => 7.95
+    [regular] => 7.95
+    [regular_term] => 1 L
+    [recurring] => 0
+    [currency] => USD
+    [currency_symbol] => $
+    [s2member_paypal_proxy_return_url] => http://www.paycheckstubonline.com/thank-you-page-after-pay-success/
+    [s2member_paypal_proxy] => authnet
+    [s2member_paypal_proxy_use] => pro-emails
+    [s2member_paypal_proxy_coupon] => Array
+        (
+            [coupon_code] => 
+            [full_coupon_code] => 
+            [affiliate_id] => 
+        )
+
+    [s2member_paypal_proxy_verification] => 49f5d8b0e85f840308be22518850ec87
+)
+

@@ -1,0 +1,2 @@
+<?php
+// single page

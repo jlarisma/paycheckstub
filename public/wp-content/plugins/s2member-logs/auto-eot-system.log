@@ -1,0 +1,322 @@
+LOG ENTRY: Mon Jul 4th, 2016 @ precisely 1:50 am UTC
+PHP v5.5.9-1ubuntu4.14 :: WordPress v4.5.3 :: s2Member v160503 :: s2Member Pro v160503
+Memory 4.87 MB :: Real Memory 5.50 MB :: Peak Memory 5.42 MB :: Real Peak Memory 5.50 MB
+localhost/wp-cron.php?doing_wp_cron=1467597018.4066739082336425781250
+User-Agent: WordPress/4.5.3; http://localhost
+Array
+(
+    [user] => Array
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 57857
+                    [user_login] => whitaker85
+                    [user_pass] => $P$BoO1bRJZZqzPuAjxdPNjZ1w4ky8KvU/
+                    [user_nicename] => whitaker85
+                    [user_email] => octavia.whitaker@outlook.com
+                    [user_url] => 
+                    [user_registered] => 2015-10-16 18:57:04
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => whitaker85
+                    [user_level] => 0
+                )
+
+            [ID] => 57857
+            [caps] => Array
+                (
+                    [access_s2member_level0] => 1
+                    [s2member_level0] => 1
+                    [s2member_level2] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [2] => s2member_level2
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [access_s2member_level1] => 1
+                    [access_s2member_level2] => 1
+                    [s2member_level0] => 1
+                    [s2member_level2] => 1
+                )
+
+            [filter] => 
+        )
+
+    [auto_eot_time] => 1467558631
+    [eot_del_type] => auto-eot-cancellation-expiration-demotion
+)
+
+LOG ENTRY: Mon Jul 4th, 2016 @ precisely 1:50 am UTC
+PHP v5.5.9-1ubuntu4.14 :: WordPress v4.5.3 :: s2Member v160503 :: s2Member Pro v160503
+Memory 4.88 MB :: Real Memory 5.50 MB :: Peak Memory 5.42 MB :: Real Peak Memory 5.50 MB
+localhost/wp-cron.php?doing_wp_cron=1467597018.4066739082336425781250
+User-Agent: WordPress/4.5.3; http://localhost
+Array
+(
+    [user] => Array
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 57977
+                    [user_login] => aftanbrown
+                    [user_pass] => $P$BEYCZcQHrCkxrn9XqERgEXr/LjDSJv/
+                    [user_nicename] => aftanbrown
+                    [user_email] => BROWN.AFTAN@GMAIL.COM
+                    [user_url] => 
+                    [user_registered] => 2015-10-19 15:13:40
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => aftanbrown
+                    [user_level] => 0
+                )
+
+            [ID] => 57977
+            [caps] => Array
+                (
+                    [s2member_level1] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [0] => s2member_level1
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [access_s2member_level1] => 1
+                    [s2member_level1] => 1
+                )
+
+            [filter] => 
+        )
+
+    [auto_eot_time] => 1467562955
+    [eot_del_type] => auto-eot-cancellation-expiration-demotion
+)
+
+LOG ENTRY: Mon Jul 4th, 2016 @ precisely 1:50 am UTC
+PHP v5.5.9-1ubuntu4.14 :: WordPress v4.5.3 :: s2Member v160503 :: s2Member Pro v160503
+Memory 4.88 MB :: Real Memory 5.50 MB :: Peak Memory 5.42 MB :: Real Peak Memory 5.50 MB
+localhost/wp-cron.php?doing_wp_cron=1467597018.4066739082336425781250
+User-Agent: WordPress/4.5.3; http://localhost
+Array
+(
+    [user] => Array
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 58749
+                    [user_login] => hostonesik
+                    [user_pass] => $P$BgXGWN1jgPVXN.zoXQHrsAe23GyNdv1
+                    [user_nicename] => hostonesik
+                    [user_email] => hostonesikfam@gmail.com
+                    [user_url] => 
+                    [user_registered] => 2015-11-03 21:35:48
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => hostonesik
+                    [user_level] => 0
+                )
+
+            [ID] => 58749
+            [caps] => Array
+                (
+                    [s2member_level2] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [0] => s2member_level2
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [access_s2member_level1] => 1
+                    [access_s2member_level2] => 1
+                    [s2member_level2] => 1
+                )
+
+            [filter] => 
+        )
+
+    [auto_eot_time] => 1467506657
+    [eot_del_type] => auto-eot-cancellation-expiration-demotion
+)
+
+LOG ENTRY: Mon Jul 4th, 2016 @ precisely 1:50 am UTC
+PHP v5.5.9-1ubuntu4.14 :: WordPress v4.5.3 :: s2Member v160503 :: s2Member Pro v160503
+Memory 4.88 MB :: Real Memory 5.50 MB :: Peak Memory 5.42 MB :: Real Peak Memory 5.50 MB
+localhost/wp-cron.php?doing_wp_cron=1467597018.4066739082336425781250
+User-Agent: WordPress/4.5.3; http://localhost
+Array
+(
+    [user] => Array
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 60193
+                    [user_login] => dre86te
+                    [user_pass] => $P$ByFTYWdv2RzFZTnDIWxqENrBXgFEGF0
+                    [user_nicename] => dre86te
+                    [user_email] => andre.overton@me.com
+                    [user_url] => 
+                    [user_registered] => 2015-12-30 20:11:36
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => dre86te
+                    [user_level] => 0
+                )
+
+            [ID] => 60193
+            [caps] => Array
+                (
+                    [s2member_level2] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [0] => s2member_level2
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [access_s2member_level1] => 1
+                    [access_s2member_level2] => 1
+                    [s2member_level2] => 1
+                )
+
+            [filter] => 
+        )
+
+    [auto_eot_time] => 1454184660
+    [eot_del_type] => auto-eot-cancellation-expiration-demotion
+)
+
+LOG ENTRY: Mon Jul 4th, 2016 @ precisely 1:50 am UTC
+PHP v5.5.9-1ubuntu4.14 :: WordPress v4.5.3 :: s2Member v160503 :: s2Member Pro v160503
+Memory 4.89 MB :: Real Memory 5.50 MB :: Peak Memory 5.42 MB :: Real Peak Memory 5.50 MB
+localhost/wp-cron.php?doing_wp_cron=1467597018.4066739082336425781250
+User-Agent: WordPress/4.5.3; http://localhost
+Array
+(
+    [user] => Array
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 60197
+                    [user_login] => johnnyalbo
+                    [user_pass] => $P$BsJptcZYILrCJp2yNVz9hpe84m25Yi0
+                    [user_nicename] => johnnyalbo
+                    [user_email] => team@athleatz.com
+                    [user_url] => 
+                    [user_registered] => 2015-12-30 22:04:13
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => johnnyalbo
+                    [user_level] => 0
+                )
+
+            [ID] => 60197
+            [caps] => Array
+                (
+                    [s2member_level1] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [0] => s2member_level1
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [access_s2member_level1] => 1
+                    [s2member_level1] => 1
+                )
+
+            [filter] => 
+        )
+
+    [auto_eot_time] => 1454191453
+    [eot_del_type] => auto-eot-cancellation-expiration-demotion
+)
+
+LOG ENTRY: Mon Jul 4th, 2016 @ precisely 1:50 am UTC
+PHP v5.5.9-1ubuntu4.14 :: WordPress v4.5.3 :: s2Member v160503 :: s2Member Pro v160503
+Memory 4.89 MB :: Real Memory 5.50 MB :: Peak Memory 5.42 MB :: Real Peak Memory 5.50 MB
+localhost/wp-cron.php?doing_wp_cron=1467597018.4066739082336425781250
+User-Agent: WordPress/4.5.3; http://localhost
+Array
+(
+    [user] => Array
+        (
+            [data] => stdClass Object
+                (
+                    [ID] => 60198
+                    [user_login] => roshrum4399
+                    [user_pass] => $P$B/arEHkoYE6.g2fxBSOL0TeM4xCKwa/
+                    [user_nicename] => roshrum4399
+                    [user_email] => roshrum4399@gmail.com
+                    [user_url] => 
+                    [user_registered] => 2015-12-30 22:24:38
+                    [user_activation_key] => 
+                    [user_status] => 0
+                    [display_name] => roshrum4399
+                    [user_level] => 0
+                )
+
+            [ID] => 60198
+            [caps] => Array
+                (
+                    [access_s2member_level0] => 1
+                    [s2member_level0] => 1
+                    [s2member_level2] => 1
+                )
+
+            [cap_key] => wp_capabilities
+            [roles] => Array
+                (
+                    [2] => s2member_level2
+                )
+
+            [allcaps] => Array
+                (
+                    [read] => 1
+                    [level_0] => 1
+                    [access_s2member_level0] => 1
+                    [access_s2member_level1] => 1
+                    [access_s2member_level2] => 1
+                    [s2member_level0] => 1
+                    [s2member_level2] => 1
+                )
+
+            [filter] => 
+        )
+
+    [auto_eot_time] => 1454192640
+    [eot_del_type] => auto-eot-cancellation-expiration-demotion
+)
+

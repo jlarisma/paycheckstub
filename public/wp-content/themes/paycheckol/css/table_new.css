@@ -1,0 +1,155 @@
+*{
+font-size: 12px;
+vertical-align: middle;
+}
+
+#ad-paystub{ line-height: 25px; font-size: 12px; color: #929292; padding-top: 15px; padding-bottom:20px; }
+
+table, tr, td,th,thead {
+    margin:0;
+    padding:0;
+    border-spacing: 0;
+    vertical-align: middle;
+    border-collapse: collapse;
+
+}
+.hd-text{
+    color:black;
+    height:19px;
+}
+.fontsize16{
+    font-size:16px;
+}
+.fontsize13 td, .fontsize13{
+    font-size: 13px!important;
+}
+.fontsize11{
+    font-size: 11px!important;
+}
+.tl-right{
+    text-align: right !important;
+    padding-right: 3px;
+}
+.tl-left{
+    text-align: left!important;
+}
+.tl-center{
+    text-align: center!important;
+}
+.lh12{
+     line-height: 12px;
+}
+.lh17{
+    line-height: 17px;
+}
+.paystub{
+    border-style: solid;
+    !margin: 20px;
+}
+.paystub td{
+    border-width:1px;
+}
+.paystub table{
+    width:100%;
+    border-spacing: 0;
+}
+.no-background{
+    background-image: none!important;
+}
+/* border right & bottom */
+.bd-rb{
+    border-bottom-style: solid;
+    border-right-style: solid;
+}
+.bd-right{
+    border-right-style: solid;
+}
+.bd-bottom{
+    border-bottom-style: solid;
+}
+/** ----------------------------------------- styles for advanced paystub section **/
+#ad-paystub{
+    z-index: 99;
+    width:645px;
+    position: relative;
+    font-weight: bold;
+    text-indent: 7px;
+	margin-left:60px;
+
+}
+#ad-paystub table {
+    text-align:right;text-align: center;width:100%
+}
+
+#ad-paystub, #ad-paystub td {
+    border-width:0px;
+    text-align: left;
+
+}
+#ad-paystub tr{
+    line-width:: 12px;
+}
+#ad-paystub .hd-text td{
+    background-color: #dfdfdf;
+    font-size: 13px!important;
+	height:18px;
+    text-indent: 4px;
+}
+
+.gray-bar{
+    background-color:rgb(180,180,180);
+    color:white;
+    text-align: left;
+    text-indent: 4px;
+	height:25px;
+}
+/** ----------------------------------------- styles for basic paystub section **/
+#bc-paystub{
+    z-index: 99;
+    width: 602px;
+    position: relative;
+    font-weight: bold;
+    text-indent: 4px;
+}
+#bc-paystub, #bc-paystub td {
+    border-width:1px;
+    text-align: left;
+}
+
+#bc-paystub div, #bc-paystub span{
+    text-align: left;
+}
+#bc-paystub span {
+    display: inline-block;
+}
+
+
+    /** ----------------------------------------- styles for neat paystub section **/
+#nt-paystub{
+    z-index: 99;
+    width: 874px;
+    position: relative;
+    font-weight: bold;
+}
+
+#nt-paystub, #nt-paystub td{
+    font-size:11px;
+    border-width:2px!important;
+}
+#nt-paystub .hd-text, #nt-paystub .hd-text td{
+    font-size: 10px !important;
+    color:#828282;
+}
+
+.nt-title{
+    text-align: right;
+    margin-right: 12px;
+    margin-top: 29px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/** styles for advanced paystub section **/
+#adv-paystub{
+
+}

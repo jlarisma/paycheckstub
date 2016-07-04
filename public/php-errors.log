@@ -1,0 +1,16 @@
+[14-Aug-2015 20:30:09 UTC] PHP Notice:  Undefined index: stub_id in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 164
+[14-Aug-2015 20:30:09 UTC] PHP Notice:  Undefined index: SERVER_PROTOCOL in /home/nginx/domains/paycheckstubonline.com/public/paystub/util.php on line 138
+[14-Aug-2015 20:30:09 UTC] PHP Notice:  Undefined index: SERVER_PORT in /home/nginx/domains/paycheckstubonline.com/public/paystub/util.php on line 140
+[14-Aug-2015 20:30:09 UTC] PHP Notice:  Undefined index: SERVER_NAME in /home/nginx/domains/paycheckstubonline.com/public/paystub/util.php on line 142
+[14-Aug-2015 20:30:09 UTC] PHP Notice:  Undefined index:  in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 167
+[14-Aug-2015 20:30:09 UTC] PHP Notice:  Undefined index:  in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 168
+[14-Aug-2015 20:30:09 UTC] PHP Notice:  Undefined index: num_stubs in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 169
+[14-Aug-2015 20:30:09 UTC] PHP Notice:  Undefined index: check_num in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 171
+[14-Aug-2015 20:30:20 UTC] PHP Notice:  Undefined index: stub_id in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 164
+[14-Aug-2015 20:30:20 UTC] PHP Notice:  Undefined index: SERVER_PROTOCOL in /home/nginx/domains/paycheckstubonline.com/public/paystub/util.php on line 138
+[14-Aug-2015 20:30:20 UTC] PHP Notice:  Undefined index: SERVER_PORT in /home/nginx/domains/paycheckstubonline.com/public/paystub/util.php on line 140
+[14-Aug-2015 20:30:20 UTC] PHP Notice:  Undefined index: SERVER_NAME in /home/nginx/domains/paycheckstubonline.com/public/paystub/util.php on line 142
+[14-Aug-2015 20:30:20 UTC] PHP Notice:  Undefined index:  in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 167
+[14-Aug-2015 20:30:20 UTC] PHP Notice:  Undefined index:  in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 168
+[14-Aug-2015 20:30:20 UTC] PHP Notice:  Undefined index: num_stubs in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 169
+[14-Aug-2015 20:30:20 UTC] PHP Notice:  Undefined index: check_num in /home/nginx/domains/paycheckstubonline.com/public/pdf_renderdl.php on line 171
