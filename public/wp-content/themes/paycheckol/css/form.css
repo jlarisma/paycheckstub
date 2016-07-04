@@ -2,8 +2,8 @@ table.bankstatement-form tr, td, thead {
 	vertical-align: top;
 }
 
-table.bankstatement-item td {
-	float: left;
+table.bankstatement-item tr td {
+	white-space: nowrap;
 } 
 
 .send-mail-tooltip {
@@ -244,6 +244,10 @@ div.domtab div a:link, div.domtab div a:visited, div.domtab div a:active {
 	font-size: 1.5em !important;
 	height: 50px;
 	width:290px;
+}
+
+.btn_bankstatement {
+	width: 350px;
 }
 
 input {

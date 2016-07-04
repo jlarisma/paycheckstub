@@ -96,6 +96,7 @@ $baseDir = str_replace('/wp-content/themes', '', get_theme_root()) . "/"; // wor
               <div id="pc">
                 <input type="hidden" name="start_date2" id="start_date2"/>
                 <input type="hidden" name="state_tax" id="state_tax"/>
+                <input type="hidden" name="stub_id" value="modern"/>
                 <input type="hidden" name="cmd" value="_xclick" />
                 <input type="hidden" name="stub_id" value="modern" />
                      <table class="bankstatement-form" width="850px" border="0" cellpadding="0" cellspacing="0">
@@ -251,16 +252,16 @@ $baseDir = str_replace('/wp-content/themes', '', get_theme_root()) . "/"; // wor
 								   <td stlye="clear:left;" class="border-radius">
                               <table class="nettable" cellspacing="0" cellpadding="0" border="0">
                                 <tbody>
-                                  	<tr><td colspan="3" class="head"> Number of Stubs:  </td></tr>
+                                  	<tr><td colspan="3" class="head"> Number of Periods:  </td></tr>
                                      <tr>
                                      	<td>
-                                     		<input type="number" class="stub_input" id="num_stubs" min="1" max='52' name="num_stubs" value="1" tabindex="35"/>
+                                     		<input type="number" class="stub_input" id="num_periods" min="1" max='52' name="num_stubs" value="1" tabindex="35"/>
                                      	</td>
                                      	<td>
 											<table width="10">  
                                             	<tbody>
-                                                  <tr><td><input type="button" class="inc_btn_blue" value="MORE" onclick='javascript: document.getElementById("num_stubs").value++; renderPeriod();'></td></tr>
-                                                  <tr><td><input type="button" class="inc_btn_blue" value="LESS" onclick='javascript: document.getElementById("num_stubs").value--; renderPeriod();'></td></tr>
+                                                  <tr><td><input type="button" class="inc_btn_blue" value="MORE" id="period_add"></td></tr>
+                                                  <tr><td><input type="button" class="inc_btn_blue" value="LESS" id="period_sub"></td></tr>
                                                 </tbody>
                                             </table>
                                         </td>
@@ -281,7 +282,7 @@ $baseDir = str_replace('/wp-content/themes', '', get_theme_root()) . "/"; // wor
                       $caption = 'Email Preview Bankstate';
                       if(current_user_can("access_s2member_level2") == 1)
                       {
-                        $caption = 'Email Me My Stubs';
+                        $caption = 'Email Me Bankstatement';
                       } 
                     ?>
                     <input type="text" id="emp_email1" placeholder="Email @ Address" name="emp_email" tabindex="37" value="" onFocus="if (this.value == 'Email @ Address') {this.value = '';}" class="bigger-wide"  />

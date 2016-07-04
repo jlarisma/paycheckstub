@@ -34,6 +34,7 @@ function _N2($num){
 }
 
 
+
 $STATE_INFO = array();
 $STATE_INFO[0] = array('AL', 'Alabama');
 $STATE_INFO[1] = array('AK', 'Alaska');
@@ -130,7 +131,29 @@ function date2andom(){
      return $n;    
 }
 
-$sumamuont = 0;   
+
+$period_num = _R('period_no');
+
+$bankitem_num = count(_R('nameof-' . $period_num));
+for($i=0; $i<$bankitem_num; $i++)
+{
+    $bankVars[$i]["name"] = _R('nameof-' . $period_num)[$i];
+    $bankVars[$i]["amount"] = _R('amount-' . $period_num)[$i];
+    $bankVars[$i]["type"] = _R('type-' . $period_num)[$i];
+    $bankVars[$i]["date"] = _R('date-' . $period_num)[$i];
+    $bankVars[$i]["date2"] = $bankVars[$i]["date"] + date2andom() ;
+    $sumamuont += $bankVars[$i]["amount"]; 
+}
+
+$finalamount = _R('finalamount-' . $period_num);
+$digitscards = _R('digitscards-' . $period_num);
+$netpayadd = _R('netpayadd-' . $period_num);
+
+
+$INITIALBANKAMOUNT = $finalamount - $sumamuont + $netpayadd;
+
+//previous logic
+/*$sumamuont = 0;   
 
 for ($i = 0;$i <= $bankitems ; $i++){
 
@@ -146,6 +169,9 @@ $finalamount = _R('finalamount');
 $digitscards = _R('digitscards');
 $netpayadd = _R('netpayadd');
 
-$INITIALBANKAMOUNT = $finalamount - $sumamuont + $netpayadd;
+$INITIALBANKAMOUNT = $finalamount - $sumamuont + $netpayadd;*/
+
+
+
 
 ?>

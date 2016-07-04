@@ -178,7 +178,8 @@ echo '<div class="row" style="//font-weight:bold">';
     echo '<div class="col-xs-2">AMOUNT</div>';
     echo '</div>';
  
-for ($i = 2 ;$i <= $bankitems ; $i++){    
+
+for ($i = 0 ;$i < $bankitem_num ; $i++){    
 
     if(empty($bankVars[$i]["amount"])) continue;
 

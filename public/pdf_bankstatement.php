@@ -39,7 +39,6 @@ $url = $baseUrl .$pdf_pages[$urlid][1];     // the url of the desired stubb, sec
 $num_stubs = $_REQUEST['num_stubs'];	
 
 
-$num_stubs = 1;	
 $pageList = '';
 $check_num_base = $_REQUEST['check_num'];
 
@@ -52,10 +51,9 @@ $toEmail = empty($_REQUEST['from_paypal']) ? $_REQUEST['emp_email'] : $_REQUEST[
 $body = "<p>Enjoy your Preview of {$pageStyle} below, Please tell us how we can improve it.</p>";
 
 $paramsSES2 = array();
-
 for ($i = 0; $i < $num_stubs; $i++){
-    $_REQUEST['check_num'] = "$check_num_base-$i";
-    $_REQUEST['prd_num'] = $i; 							// set the current period stub
+    //$_REQUEST['check_num'] = "$check_num_base-$i";
+    $_REQUEST['period_no'] = $i + 1; 							// set the current period stub
     $params = arrToParam($_REQUEST);					//  function, above, parses all the _requst vars
       $ix = $i + 1;
        //$sql_insert2 = "INSERT INTO tbl_paystubs(user_id, options, info_email) VALUES ('$user_id', '$params', '$email' )";  
@@ -96,7 +94,7 @@ $res2 = SESUtils::sendMail($paramsSES2);
 	}
 
 
-echo "<script>window.location = 'http://www.paycheckstubonline.com/thanks-try-creat-pay-check-bankstatement/'</script>";
+echo "<script>window.location = 'http://localhost/thanks-try-creat-pay-check-bankstatement/'</script>";
 
 	
 ?>
