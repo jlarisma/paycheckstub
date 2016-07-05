@@ -114,10 +114,89 @@ $(document).ready(function() {
                     $($doc.body).html(result);
                     var ht = $('#bankstatement-pdf-preview')[0].contentWindow.document.body.scrollHeight;
                     $('#bankstatement-pdf-preview').height(ht);
-                    console.log(ht);
 				}
 			});
 		});
+
+		$('#fileInput').on('change', function() {
+			var formData = new FormData();
+			formData.append('image', this.files[0]);
+
+			$.ajax({
+				url: '<?php echo $current_uri?>file_upload.php',
+				data: formData,
+				method: 'post',
+				contentType: false,
+				processData: false,
+				success: function(data) {
+					if(data != 'error')
+					{
+						var img = $.parseJSON(data);
+
+						var popup = '<div class="white-popup">';
+						popup += '<img id="jcrop-target" alt="' + img.filename + '" src="'+ img.url +'" />';
+						popup += '<button class="inc_btn_blue" id="crop-save">save</button>';
+						popup += '<button class="inc_btn_blue" id="crop-cancel">cancel</button>';
+
+						$.magnificPopup.open({
+						  items: {
+						    src: $(popup),
+						    type: 'inline'
+						  },
+						  callbacks: {
+						  	open: onCrop
+						  }
+						});
+					}
+				},
+				error: function(data) {
+					//do somet
+				}
+			});	
+
+		});
+	}
+
+	function onCrop()
+	{
+		var x1 = 0; x2 = 0; y1 = 0; y2 = 0; w = 0; h = 0;
+  		$('#jcrop-target').Jcrop({
+  			onSelect: function(coor) {
+  				x1 = coor.x; y1 = coor.y;
+  				x2 = coor.x2; y2 = coor.y2;
+  				w = coor.w; h = coor.y
+  			},
+  			onChange: function(coor) {
+  				x1 = coor.x; y1 = coor.y;
+  				x2 = coor.x2; y2 = coor.y2;
+  				w = coor.w; h = coor.y
+  			},
+  			setSelect: [0, 0, 100, 100]
+  		});
+
+  		$('#crop-save').off('click');
+  		$('#crop-save').on('click', function() {
+  			var formData = new FormData();
+  			formData.append('x1', x1);
+  			formData.append('x2', x2);
+  			formData.append('y1', y1);
+  			formData.append('y2', y2);
+  			formData.append('w', w);
+  			formData.append('h', w);
+  			formData.append('crop', 'true');
+  			formData.append('file', $('#jcrop-target').attr('alt'));
+  			$.ajax({
+  				url: '<?php echo $current_uri?>file_upload.php',
+				data: formData,
+				method: 'post',
+				contentType: false,
+				processData: false,
+				success: function(result) {
+					console.log(result);
+				}
+  			})
+  		});
+
 	}
 
 	function attachAdd()
@@ -215,6 +294,7 @@ $(document).ready(function() {
 			}
 		});
 	}
+
 
 });
 </script>

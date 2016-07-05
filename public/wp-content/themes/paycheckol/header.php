@@ -62,7 +62,8 @@
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/table_new.css" />
  <script type="text/javascript">document.documentElement.className = 'js';</script>
-
+<script type="text/javascript" src="/wp-content/<?php echo get_theme_roots(); ?>/paycheckol/js/jquery.Jcrop.js"></script>
+<link rel="stylesheet" href="/wp-content/<?php echo get_theme_roots(); ?>/paycheckol/css/jquery.Jcrop.css" type="text/css" />
 
 
 
