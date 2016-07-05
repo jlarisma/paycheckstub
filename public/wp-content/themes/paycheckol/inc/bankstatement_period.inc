@@ -165,8 +165,14 @@ $(document).ready(function() {
 		$('#period_sub').on('click', function() {
 			var num = parseInt($('#num_periods').val());
 
+
+			$('#bankstatement-period-' + num).remove();
+			
 			if(num > 1)
-				$('#num_periods').val(num-1)
+				$('#num_periods').val(num-1);
+
+
+
 		});
 	}
 
