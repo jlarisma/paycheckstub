@@ -1,5 +1,9 @@
 <?php
 
+require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
+
+if ( ! function_exists( 'wp_handle_upload' ) ) 
+    require_once( ABSPATH . '/wp-admin/includes/file.php' );
 // calculation engine
 //include __DIR__ . "/engine-pay.js.php"; 
 include __DIR__ . "/addengine-pay.js.php"; 
@@ -15,6 +19,13 @@ $backgroundImage = $is_customer_paid ? "{$baseUrl}paystub/assets/modern-clear.pn
 $line_1 = $_REQUEST['line_1'];
 $line_2 = $_REQUEST['line_2'];
 $line_3 = $_REQUEST['line_3'];
+
+$logo = 'http://www.paycheckstubonline.com/paystub/addimages/chase-logo.png';
+$uploadDir = wp_upload_dir();
+if(file_exists($uploadDir['path'] .'/'. $_REQUEST['company_logo']))
+    $logo = $uploadDir['url'] .'/'. $_REQUEST['company_logo'];
+
+
 
 $promo_code = $_REQUEST['promo_code'];
 if ($promo_code == '234'){
@@ -84,7 +95,7 @@ background-size: cover;
             <div class="col-xs-7">
              <div class="row">
                 <div class="col-xs-6" style="font-size: 9.2;">
-                    <img src="http://www.paycheckstubonline.com/paystub/addimages/chase-logo.png" style="    width: 100px;">
+                    <img src="$logo" style="width: 100px;">
                     <br>
                     <a style="font-size: 9.2;">JPMorgan  Chase  Bank, N.A.</a>
                                         <br>

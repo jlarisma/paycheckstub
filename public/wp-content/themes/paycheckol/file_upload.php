@@ -17,14 +17,31 @@ logoUpload();
 function logoUpload()
 {
 	$image = $_FILES['image'];
-	$copyImage = wp_handle_upload($image, ['test_form' => FALSE]);
+	$uploadDir = wp_upload_dir();
+	
+	$imageFile = $uploadDir['path'] .'/'. $image['name'];
+	
+	if(file_exists($imageFile))
+		unlink($imageFile);
+
+
+	$copyImage = wp_handle_upload($image, ['test_form' => FALSE, 'unique_filename_callback' => 'overwriteImage']);
 
 	if(isset($copyImage['error']))
-	echo 'error';
-	else {
+	{	
+		echo 'error';
+		return;
+	} else {
 		
-		$uploadDir = wp_upload_dir();
-		$resizedImg = image_resize($copyImage['file'], 300, 290, false, '_logo', $uploadDir['path'], 90);
+		$resizedImg = image_resize($copyImage['file'], 700, 600, false, '_logo', $uploadDir['path'], 90);
+
+		if(isset($resizedImg->errors))
+		{
+			echo 'error'; return;
+		}
+
+		if(file_exists($imageFile))
+			unlink($imageFile);
 
 		$newImage = explode('/', $resizedImg);
 
@@ -35,14 +52,13 @@ function logoUpload()
 			'filename' => $newImage[count($newImage)-1]
 		];
 
-		//print_r($return);
+		
 		echo  stripslashes(json_encode($return, true));
 
 	}
 
 
 }
-
 
 function logoResize()
 {
@@ -61,6 +77,8 @@ function logoResize()
 
 	imagejpeg($dst_r, $src, $jpeg_quality);
 	imagedestroy($dst_r);
+
+	echo $src;
 }
 
 ?>

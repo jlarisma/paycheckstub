@@ -133,10 +133,9 @@ $(document).ready(function() {
 					{
 						var img = $.parseJSON(data);
 
-						var popup = '<div class="white-popup">';
+						var popup = '<div class="white-popup" style="max-width:1000px;">';
 						popup += '<img id="jcrop-target" alt="' + img.filename + '" src="'+ img.url +'" />';
-						popup += '<button class="inc_btn_blue" id="crop-save">save</button>';
-						popup += '<button class="inc_btn_blue" id="crop-cancel">cancel</button>';
+						popup += '<button class="inc_btn_blue" id="crop-save">crop</button>';
 
 						$.magnificPopup.open({
 						  items: {
@@ -173,7 +172,7 @@ $(document).ready(function() {
   			},
   			setSelect: [0, 0, 100, 100]
   		});
-
+  		$('#company-logo').val($('#jcrop-target').attr('alt'));
   		$('#crop-save').off('click');
   		$('#crop-save').on('click', function() {
   			var formData = new FormData();
@@ -192,7 +191,8 @@ $(document).ready(function() {
 				contentType: false,
 				processData: false,
 				success: function(result) {
-					console.log(result);
+					//console.log(result);
+					$.magnificPopup.close();
 				}
   			})
   		});
