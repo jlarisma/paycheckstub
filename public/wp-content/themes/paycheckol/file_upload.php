@@ -17,6 +17,15 @@ logoUpload();
 function logoUpload()
 {
 	$image = $_FILES['image'];
+
+	$validImg = ['image/png', 'image/jpeg', 'image/gif'];
+
+	if(!in_array($image['type'], $validImg))
+	{
+		echo 'error';
+		return;
+	}
+
 	$uploadDir = wp_upload_dir();
 	
 	$imageFile = $uploadDir['path'] .'/'. $image['name'];
@@ -64,19 +73,43 @@ function logoResize()
 {
 	$uploadDir = wp_upload_dir();
 
-	$targ_w = $targ_h = 150;
-	$jpeg_quality = 90;
+	$width = $height = 150;
 
 	$src = $uploadDir['path'] . '/' . $_POST['file'];
 	//print_r($_POST); exit;
-	$img_r = imagecreatefromjpeg($src);
-	$dst_r = ImageCreateTrueColor( $targ_w, $targ_h );
+	preg_match('/^.*\.(jpg|jpeg|gif|png)$/i', $src, $imageType);
+//print_r($imageType);
+	switch($imageType[1])
+	{
+		case 'jpg':
+		case 'jpeg':
+			$createImg = imagecreatefromjpeg($src);
+			$saveImg = 'imagejpeg';
+		break;
+		case 'gif': 
+			$createImg = imagecreatefromgif($src);
+			$saveImg = 'imagegif';
+		break;
+		case 'png':
+			$createImg = imagecreatefrompng($src);
+			$saveImg = 'imagepng';
+		break;
+		default:
+			echo 'error';
+			return;
+		break;
 
-	imagecopyresampled($dst_r,$img_r,0,0,$_POST['x1'],$_POST['y1'],
-	    $targ_w,$targ_h,$_POST['w'],$_POST['h']);
+	}
+	
 
-	imagejpeg($dst_r, $src, $jpeg_quality);
-	imagedestroy($dst_r);
+	
+	$imageTc = ImageCreateTrueColor( $width, $height );
+
+	imagecopyresampled($imageTc,$createImg,0,0,$_POST['x1'],$_POST['y1'],
+	    $width,$height,$_POST['w'],$_POST['h']);
+
+	$saveImg($imageTc, $src);
+	imagedestroy($imageTc);
 
 	echo $src;
 }

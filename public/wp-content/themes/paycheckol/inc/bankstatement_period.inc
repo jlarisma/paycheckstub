@@ -134,7 +134,7 @@ $(document).ready(function() {
 						var img = $.parseJSON(data);
 
 						var popup = '<div class="white-popup" style="max-width:1000px;">';
-						popup += '<img id="jcrop-target" alt="' + img.filename + '" src="'+ img.url +'" />';
+						popup += '<img style="display:block; margin-left; margin-right: auto;" id="jcrop-target" alt="' + img.filename + '" src="'+ img.url +'" />';
 						popup += '<button class="inc_btn_blue" id="crop-save">crop</button>';
 
 						$.magnificPopup.open({
@@ -146,6 +146,8 @@ $(document).ready(function() {
 						  	open: onCrop
 						  }
 						});
+					} else {
+						alert('an error occured!');
 					}
 				},
 				error: function(data) {
@@ -159,6 +161,7 @@ $(document).ready(function() {
 	function onCrop()
 	{
 		var x1 = 0; x2 = 0; y1 = 0; y2 = 0; w = 0; h = 0;
+
   		$('#jcrop-target').Jcrop({
   			onSelect: function(coor) {
   				x1 = coor.x; y1 = coor.y;
@@ -172,6 +175,7 @@ $(document).ready(function() {
   			},
   			setSelect: [0, 0, 100, 100]
   		});
+
   		$('#company-logo').val($('#jcrop-target').attr('alt'));
   		$('#crop-save').off('click');
   		$('#crop-save').on('click', function() {
@@ -191,12 +195,12 @@ $(document).ready(function() {
 				contentType: false,
 				processData: false,
 				success: function(result) {
-					//console.log(result);
-					$.magnificPopup.close();
+					if(result != 'error')
+						$.magnificPopup.close();
+					else alert('an error occured!');
 				}
   			})
   		});
-
 	}
 
 	function attachAdd()
