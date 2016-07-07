@@ -196,7 +196,8 @@ $baseDir = str_replace('/wp-content/themes', '', get_theme_root()) . "/"; // wor
                                          <tr><td><input type="text" id="empr_add_city" name="empr_add_city" placeholder="Company City" tabindex="13" value="Company City" onFocus="if (this.value == 'Company City') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Company City';}"/></td></tr>
                                          <tr><td><input type="text" id="empr_add_state" placeholder="Company State" name="empr_add_state" tabindex="14" value="Company State" onFocus="if (this.value == 'Company State') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Company State';}"/><tr><td>
                                          <tr><td><input type="text" id="empr_add_zip" name="empr_add_zip" placeholder="Zip Code" tabindex="15" value="Zip Code" onFocus="if (this.value == 'Zip Code') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Zip Code';}"/></td></tr>
-                                         <tr><td><input type="hidden" id="company-logo" name="company_logo" value=""><div class="head" style="padding-top:3px;margin-left:5px;text-transform:inherit; font-size:">Upload Logo</div><input id="fileInput" type="file" name="file"></td></tr>
+                                         <tr><td><input type="hidden" id="company-logo" name="company_logo" value=""><div class="head" style="padding-top:3px;margin-left:5px;text-transform:inherit; font-size:">Upload Logo</div><div id="anim-loader" class="loader"></div><input id="fileInput" type="file" name="file"></td></tr>
+                                         <tr><td><img id="view-logo" src="" width="180"/></td></tr>
                                        </tbody>
                                     </table>
                                   </td>

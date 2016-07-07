@@ -1,3 +1,26 @@
+/******** CSS LOADER **************/
+
+.loader {
+    border: 4px solid #81BDC2; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    animation: spin 0.5s linear infinite;
+    float: right;
+    margin-top: -16px;
+    margin-right: 87px;
+    display:none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/******** CSS LOADER **************/
+
 .white-popup {
   position: relative;
   background: #FFF;

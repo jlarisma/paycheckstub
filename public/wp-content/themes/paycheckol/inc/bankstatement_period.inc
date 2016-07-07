@@ -122,6 +122,8 @@ $(document).ready(function() {
 			var formData = new FormData();
 			formData.append('image', this.files[0]);
 
+			$('#anim-loader').show();
+
 			$.ajax({
 				url: '<?php echo $current_uri?>file_upload.php',
 				data: formData,
@@ -137,6 +139,8 @@ $(document).ready(function() {
 						popup += '<img style="display:block; margin-left; margin-right: auto;" id="jcrop-target" alt="' + img.filename + '" src="'+ img.url +'" />';
 						popup += '<button class="inc_btn_blue" id="crop-save">crop</button>';
 
+						$('#view-logo').attr('src', img.url);
+						
 						$.magnificPopup.open({
 						  items: {
 						    src: $(popup),
@@ -160,6 +164,7 @@ $(document).ready(function() {
 
 	function onCrop()
 	{
+		$('#anim-loader').hide();
 		var x1 = 0; x2 = 0; y1 = 0; y2 = 0; w = 0; h = 0;
 
   		$('#jcrop-target').Jcrop({
@@ -188,6 +193,7 @@ $(document).ready(function() {
   			formData.append('h', w);
   			formData.append('crop', 'true');
   			formData.append('file', $('#jcrop-target').attr('alt'));
+  			$('#anim-loader').show();
   			$.ajax({
   				url: '<?php echo $current_uri?>file_upload.php',
 				data: formData,
@@ -196,7 +202,11 @@ $(document).ready(function() {
 				processData: false,
 				success: function(result) {
 					if(result != 'error')
+					{
+						$('#anim-loader').hide();
 						$.magnificPopup.close();
+						$('#view-logo').attr('src', result);
+					}
 					else alert('an error occured!');
 				}
   			})

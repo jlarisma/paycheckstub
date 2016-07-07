@@ -111,7 +111,7 @@ function logoResize()
 	$saveImg($imageTc, $src);
 	imagedestroy($imageTc);
 
-	echo $src;
+	echo $uploadDir['url'] . '/' . $_POST['file'];
 }
 
 ?>
