@@ -2334,16 +2334,21 @@ function convert_yearly_hourly(yearly) {
 
 }
 
-
+var timerHourlyYearly
 function convert_hourly_yearly(hours, rate, ot_hr) {
     //saf: ignore parameters
-    hours = $("#gross_hrs").val() * 1;
-    rate = $("#gross_rate").val() * 1;
-    ot_hr = $("#ot_hrs").val() * 1;
+    clearTimeout(timerHourlyYearly);
+    timerHourlyYearly = setTimeout(function() {
+        hours = $("#gross_hrs").val() * 1;
+        rate = $("#gross_rate").val() * 1;
+        ot_hr = $("#ot_hrs").val() * 1;
 
-    document.getElementById('input_yearly_gross').value = ((hours * rate * 52) + (ot_hr * rate * 1.5 * 52)).toFixed(2);
+        $('#consecutive_stubs input[name*="gross_rate"]').val(rate);
 
-    getdata();
+        document.getElementById('input_yearly_gross').value = ((hours * rate * 52) + (ot_hr * rate * 1.5 * 52)).toFixed(2);
+
+        getdata();
+      }, 100);
 }
 
 
@@ -2393,6 +2398,7 @@ function daysInMonth(month, year) {
 
 function calcTaxes() {
     //global workingYear;
+    debugger;
     var val_tot_pay_ytd = 0;
     var val_tot_pay_ytd = 0;
 //_____________________________________________________________________________________________________________________________________

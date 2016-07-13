@@ -173,7 +173,7 @@ echo ("test = ".$my_preview_stubs->options);
  			 To make more (unlimited -only).
 		  <ol>
 			<li>  Select MY STUBS menu</li>
-			<li>  Fill in your info</li>
+			<li>  Fill in your information on this <a href="<?php echo get_home_url() ?>/paycheck-stub-generator/" target="_blank">form</a></li>
 			<li>  Select how many Pay Periods</li>
 			<li>  On that page you will see two small BLUE BUTTONs</li>
 		  </ol>
