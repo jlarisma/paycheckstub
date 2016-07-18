@@ -21,7 +21,7 @@ function deleteUserTransactions($userId)
     //DELETE FROM user_transaction WHERE user_id = ?
 }
 
-add_action( 'delete_user', 'myDelete' );
+add_action( 'delete_user', 'deleteUserTransactions' );
 
 function test_modify_user_table( $column ) {
     $column['_bypass'] = 'ByPassFUNC';
