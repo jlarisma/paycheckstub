@@ -12,6 +12,17 @@ function wti_loginout_menu_link( $items, $args ) {
 }
    */
 
+function deleteUserTransactions($userId)
+{
+    global $wpdb;
+
+    $wpdb->query('DELETE FROM user_transaction WHERE user_id = ' . $userId);
+    //UPDATE  `paycheck_db`.`user_transaction` SET  `user_id` =  '64138' WHERE  `user_transaction`.`id` = ?;
+    //DELETE FROM user_transaction WHERE user_id = ?
+}
+
+add_action( 'delete_user', 'myDelete' );
+
 function test_modify_user_table( $column ) {
     $column['_bypass'] = 'ByPassFUNC';
     //alert("qwert");
