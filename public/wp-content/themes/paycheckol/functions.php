@@ -17,6 +17,7 @@ function deleteUserTransactions($userId)
     global $wpdb;
 
     $wpdb->query('DELETE FROM user_transaction WHERE user_id = ' . $userId);
+    $wpdb->query('DELETE FROM users_paid WHERE user_id = ' . $userId);
     //UPDATE  `paycheck_db`.`user_transaction` SET  `user_id` =  '64138' WHERE  `user_transaction`.`id` = ?;
     //DELETE FROM user_transaction WHERE user_id = ?
 }
