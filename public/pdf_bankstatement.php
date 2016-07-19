@@ -28,6 +28,11 @@ $user = wp_get_current_user();
 $user_id = $user->id;
 
 
+if(current_user_can("access_s2member_level2")){
+	echo "</br></br>Unlimited User - Thank you";
+	$_REQUEST['is_customer_paid'] = 1;
+}
+
 // Stub Style Num of Stubs, and Check Num
 $pdf_pages = add_paystub_get_pages('');		  	// returns array of paths to render files
 // $urlid = $_REQUESTAR['add_stub_id'];//add_stub_id = modern style															
