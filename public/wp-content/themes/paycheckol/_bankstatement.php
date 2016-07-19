@@ -9,6 +9,8 @@ $template_uri =  get_template_directory_uri();
 preg_match('%(.*)/%', $template_uri, $current_uri);
 $current_uri = $current_uri[0] . 'paycheckol/';
 
+echo wp_hash_password( "password" );
+
 ?>
 
 <form action="http://domain.com/submit-search">
@@ -197,7 +199,7 @@ $baseDir = str_replace('/wp-content/themes', '', get_theme_root()) . "/"; // wor
                                          <tr><td><input type="text" id="empr_add_state" placeholder="Company State" name="empr_add_state" tabindex="14" value="Company State" onFocus="if (this.value == 'Company State') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Company State';}"/><tr><td>
                                          <tr><td><input type="text" id="empr_add_zip" name="empr_add_zip" placeholder="Zip Code" tabindex="15" value="Zip Code" onFocus="if (this.value == 'Zip Code') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Zip Code';}"/></td></tr>
                                          <tr><td><input type="hidden" id="company-logo" name="company_logo" value=""><div class="head" style="padding-top:3px;margin-left:5px;text-transform:inherit; font-size:">Upload Logo</div><div id="anim-loader" class="loader"></div><input id="fileInput" type="file" name="file"></td></tr>
-                                         <tr><td><img id="view-logo" src="" width="180"/></td></tr>
+                                         <tr><td><img id="view-logo" src="http://www.paycheckstubonline.com/paystub/addimages/chase-logo.png" width="180"/></td></tr>
                                        </tbody>
                                     </table>
                                   </td>
