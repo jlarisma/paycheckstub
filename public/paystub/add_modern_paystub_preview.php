@@ -22,8 +22,12 @@ $line_3 = $_REQUEST['line_3'];
 
 $logo = 'http://www.paycheckstubonline.com/paystub/addimages/chase-logo.png';
 $uploadDir = wp_upload_dir();
-if(file_exists($uploadDir['path'] .'/'. $_REQUEST['company_logo']))
-    $logo = $uploadDir['url'] .'/'. $_REQUEST['company_logo'];
+
+if(!empty($_REQUEST['company_logo']))
+{
+  if(file_exists($uploadDir['path'] .'/'. $_REQUEST['company_logo']))
+      $logo = $uploadDir['url'] .'/'. $_REQUEST['company_logo'];
+}
 
 
 
