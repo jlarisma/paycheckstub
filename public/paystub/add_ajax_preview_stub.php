@@ -3,10 +3,17 @@
 require_once(__DIR__.'/_addpages.inc');			// gets function 'paystub_get_pages'  which get's the path for the previes, Modern, Neat, etc
 require_once($_SERVER['DOCUMENT_ROOT'] .'/wkhtmltox/wkhtmltopdf.php');
 require_once(__DIR__.'/util.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php' );
 
 $pdf_pages = add_paystub_get_pages('');
 
+
 $urlid = $_REQUEST['stub_id'];//
+
+
+if(current_user_can("access_s2member_level2")){
+	$_REQUEST['is_customer_paid'] = 1;
+}
 
 for($i=0; $i < $_REQUEST['num_stubs']; $i++)
 {
