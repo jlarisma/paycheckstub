@@ -2398,7 +2398,6 @@ function daysInMonth(month, year) {
 
 function calcTaxes() {
     //global workingYear;
-    debugger;
     var val_tot_pay_ytd = 0;
     var val_tot_pay_ytd = 0;
 //_____________________________________________________________________________________________________________________________________
