@@ -109,7 +109,7 @@ $(document).ready(function() {
 				data: data,
 				method: 'post',
 				success: function(result) {
-					console.log($('#bankstatement-pdf-preview')[0]);
+					//console.log($('#bankstatement-pdf-preview')[0]);
 					$doc = $('#bankstatement-pdf-preview')[0].contentWindow.document;
                     $($doc.body).html(result);
                     var ht = $('#bankstatement-pdf-preview')[0].contentWindow.document.body.scrollHeight;
@@ -217,7 +217,7 @@ $(document).ready(function() {
 	{
 		$('input.add-new').off('click');
 		$('input.add-new').on('click', function() {
-			console.log($(this).parent().prevAll('table.bankstatement-item:first').find('tr[row="add-new"]:first'));
+			//console.log($(this).parent().prevAll('table.bankstatement-item:first').find('tr[row="add-new"]:first'));
 			$(this).parent().prevAll('table.bankstatement-item:first').find('tr[row="add-new"]:first').clone().appendTo($(this).parent().prevAll('table.bankstatement-item:first'));
 			attachEvent();
 		});

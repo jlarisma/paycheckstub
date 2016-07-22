@@ -2315,7 +2315,7 @@ function convert_yearly_hourly(yearly) {
         document.getElementById('gross_rate').value = (yearly / 2080).toFixed(2);
         document.getElementById('ot_hrs').value = 0;
 
-        console.log($('#consecutive_stubs input[name*="gross_hrs"]'));
+        //console.log($('#consecutive_stubs input[name*="gross_hrs"]'));
 
         $('#consecutive_stubs input[name*="gross_hrs"]').each(function() {
             $(this).val($('#gross_hrs').val());

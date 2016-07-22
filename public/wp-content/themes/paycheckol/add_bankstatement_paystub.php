@@ -631,7 +631,7 @@ if ( current_user_can( 'administrator' ) ) {
 			if (validate_email() == true){
 				//alert ("good validate");
                 $param = $('#form-main').serialize();            
-                console.log($param);
+                //console.log($param);
 				previewPDF();
                 
 			}

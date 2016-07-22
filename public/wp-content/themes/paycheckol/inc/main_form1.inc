@@ -1132,7 +1132,7 @@
         $("#period_list").empty();
         $("#period_list").html(renderHtml);
         $("#consecutive_stubs").accordion({collapsible:true});
-        console.log($("#consecutive_stubs"));
+        //console.log($("#consecutive_stubs"));
     }
 
 
@@ -1216,8 +1216,8 @@
 
    <script type="text/javascript">
 		var verifyCallback = function(response) {
-			console.log(response);
-			console.log('verifyed');
+			//console.log(response);
+			//console.log('verifyed');
 			//pre_pdf();
 			$(".mfp-close").click();
 			

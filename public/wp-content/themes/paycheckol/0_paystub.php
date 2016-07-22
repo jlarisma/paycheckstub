@@ -377,12 +377,12 @@ $temp_user = wp_get_current_user();
                     data: $param,							// sends all the INFO data to ajax_prep_db
                     success: function(data, status, xhr){
                          alert('transaction allowed');
-                         console.log(data);
+                         //console.log(data);
                     },   // end of 'success'
                     error: function(xhr, status, err) {
                         //alert('transaction not allowed');
                         return false;
-                        console.log(err);
+                        //console.log(err);
                     }    // end of errer
                 });  // end of $.ajax
                 return true;  // true or false

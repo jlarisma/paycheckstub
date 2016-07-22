@@ -203,7 +203,7 @@ function daterandom($str){
         // set the form parameter for stub identity
         $param = $('#form-main').serialize();
         $param += "&prd_num=0";//trial = 0
-        console.log($param);
+        //console.log($param);
         $.post("<?php echo $add_prevUrl ?>",
                 $param,
                 function (data) {
@@ -219,7 +219,7 @@ function daterandom($str){
 <script>
     function showUser(str, str1) {
         var amount;
-        console.log(str);
+        //console.log(str);
         for (var index in javascript_array) {
             //console.log(javascript_array[index]);
             if (str == javascript_array[index]["ID"]) {
@@ -231,7 +231,7 @@ function daterandom($str){
         //console.log(str1);
         var stramount = 'amount' + str1;
         var stramount1 = 'type' + str1;
-        console.log(stramount);
+        //console.log(stramount);
         document.getElementById(stramount).value = amount;
         document.getElementById(stramount1).value = type;
 
@@ -250,7 +250,7 @@ function daterandom($str){
                     $param,
                     function (data) {
                         //$ifr.value(data) ;
-                        console.log(data);
+                        //console.log(data);
                     }
             )
             $("#finalamount").removeClass('hidden');
@@ -266,7 +266,7 @@ function daterandom($str){
         $('#addnew').click(function () {
             currentItem++;
             strpicker = ".datepicker" + currentItem;
-            console.log(strpicker);
+            //console.log(strpicker);
             $('#bankitems').val(currentItem);
             var strToAdd = '<div id="fieldid' + currentItem + '" class="inline-block"><tr class="" ><td><a class="cut1 btn"  id=' + currentItem + '" onclick="removep(\'' + currentItem + '\')">--</a></td>    <td colspan="2"></td></tr><tr><td width="">';
             strToAdd += '<select style="" class="quform-tooltip chosen-select" id="nameof' + currentItem + '" name="nameof' + currentItem + '" title="Name Select" onChange="showUser(this.value,' + currentItem + ')"><option value="">Please select</option>';
@@ -301,7 +301,7 @@ function daterandom($str){
                 var fieldNum = this.id;
                 $(this).remove();
                 var fieldID = "#fieldid" + fieldNum;
-                console.log(fieldID);
+                //console.log(fieldID);
                 $(fieldID).remove();
             });
         });
@@ -320,7 +320,7 @@ function daterandom($str){
             var fieldNum = this.id;
             $(this).remove();
             var fieldID = "#fieldid" + fieldNum;
-            console.log(fieldID);
+            //console.log(fieldID);
             $(fieldID).remove();
         });
     });
@@ -333,7 +333,7 @@ function daterandom($str){
         var fieldNum = p;
         //$(this).remove();.
         var fieldID = "#fieldid" + fieldNum;
-        console.log(fieldID);
+        //console.log(fieldID);
         $(fieldID).remove();
     }
 </script>

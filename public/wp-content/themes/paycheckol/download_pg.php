@@ -326,10 +326,10 @@ echo ("test = ".$my_preview_stubs->options);
 		
 		function dowhattodo(what2do){
 			//what2do = $("#whattodo").val();
-		  console.log('dowhattodo(what2do)' + what2do);
+		  //console.log('dowhattodo(what2do)' + what2do);
 		  w2d = what2do.replace(/\d+/g, '');
 		  if ( w2d == 'dlbt'){ 
-		    console.log('dlbt5');
+		    //console.log('dlbt5');
 			var parent = $("." + what2do).parent().parent();
 		    var dlVal =  $("#data" + what2do).val();
 			downloadUrl ='http://www.paycheckstubonline.com/pdf_renderdlbt.php?&aaa='+dlVal;
@@ -339,7 +339,7 @@ echo ("test = ".$my_preview_stubs->options);
 		  }
 
 		  if ( w2d == 'dlpt'){ 
-		    console.log('dlpt5');
+		    //console.log('dlpt5');
 			var parent = $("." + what2do).parent().parent();
 		    var dlVal =  $("#data" + what2do).val();
 			downloadUrl ='http://www.paycheckstubonline.com/pdf_renderdl.php?&aaa='+dlVal;
@@ -350,7 +350,7 @@ echo ("test = ".$my_preview_stubs->options);
 		  }
 
 		  if ( w2d == 'dlemail'){ 
-		    console.log('dlemail5');
+		    //console.log('dlemail5');
 			var parent = $("." + what2do).parent().parent();
 		    var dlVal =  $("#data" + what2do).val();
 			downloadUrl ='http://www.paycheckstubonline.com/pdf_renderemail.php?'+dlVal;
@@ -363,8 +363,8 @@ echo ("test = ".$my_preview_stubs->options);
 					
 		};
 		var verifyCallback = function(response) {
-			console.log(response);
-			console.log('verifyed');
+			//console.log(response);
+			//console.log('verifyed');
 			//pre_pdf();
 			$(".mfp-close").click();	
 			var what2do = $("#whattodo").val();
