@@ -116,8 +116,8 @@ if ( !function_exists('arrToParam')){
 //==============================================
 
 
-//print_r($_REQUESTAR);
 
+$pdfError = false;
 for ( $i = 0; $i < $num_stubs; $i++){
     $_REQUESTAR['check_num'] = "$check_num_base-$i";
     $_REQUESTAR['prd_num'] = $i; 							// set the current period stub
@@ -126,10 +126,32 @@ for ( $i = 0; $i < $num_stubs; $i++){
    //   echo($params);
     $pdf = new WkHtmlToPdf();
     $page = $pdf->curlGetData($url, $_REQUESTAR, "post");
+
+    if(stripos(strtolower($page), 'error') !== false)
+    {
+    	$pdfError = true;
+    	break;
+    }
+
+
     $pdf->addPage($page);
 	$pdf->send('Paycheckstub_'.$ix.'.pdf');
 }
 
+
+if($pdfError)
+{
+	require_once("ses/SESUtils.php");
+	//$email = 'george.strnad@gmail.com';
+	//$email = 'joe.larisma@supportingcareers.com.au';
+	//$email = 'despisedtruth@gmail.com';
+	$paramsSESe["to"] = $email;
+	$paramsSESe["subject"] = "Paystub Error";
+	$paramsSESe["message"] = 'There was an error in creating your paystubs. Please double check your entry.';
+	$paramsSESe["from"] = "info@paycheckstubonline.com";
+
+	$res1 = SESUtils::sendMail($paramsSESe);
+}
 
 echo "<script>window.location = 'http://www.paycheckstubonline.com/thanks-try-creat-pay-check-bankstatement/'</script>";
 
