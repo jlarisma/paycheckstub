@@ -781,8 +781,8 @@
                                      	<td>
 											<table width="10">  
                                             	<tbody>
-                                                  <tr><td><input type="button" class="inc_btn_blue" value="MORE" onclick='javascript: document.getElementById("num_stubs").value++; renderPeriod();'></td></tr>
-                                                  <tr><td><input type="button" class="inc_btn_blue" value="LESS" onclick='javascript: document.getElementById("num_stubs").value--; renderPeriod();'></td></tr>
+                                                  <tr><td><input type="button" class="inc_btn_blue" value="MORE" onclick='javascript: document.getElementById("num_stubs").value++; renderPeriod(); preview_pdf();'></td></tr>
+                                                  <tr><td><input type="button" class="inc_btn_blue" value="LESS" onclick='javascript: document.getElementById("num_stubs").value--; renderPeriod(); preview_pdf();'></td></tr>
                                                 </tbody>
                                             </table>
                                         </td>
@@ -1079,11 +1079,12 @@
                  $.post("<?php echo $prevUrl?>",
                     $param,
                     function(data){
+                        console.log(data);
                         $(el).css('height', '100px');
                         $doc = el.contentWindow.document;
                         $($doc.body).html(data);
                         $height = calcHeight(el);
-                        $(el).parent().css('height', ($height * 1 + 100) + 'px' )
+                        $(el).parent().css('height', ($height * 1 + 100) + 'px' );
                     }
                 )
             });
@@ -1257,7 +1258,7 @@
 
 $(document).ready(function() {
 
-  preview_pdf(0);
+  //preview_pdf(0);
 
 	$('.popup-with-form').magnificPopup({
 		type: 'inline',

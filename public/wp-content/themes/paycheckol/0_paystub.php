@@ -423,7 +423,7 @@ $temp_user = wp_get_current_user();
 
                     //alert($.datepicker.iso8601Week(date));
                     //alert("Difference in weeks = ".endweek - startweek);
-                }});    
+                }}).attr('readonly','readonly');    
             $("#end_date").datepicker({clickInput: true,
                 //maxDate: "+30D",
                 minDate: new Date(2000, 1 - 1, 01),
@@ -438,7 +438,7 @@ $temp_user = wp_get_current_user();
                     //alert("end date selected on start");
                     //alert($.datepicker.iso8601Week(date));
                     //alert("Difference in weeks = ".endweek - startweek);
-                }});
+                }}).attr('readonly','readonly');
 
             $('#pay_date').datepicker({clickInput: true,
                     onSelect: function (dateText, inst) {
@@ -461,7 +461,7 @@ $temp_user = wp_get_current_user();
                 calcTaxes();
             }catch(e){}
 
-
+            preview_pdf();
         });
 
 
