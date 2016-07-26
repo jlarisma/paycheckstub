@@ -1067,6 +1067,7 @@
 
     //multiple stub update
     function preview_pdf() {
+      labelPeriods();
        if (!validate_state()) {
             return false;
         } else {
@@ -1079,7 +1080,6 @@
                  $.post("<?php echo $prevUrl?>",
                     $param,
                     function(data){
-                        console.log(data);
                         $(el).css('height', '100px');
                         $doc = el.contentWindow.document;
                         $($doc.body).html(data);
@@ -1118,6 +1118,16 @@
             )
             }
 
+    }
+
+    function labelPeriods()
+    {
+      //console.log($('#end_date').val() + $('#issue_date_diff').val());
+      endDate = new Date($('#end_date').val());
+      dt = new Date(endDate);
+      dt.setDate(endDate.getDate() + parseInt($('#issue_date_diff').val()));
+      result = (dt.getMonth() + 1) + '/' + dt.getDate() + '/' + dt.getFullYear();
+      console.log(result);
     }
 
     function renderPeriod(){
