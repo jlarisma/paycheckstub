@@ -1015,7 +1015,7 @@
 <script type="text/u-template" id="period_u_templ">
   <div id="consecutive_stubs">
       <% for ( idx = 0; idx < numOfPeriod; idx++) { %>
-          <h3>PERIOD   #  <%=idx+1%>    of    <%=numOfPeriod%> </h3>
+          <h3>[PERIOD   #  <%=idx+1%>    of    <%=numOfPeriod%>] <span id=pay-date-label-<%=idx%>></span></h3>
           <div><table>
               <tr><td class="">
                       <table width="185" cellspacing="0" cellpadding="0" border="0">
@@ -1067,13 +1067,13 @@
 
     //multiple stub update
     function preview_pdf() {
-      labelPeriods();
+      
        if (!validate_state()) {
             return false;
         } else {
             $('#consecutive_stubs iframe').each(function(g, el) {
                 var idx = $(el).attr('id').split('_')[2];
-
+                $('#pay-date-label-' + idx).html('Pay Date: ' + labelPeriods(idx));
                 // set the form parameter for stub identity
                 $param = $('#form-main').serialize();
                 $param += "&prd_num=" + idx;
@@ -1120,14 +1120,24 @@
 
     }
 
-    function labelPeriods()
+    function labelPeriods(period)
     {
-      //console.log($('#end_date').val() + $('#issue_date_diff').val());
       endDate = new Date($('#end_date').val());
       dt = new Date(endDate);
-      dt.setDate(endDate.getDate() + parseInt($('#issue_date_diff').val()));
+  	  
+  	  dateDiff = parseInt($('#issue_date_diff').val());
+      dt.setDate(endDate.getDate() + dateDiff);
+  	  
+  	  if(period > 0)
+  	  {
+  		  var periodDate = new Date(dt);
+  		  periodDate.setDate(dt.getDate() - (7*period));
+  		  dt = periodDate;
+  	  }
+  	  
       result = (dt.getMonth() + 1) + '/' + dt.getDate() + '/' + dt.getFullYear();
-      console.log(result);
+  	  
+  	  return result;
     }
 
     function renderPeriod(){
@@ -1137,7 +1147,7 @@
             g_rate:$("#gross_rate").val(),
             o_hrs:$("#ot_hrs").val(),
             c_prd:$("#commission_prd").val(),
-            c_ytd:$("#commission_ytd").val()
+            c_ytd:$("#commission_ytd").val(),
         };
         renderHtml = _.template(templ, options);
         $("#period_list").empty();
