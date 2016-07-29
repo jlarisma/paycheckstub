@@ -4,11 +4,13 @@
 	if(isset($_GET['formId']))
 	{ 
 		//echo "last " . $_GET['formId'] . " month";
-		$currentMonth = date('F Y', mktime(0, 0, 0, date('m') - (($_GET['formId']) -1), 10));//date('M Y', strtotime("last " . $_GET['formId'] . " month"));
-		$lastMonth = date('F Y', mktime(0, 0, 0, date('m') - (($_GET['formId'] + 1)-1), 10)); //date('M Y', strtotime("last " . ($_GET['formId'] + 1) . " month"));
+		$currentMonth = date('F t, Y', mktime(0, 0, 0, date('m') - (($_GET['formId'] + 1)-1), 10));//date('M Y', strtotime("last " . $_GET['formId'] . " month"));
+		$lastMonth = date('F 1, Y', mktime(0, 0, 0, date('m') - (($_GET['formId'] + 1)-1), 10)); //date('M Y', strtotime("last " . ($_GET['formId'] + 1) . " month"));
+		$numDays = date('t', mktime(0, 0, 0, date('m') - (($_GET['formId'] + 1)-1), 10));
 	} else {
-		$currentMonth =  date('M Y');
-		$lastMonth = date('M Y', strtotime("last month"));
+		$currentMonth = date('M t, Y', strtotime("last month"));
+		$lastMonth = date('M 1, Y', strtotime("last month"));
+		$numDays = date('t', strtotime("last month"));
 	}	
 
 
@@ -41,8 +43,9 @@
 			<?php
 				global $wpdb;
 				$bankstatements = $wpdb->get_results("SELECT name, amount, type FROM ka_bankstatement");
-				foreach($bankstatements as $bankstatement) {
-				$day = floor(rand(1, 30));
+				for($day = 1; $day <= $numDays; $day++) {
+
+					if($bankstatement = $bankstatements[$day]) {
 			?>
 			<tr>
 				<td><a class="cut btn">-- </a></td>
@@ -52,6 +55,7 @@
 				<td><input name="date-<?php echo $formId; ?>[]" type="text" value="<?php echo $day; ?>""></td>
 			</tr>
 			<?php 
+					}
 				}
 			?>
 			<tr row="add-new">

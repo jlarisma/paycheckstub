@@ -1,8 +1,9 @@
 <div id="bankstatement-container">
 	<div id="bankstatement-period-1" class="bankstatement-period" style="margin:10px 0;">
 		<?php
-			$currentMonth = date('M Y');
-			$lastMonth = date('M Y', strtotime("last month"))
+			$currentMonth = date('M t, Y', strtotime("last month"));
+			$lastMonth = date('M 1, Y', strtotime("last month"));
+			$numDays = date('t', strtotime("last month"));
 		?>
 		<h3 id="period-label">Period 1 -  <?php echo  $lastMonth . ' from ' .$currentMonth?></h3>
 		<span>&nbsp;</span>
@@ -30,8 +31,10 @@
 				<?php
 					global $wpdb;
 					$bankstatements = $wpdb->get_results("SELECT name, amount, type FROM ka_bankstatement");
-					foreach($bankstatements as $bankstatement) {
-					$day = floor(rand(1, 30));
+					for($day = 1; $day <= $numDays; $day++) {
+
+					if($bankstatement = $bankstatements[$day]) {
+
 				?>
 				<tr>
 					<td><a class="cut btn">-- </a></td>
@@ -42,6 +45,7 @@
 				</tr>
 				<?php 
 					}
+				}
 				?>
 				<tr row="add-new">
 					<td><a class="cut btn">-- </a></td>
