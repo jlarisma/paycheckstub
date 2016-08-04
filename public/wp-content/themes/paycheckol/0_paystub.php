@@ -458,10 +458,10 @@ $temp_user = wp_get_current_user();
                 enddate = $('#end_date').datepicker('getDate');
                 endweek = ($.datepicker.iso8601Week(enddate));
 
-                calcTaxes();
+                getdata();
             }catch(e){}
 
-            preview_pdf();
+            //preview_pdf();
         });
 
 

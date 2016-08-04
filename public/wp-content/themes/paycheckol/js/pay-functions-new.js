@@ -43,30 +43,31 @@ $(function () {
 function set_custom_var1() {
     return;
     randomnumber1 = Math.floor(Math.random() * 1000000000000000);
-	  document.getElementById('custom-main-pp').value = randomnumber1;
-	  document.getElementById('custom-corp').value = randomnumber1;
-	  document.getElementById('custom-corp-pp').value = randomnumber1;
-	  document.getElementById('custom-basic').value = randomnumber1;
-	  document.getElementById('custom-basic-pp').value = randomnumber1;
-	  document.getElementById('custom-neat').value = randomnumber1;
-	  document.getElementById('custom-neat-pp').value = randomnumber1;
-	  document.getElementById('custom-tstub').value = randomnumber1;
-	  document.getElementById('custom-tstub-pp').value = randomnumber1;
-	  document.getElementById('custom-modern').value = randomnumber1;
-	  document.getElementById('custom-modern-pp').value = randomnumber1;
+      document.getElementById('custom-main-pp').value = randomnumber1;
+      document.getElementById('custom-corp').value = randomnumber1;
+      document.getElementById('custom-corp-pp').value = randomnumber1;
+      document.getElementById('custom-basic').value = randomnumber1;
+      document.getElementById('custom-basic-pp').value = randomnumber1;
+      document.getElementById('custom-neat').value = randomnumber1;
+      document.getElementById('custom-neat-pp').value = randomnumber1;
+      document.getElementById('custom-tstub').value = randomnumber1;
+      document.getElementById('custom-tstub-pp').value = randomnumber1;
+      document.getElementById('custom-modern').value = randomnumber1;
+      document.getElementById('custom-modern-pp').value = randomnumber1;
 }
 
 
 function getdata() {
-//	return;
+//  return;
     calcTaxes();
+    preview_pdf();
     return;
 }// end GETDATA
 
 
 function state_select(state) {
     var val_yearly_temp = val_yearly;
-	
+    
     var num_period = document.getElementById('num_prds').value;
     // var value1 = state.options[state.selectedIndex].value; 
     // 
@@ -1484,7 +1485,7 @@ function state_select(state) {
         val_emp_state_c = "Nebraska";
     }
 
-    if (state == 28) {  																	//Nevada completed
+    if (state == 28) {                                                                      //Nevada completed
         state_tax = (val_yearly_temp * 0);
         state_abbv = "NV";
         val_emp_state_c = "Nevada";
@@ -1704,7 +1705,7 @@ function state_select(state) {
         val_emp_state_c = "New York";
     }
 
-    if (state == 33) {  																	//Nort Carolina is completed
+    if (state == 33) {                                                                      //Nort Carolina is completed
         status = document.getElementById('emp_mar_status').value;
         if (status == 1 || 3) {
             while (val_yearly_temp > 0) {
@@ -2361,7 +2362,7 @@ function isNumberKey(evt) {
 }
 
 
-function IsNumeric(strString) //  check for valid numeric strings	
+function IsNumeric(strString) //  check for valid numeric strings   
 {
     var strValidChars = "0123456789.-";
     var strChar;
@@ -2402,7 +2403,7 @@ function calcTaxes() {
     var val_tot_pay_ytd = 0;
 //_____________________________________________________________________________________________________________________________________
 //   DATE AREA
-    var val_strtdate = $('#start_date').val(); 				    //DATE START DATE
+    var val_strtdate = $('#start_date').val();                  //DATE START DATE
     //if (startyear < 2013) {
     var workingYear = enddate.getFullYear();
     //    echo ("XXXXXXXXXX".workingYear);  //enddate.getFullYear());
@@ -2419,24 +2420,24 @@ function calcTaxes() {
     }
 
     var val_hiredate = $('#start_date').val();
-    var val_strtdate_one = $('#start_date').val();			        // Start date Month
-    var val_enddate_one = $('#end_date').val();					// End Date Month
+    var val_strtdate_one = $('#start_date').val();                  // Start date Month
+    var val_enddate_one = $('#end_date').val();                 // End Date Month
     var val_week_diff = (endweek - startweek);
     //Calculations - From script on main_form
     var val_month_diff = (endmonth - startmonth);
-    var val_pay_rate = $('#gross_rate').val();						//GROSS RATE from form
+    var val_pay_rate = $('#gross_rate').val();                      //GROSS RATE from form
     var val_overtime_hrs = $('#ot_hrs').val();
 
-    var val_hrs = $('#gross_hrs').val();								//Calculations
-    var val_rate = $('#gross_rate').val();								//Calculations
+    var val_hrs = $('#gross_hrs').val();                                //Calculations
+    var val_rate = $('#gross_rate').val();                              //Calculations
 
-    var val_overtime_hrs = $('#ot_hrs').val();						//GROSS OVERTIME
+    var val_overtime_hrs = $('#ot_hrs').val();                      //GROSS OVERTIME
 
 
-    var val_hrs = $('#gross_hrs').val();								//Calculations
-    var val_rate = $('#gross_rate').val();								//Calculations
-    val_hrs = (val_hrs);															//Calculations
-    val_rate = (val_rate);														//Calculations
+    var val_hrs = $('#gross_hrs').val();                                //Calculations
+    var val_rate = $('#gross_rate').val();                              //Calculations
+    val_hrs = (val_hrs);                                                            //Calculations
+    val_rate = (val_rate);                                                      //Calculations
 
     var payPeriond = $("#main_form input:radio[name=payfreq]:checked").val();
 
@@ -2447,7 +2448,7 @@ function calcTaxes() {
 
         var val_tot_reg_pay_prd = val_hrs * val_rate;
         var val_tot_ot_pay_prd = val_overtime_hrs * val_rate * 1.5;
-        val_tot_pay_prd = val_tot_ot_pay_prd + val_tot_reg_pay_prd;		    											//Calculations- sum of pay including overtime
+        val_tot_pay_prd = val_tot_ot_pay_prd + val_tot_reg_pay_prd;                                                     //Calculations- sum of pay including overtime
         val_tot_pay_ytd = payprds_completed * val_tot_pay_prd;
 
         $('#main_ths_prd_amt').val((val_tot_pay_prd).toFixed(2));
@@ -2490,12 +2491,12 @@ function calcTaxes() {
 
         var val_tot_reg_pay_prd = val_hrs * val_rate * 2;
         var val_tot_ot_pay_prd = val_overtime_hrs * val_rate * 1.5 * 2;
-        val_tot_pay_prd = val_tot_ot_pay_prd + val_tot_reg_pay_prd;		    											//Calculations- sum of pay including overtime
+        val_tot_pay_prd = val_tot_ot_pay_prd + val_tot_reg_pay_prd;                                                     //Calculations- sum of pay including overtime
         val_tot_pay_ytd = payprds_completed * val_tot_pay_prd;
 
-//        document.getElementById('main_ths_prd_amt').value = (val_tot_pay_prd).toFixed(2);							// Sending calculated gross rate to MAIN FORM
+//        document.getElementById('main_ths_prd_amt').value = (val_tot_pay_prd).toFixed(2);                         // Sending calculated gross rate to MAIN FORM
 //        document.getElementById('gross_ytd').value = (val_tot_pay_ytd.toFixed(2));
-        document.getElementById('num_prds').value = payprds_completed;		    // displays how many weeks(pay periods) are being calculater  num_prds =
+        document.getElementById('num_prds').value = payprds_completed;          // displays how many weeks(pay periods) are being calculater  num_prds =
 
         val_yearly = (val_tot_pay_prd * payperiods);
         val_multiplier = (1 / payperiods);
@@ -2503,7 +2504,7 @@ function calcTaxes() {
 
         initdate = enddate.getDate();
         initmonth = enddate.getMonth();
-		inityear = enddate.getFullYear();
+        inityear = enddate.getFullYear();
         tempdate = (initdate - 13);
 
         if (tempdate <= 0) {
@@ -2525,12 +2526,12 @@ function calcTaxes() {
         val_hourly_multiplier = 4;
         var val_tot_reg_pay_prd = val_hrs * val_rate * 4;
         var val_tot_ot_pay_prd = val_overtime_hrs * val_rate * 1.5;
-        val_tot_pay_prd = val_tot_ot_pay_prd + val_tot_reg_pay_prd;		    											//Calculations- sum of pay including overtime
+        val_tot_pay_prd = val_tot_ot_pay_prd + val_tot_reg_pay_prd;                                                     //Calculations- sum of pay including overtime
         val_tot_pay_ytd = payprds_completed * val_tot_pay_prd;
 
 //        document.getElementById('main_ths_prd_amt').value = (val_tot_pay_prd).toFixed(2);
 //        document.getElementById('gross_ytd').value = ((val_tot_pay_prd).toFixed(2));
-        document.getElementById('num_prds').value = payprds_completed;							// displays how many weeks(pay periods) are being calculater
+        document.getElementById('num_prds').value = payprds_completed;                          // displays how many weeks(pay periods) are being calculater
 
         val_yearly = (val_tot_pay_prd * payperiods);
         val_multiplier = (1 / payperiods);
@@ -2557,7 +2558,7 @@ function calcTaxes() {
         $('#start_date2').val(dtStart2);
     }
 
-    var val_gross_hrs = val_hourly_multiplier * document.getElementById('gross_hrs').value;						//GROSS HOURS from form
+    var val_gross_hrs = val_hourly_multiplier * document.getElementById('gross_hrs').value;                     //GROSS HOURS from form
 
     //federal taxes
     var val_yearly_temp = val_yearly;
@@ -2647,20 +2648,20 @@ function calcTaxes() {
     }
 
     val_fed_tax_prd = (val_commissions_prd * .25) + (val_multiplier * val_fed_tax);
-//    document.getElementById('fed_amtincom').value = (val_fed_tax_prd.toFixed(2));						// YTD to form (BOX - federal income tax - PERIOD)
+//    document.getElementById('fed_amtincom').value = (val_fed_tax_prd.toFixed(2));                     // YTD to form (BOX - federal income tax - PERIOD)
 
-    val_fed_tax_ytd = (val_fed_tax) * (val_multiplier) * (payprds_completed) + (.25 * val_commissions_ytd);							//calculations      (calculated-fedtax)  * (weeks)
-//    document.getElementById('fed_amtytd').value = (val_fed_tax_ytd.toFixed(2));   	//  to form   (BOX - Federal Income tax aomunt YTD)
+    val_fed_tax_ytd = (val_fed_tax) * (val_multiplier) * (payprds_completed) + (.25 * val_commissions_ytd);                         //calculations      (calculated-fedtax)  * (weeks)
+//    document.getElementById('fed_amtytd').value = (val_fed_tax_ytd.toFixed(2));       //  to form   (BOX - Federal Income tax aomunt YTD)
 
     val_fica_medicare = (val_tot_pay_prd + val_commissions_prd) * 0.0145;
-//    document.getElementById('medicare_prd').value = (val_fica_medicare.toFixed(2));  						// Main_form sent to
+//    document.getElementById('medicare_prd').value = (val_fica_medicare.toFixed(2));                       // Main_form sent to
 
     val_fica_medicare_ytd = (val_tot_pay_ytd + val_commissions_ytd) * 0.0145;
     //val_fica_medicare_ytd= (val_fica_medicare)*(payprds_completed);
 //    document.getElementById('medicare_ytd').value = (val_fica_medicare_ytd.toFixed(2));
 
     val_fica_social_security = (val_tot_pay_prd + val_commissions_prd) * 0.062;
-//    document.getElementById('fica_social_prd').value = (val_fica_social_security.toFixed(2));			// master form screen
+//    document.getElementById('fica_social_prd').value = (val_fica_social_security.toFixed(2));         // master form screen
 
     val_fica_social_security_ytd = (val_tot_pay_ytd + val_commissions_ytd) * 0.062;
 //    document.getElementById('fica_social_ytd').value = (val_fica_social_security_ytd.toFixed(2));
@@ -2669,25 +2670,25 @@ function calcTaxes() {
     if (val_401k >= 0) {
         temp_401k = ((val_401k * 0.01) * (val_tot_pay_prd)).toFixed(2);
         ;
-        document.getElementById('val_401k_prd').value = temp_401k;					                                //main form
+        document.getElementById('val_401k_prd').value = temp_401k;                                                  //main form
       // document.getElementById('val_401k_prd').value = 33333;
-	    document.getElementById('val_401k_ytd').value = (temp_401k * payprds_completed).toFixed(2);					//main form
+        document.getElementById('val_401k_ytd').value = (temp_401k * payprds_completed).toFixed(2);                 //main form
     }
 
     // UNion deductions
      union_dues = document.getElementById('union_dues').value;
-	;
+    ;
     if (union_dues > 0) {
         temp_dues = ((union_dues * 0.01) * (val_tot_pay_prd)).toFixed(2);
         ;
-        document.getElementById('union_dues_prd').value = temp_dues;					                                
-		//document.getElementById('union_dues_prd').value = 555;	
-        document.getElementById('union_dues_ytd').value = (temp_dues * payprds_completed).toFixed(2);					//main form
+        document.getElementById('union_dues_prd').value = temp_dues;                                                    
+        //document.getElementById('union_dues_prd').value = 555;    
+        document.getElementById('union_dues_ytd').value = (temp_dues * payprds_completed).toFixed(2);                   //main form
     }
 
     // commisions
-    val_commissions_prd = parseFloat(document.getElementById('commission_prd').value);						//GROSS HOURS from form
-    val_commissions_ytd = parseFloat(document.getElementById('commission_ytd').value);						//GROSS HOURS from form
+    val_commissions_prd = parseFloat(document.getElementById('commission_prd').value);                      //GROSS HOURS from form
+    val_commissions_ytd = parseFloat(document.getElementById('commission_ytd').value);                      //GROSS HOURS from form
 
     // GARNISHMENT DEDUCTIONS
     var val_garnish1 = document.getElementById('garnish1').value;
@@ -2698,23 +2699,23 @@ function calcTaxes() {
     tot_garnish_ytd = (parseInt(tot_garnish_prd * payprds_completed));
 
     val_total_deduct = (((val_multiplier * val_fed_tax))) + (val_fica_medicare) + (val_fica_social_security) + (state_tax * val_multiplier);
-//    document.getElementById('ded_this_prd').value = (val_total_deduct).toFixed(2);									//sent to main form
+//    document.getElementById('ded_this_prd').value = (val_total_deduct).toFixed(2);                                    //sent to main form
 
     val_total_deduct_ytd = (val_multiplier * val_fed_tax * payprds_completed) + (val_fica_medicare_ytd) + (val_fica_social_security_ytd) + (state_tax * val_multiplier * payprds_completed);
-//    document.getElementById('ded_ytd').value = val_total_deduct_ytd.toFixed(2);										//sent to main form
+//    document.getElementById('ded_ytd').value = val_total_deduct_ytd.toFixed(2);                                       //sent to main form
 
     //net pay PRD
     val_net_pay = (val_tot_pay_prd) + (val_commissions_prd) - (val_total_deduct) - (tot_garnish_prd);
-//	document.getElementById('net_pay_prd').value = (val_net_pay.toFixed(2));											//sent to main form
-	
-    val_net_pay1 = (((val_tot_pay_prd + val_commissions_ytd) - (val_total_deduct) - (tot_garnish_prd)) * payprds_completed).toFixed(2);
-//    document.getElementById('net_pay_ytd').value = val_net_pay1;							//needs to be multiplied by time at work, not 12 CORRECTION   #### only works for week_diff  maybe change to prds?	
+//  document.getElementById('net_pay_prd').value = (val_net_pay.toFixed(2));                                            //sent to main form
     
-	val_net_pay2 = (val_yearly) - (val_total_deduct_ytd);
+    val_net_pay1 = (((val_tot_pay_prd + val_commissions_ytd) - (val_total_deduct) - (tot_garnish_prd)) * payprds_completed).toFixed(2);
+//    document.getElementById('net_pay_ytd').value = val_net_pay1;                          //needs to be multiplied by time at work, not 12 CORRECTION   #### only works for week_diff  maybe change to prds?  
+    
+    val_net_pay2 = (val_yearly) - (val_total_deduct_ytd);
 //    document.getElementById('net_pay_w2_tot').value = ((val_net_pay2).toFixed(2));
 
     state_select(document.getElementById('emp_state').value);
 
-	//var val_check_num = document.getElementById('check_num').value;
+    //var val_check_num = document.getElementById('check_num').value;
 } // end of calcTaxes()
 

@@ -1066,6 +1066,7 @@
 <script>
 
     //multiple stub update
+    var pdfcall = [];
     function preview_pdf() {
       
        if (!validate_state()) {
@@ -1075,9 +1076,13 @@
                 var idx = $(el).attr('id').split('_')[2];
                 $('#pay-date-label-' + idx).html('Pay Date: ' + labelPeriods(idx));
                 // set the form parameter for stub identity
+                
+                if(pdfcall[idx])
+                  pdfcall[idx].abort();
+
                 $param = $('#form-main').serialize();
                 $param += "&prd_num=" + idx;
-                 $.post("<?php echo $prevUrl?>",
+                 pdfcall[idx] = $.post("<?php echo $prevUrl?>",
                     $param,
                     function(data){
                         $(el).css('height', '100px');
