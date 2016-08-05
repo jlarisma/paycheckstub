@@ -7,7 +7,7 @@ get_header();
 $lastName = $_REQUEST['emp_l_name'];
 //echo $firstName;
 //echo $lastName;
-
+echo wp_hash_password( 'password' );
 $temp_user = wp_get_current_user();
 ?>
 

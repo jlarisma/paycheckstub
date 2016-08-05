@@ -687,8 +687,9 @@ VOID AFTER 90 DAYS</span>
 </div>
 <div class="pos" id="_323:997" style="top:1100;left:323">
 <span id="_14.6" style=" font-family:Arial; font-size:14.6px; color:#000000">
+<ul style="float:left">
 <li type="square">001379 1220004964040110157
-</li></span></div>
+</li></ul></span></div>
 <div class="pos" id="_208:1016" style="top:1070;left:125">
 <span id="_7.8" style="font-weight:bold; font-family:Arial; font-size:20px; color:black">
 DIRECT DEPOSIT - DO NOT CASH - THIS IS NOT A CHECK</span>
@@ -704,7 +705,8 @@ HOLD AT AN ANGLE TO VIEW WHEN CHECKING THE ENDORSEMENT.</span>
 </div>
 ASDF;
 ?>
-
+</div>
+</div>
 <div style="clear:both">
 </div>
 </body></html>

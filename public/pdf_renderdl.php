@@ -116,14 +116,15 @@ if ( !function_exists('arrToParam')){
 //==============================================
 
 
-
 $pdfError = false;
+$html = [];
+$head = '';
 for ( $i = 0; $i < $num_stubs; $i++){
     $_REQUESTAR['check_num'] = "$check_num_base-$i";
     $_REQUESTAR['prd_num'] = $i; 							// set the current period stub
     $params = arrToParam($_REQUESTAR);					//  function, above, parses all the _requst vars
-      $ix = $i + 1;
-   //   echo($params);
+	$ix = $i + 1;
+
     $pdf = new WkHtmlToPdf();
     $page = $pdf->curlGetData($url, $_REQUESTAR, "post");
 
@@ -133,9 +134,31 @@ for ( $i = 0; $i < $num_stubs; $i++){
     	break;
     }
 
+    //get contents of every paystub
+    if($num_stubs > 1)
+    {
+    	preg_match("/<body[^>]*>(.*?)<\/body>/is", $page, $matches);
+		if(empty($head))
+		{
+		  	preg_match("/(.*?)<body[^>]*>/is", $page, $mhead);
+		   	$head = $mhead[1];
+		}
+	    $html[] =  $matches[1];
 
-    $pdf->addPage($page);
-	$pdf->send('Paycheckstub_'.$ix.'.pdf');
+    } else {
+    	$pdf->addPage($page);
+		$pdf->send('Paycheckstub_'.$ix.'.pdf');
+    }
+}
+
+
+if($num_stubs > 1 && !$pdfError)
+{
+	$printStub = $head . '<body><ul><li>' . implode('</li><li>', $html) . '</li></ul></body></html>';
+
+	$test = new WkHtmlToPdf();
+	$test->addPage($printStub);
+	$test->send('Paycheckstub_all.pdf');
 }
 
 
