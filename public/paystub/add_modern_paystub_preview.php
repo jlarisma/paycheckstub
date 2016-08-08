@@ -101,11 +101,11 @@ background-size: cover;
                 <div class="col-xs-6" style="font-size: 9.2;">
                     <img src="$logo" style="width: 100px;">
                     <br>
-                    <a style="font-size: 9.2;">JPMorgan  Chase  Bank, N.A.</a>
+                    <a style="font-size: 9.2;">$empr_add_name</a>
                                         <br>
-                    <a style="font-size: 9.2;">PO Box 659754</a>
+                    <a style="font-size: 9.2;">$empr_add_street</a>
                                         <br>
-                    <a style="font-size: 9.2;">San Antonio, TX 78265 - 9754</a>
+                    <a style="font-size: 9.2;">$empr_add_city, $empr_add_state $empr_add_zip</a>
                 </div>
                 <div class="col-xs-6"></div>
             </div>    
