@@ -175,12 +175,14 @@ $(document).ready(function() {
   			onSelect: function(coor) {
   				x1 = coor.x; y1 = coor.y;
   				x2 = coor.x2; y2 = coor.y2;
-  				w = coor.w; h = coor.y
+  				w = coor.w; h = coor.h;
   			},
   			onChange: function(coor) {
   				x1 = coor.x; y1 = coor.y;
   				x2 = coor.x2; y2 = coor.y2;
-  				w = coor.w; h = coor.y
+  				w = coor.w; h = coor.h;
+
+  				//console.log(x1, x2, y1, y2, w, h);
   			},
   			setSelect: [0, 0, 100, 100]
   		});
@@ -194,7 +196,7 @@ $(document).ready(function() {
   			formData.append('y1', y1);
   			formData.append('y2', y2);
   			formData.append('w', w);
-  			formData.append('h', w);
+  			formData.append('h', h);
   			formData.append('crop', 'true');
   			formData.append('file', $('#jcrop-target').attr('alt'));
   			$('#anim-loader').show();

@@ -33,17 +33,19 @@ function logoUpload()
 	if(file_exists($imageFile))
 		unlink($imageFile);
 
-
 	$copyImage = wp_handle_upload($image, ['test_form' => FALSE, 'unique_filename_callback' => 'overwriteImage']);
-
 	if(isset($copyImage['error']))
 	{	
 		echo 'error';
 		return;
 	} else {
 		
-		$resizedImg = image_resize($copyImage['file'], 700, 600, false, '_logo', $uploadDir['path'], 90);
+		list($width, $height) = getimagesize($copyImage['file']);
+		$ratio = ($width > 700 || $height > 600) ? 0.7 : 0;
 
+
+		$resizedImg = image_resize($copyImage['file'], ($width - ($width*$ratio)), ($height - ($height*$ratio)), false, '_logo', $uploadDir['path'], 90);
+		
 		if(isset($resizedImg->errors))
 		{
 			echo 'error'; return;
@@ -73,12 +75,13 @@ function logoResize()
 {
 	$uploadDir = wp_upload_dir();
 
-	$width = $height = 150;
+	$width = 180;
+	$height = 40;
 
 	$src = $uploadDir['path'] . '/' . $_POST['file'];
-	//print_r($_POST); exit;
+
 	preg_match('/^.*\.(jpg|jpeg|gif|png)$/i', $src, $imageType);
-//print_r($imageType);
+
 	switch($imageType[1])
 	{
 		case 'jpg':
@@ -101,12 +104,9 @@ function logoResize()
 
 	}
 	
+	$imageTc = ImageCreateTrueColor($width, $height);
 
-	
-	$imageTc = ImageCreateTrueColor( $width, $height );
-
-	imagecopyresampled($imageTc,$createImg,0,0,$_POST['x1'],$_POST['y1'],
-	    $width,$height,$_POST['w'],$_POST['h']);
+	imagecopyresampled($imageTc,$createImg,0,0,$_POST['x1'],$_POST['y1'], $width,$height,$_POST['w'],$_POST['h']);
 
 	$saveImg($imageTc, $src);
 	imagedestroy($imageTc);
