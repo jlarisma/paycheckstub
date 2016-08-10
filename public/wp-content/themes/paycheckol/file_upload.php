@@ -75,10 +75,15 @@ function logoResize()
 {
 	$uploadDir = wp_upload_dir();
 
-	$width = 180;
-	$height = 40;
+	//$width = $height = 180;
+	//$height = 40;
 
 	$src = $uploadDir['path'] . '/' . $_POST['file'];
+	
+	list($width, $height) = getimagesize($src);
+
+	$width = $width - ($width * 0.4);
+	$height = $height - ($height * 0.4);
 
 	preg_match('/^.*\.(jpg|jpeg|gif|png)$/i', $src, $imageType);
 
