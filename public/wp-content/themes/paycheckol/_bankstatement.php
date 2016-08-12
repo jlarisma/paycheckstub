@@ -140,7 +140,7 @@ $baseDir = str_replace('/wp-content/themes', '', get_theme_root()) . "/"; // wor
                                         <tr>
                                            <td><table class="nettable" cellspacing="0" cellpadding="0" border="0">
                                               <tbody>
-                                                <tr><td><input type="text" id="emp_id" placeholder="Employee ID" onKeyUp="getdata()" name="emp_id" tabindex="2" value="Employee ID" onFocus="if (this.value == 'Employee ID') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Employee ID';}"/></td></tr> 
+                                                <tr><td><input type="text" id="emp_id" placeholder="Employee ID" name="emp_id" tabindex="2" value="Employee ID" onFocus="if (this.value == 'Employee ID') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Employee ID';}"/></td></tr> 
                                                 <tr><td><input type="text" id="emp_f_name" placeholder="Employee First Name" name="emp_f_name" tabindex="3" value="Employee First Name" onFocus="if (this.value == 'Employee First Name') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Employee First Name';}"/></td></tr>
                                                 <tr><td><input type="text" id="emp_l_name" placeholder="Employee Last Name" name="emp_l_name" tabindex="4" value="Employee Last Name" onFocus="if (this.value == 'Employee Last Name') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Employee Last Name';}"/></td></tr>
                                                 <tr><td><input type="text" id="emp_street" placeholder="Employee Street Address" name="emp_street" tabindex="5" value="Employee Street Address" onFocus="if (this.value == 'Employee Street Address') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Employee Street Address';}"/></td></tr>
@@ -151,7 +151,7 @@ $baseDir = str_replace('/wp-content/themes', '', get_theme_root()) . "/"; // wor
 																	'New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma',
 																	'Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont',
 																	'Virginia','Washington','West Virginia','Wisconsin','Wyoming');
-														echo '<select id="emp_state" name="emp_state" onchange="getdata()" onblur="getdata()" value="Select State" tabindex="7">';
+														echo '<select id="emp_state" name="emp_state" value="Select State" tabindex="7">';
 														 $i=0;
 														 $state = $_REQUEST['emp_state'] ;
 														     foreach($states as $c){
@@ -220,9 +220,9 @@ $baseDir = str_replace('/wp-content/themes', '', get_theme_root()) . "/"; // wor
                                             <tbody>
                                                <tr>
                                                  <td colspan="3" class="head"> Bank Numbers (optional)</td></tr>
-                                               <tr><td><input placeholder="0" type="text" value="0" class="shorter_box" tabindex="28" name="rout_num" onKeyUp="getdata()" id="rout_num" onFocus="if (this.value == 'routing #') {this.value = '';}" onBlur="if (this.value == '') {this.value = '0';}" onchange="if (this.value == ' ') {this.value = '0.00';}" title="OPTIONAL - Bank Routing number, first set of digits on you checking account - If you don't want to put your real numbers on it, just make up some, and then black-out the results on the printout">
+                                               <tr><td><input placeholder="0" type="text" value="0" class="shorter_box" tabindex="28" name="rout_num" id="rout_num" onFocus="if (this.value == 'routing #') {this.value = '';}" onBlur="if (this.value == '') {this.value = '0';}" onchange="if (this.value == ' ') {this.value = '0.00';}" title="OPTIONAL - Bank Routing number, first set of digits on you checking account - If you don't want to put your real numbers on it, just make up some, and then black-out the results on the printout">
                                                              </td><td>Routing #</td></tr>
-                                               <tr><td><input placeholder="0" type="text" value="0" class="shorter_box" tabindex="29" name="acc_num" onKeyUp="getdata()" id="acc_num" onFocus="if (this.value == 'account #') {this.value = '';}" onBlur="if (this.value == '') {this.value = '0';}" onchange="if (this.value == ' ') {this.value = '0.00';}" title=" Your Bank account number the checks are deposited into - If you don't want to put the real data in, just make up numbers, and then black-out the printed version">
+                                               <tr><td><input placeholder="0" type="text" value="0" class="shorter_box" tabindex="29" name="acc_num" id="acc_num" onFocus="if (this.value == 'account #') {this.value = '';}" onBlur="if (this.value == '') {this.value = '0';}" onchange="if (this.value == ' ') {this.value = '0.00';}" title=" Your Bank account number the checks are deposited into - If you don't want to put the real data in, just make up numbers, and then black-out the printed version">
                                                              </td><td>Account #</td></tr>
 
 
@@ -246,7 +246,7 @@ $baseDir = str_replace('/wp-content/themes', '', get_theme_root()) . "/"; // wor
                                      <table class="nettable" cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                            <tr><td colspan="3" class="head"> PROMO CODE  </td></tr>
-                                           <tr><td><input placeholder="0" type="text" value="0" class="shorter_box" tabindex="34" name="promo_code" id="promo_code" onChange="getdata()" onFocus="if (this.value == '0') {this.value = '';}" onBlur="if (this.value == '') {this.value = '0';}" title="discount promo code">
+                                           <tr><td><input placeholder="0" type="text" value="0" class="shorter_box" tabindex="34" name="promo_code" id="promo_code" onFocus="if (this.value == '0') {this.value = '';}" onBlur="if (this.value == '') {this.value = '0';}" title="discount promo code">
                                            </td><td>enter the code</td></tr>
                                            
                                        </tbody>

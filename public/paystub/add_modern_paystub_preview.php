@@ -117,9 +117,9 @@ background-size: cover;
                 <br>
                 <a>$emp_f_name $emp_l_name</a>
                 <br>
-                <a>1234 ANY  ST</a>
+                <a>$emp_street</a>
                 <br>
-                <a>YOURCITY  CA 12345-0000</a>
+                <a>$emp_city  $state_abb $emp_zip</a>
             </div>
             </div>
             <div class="col-xs-5">
