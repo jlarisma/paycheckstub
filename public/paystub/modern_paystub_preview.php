@@ -111,7 +111,7 @@ $check_num $prd_num</span>
 
 <div class="pos" id="_546:244" style="top:44;left:546">
 <span id="_16.0" style=" font-family:Arial; font-size:18.0px; font-weight:bold; color:#000000">
-Earning Statement</span>
+Earnings Statement</span>
 </div>
 <div class="pos" id="_283:268" style="top:68;left:110">
 <span id="_9.8" style="font-style:italic; font-family:Arial; font-size:10px; color:#000000">
